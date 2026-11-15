@@ -1,0 +1,363 @@
+0000ec44 | In FsblHookBeforeBitstreamDload function 
+ | 
+0000ec70 | In FsblHookAfterBitstreamDload function 
+ | 
+0000ec9c | In FsblHookBeforeHandoff function 
+ | 
+0000ecc4 | In FsblHookFallback function 
+ | 
+0000ece4 | Move Image failed
+ | 
+0000ecf8 | Move Image failed reading FsblLength
+ | 
+0000ed20 | Get Header Start Address Failed
+ | 
+0000ed44 | Header Dump
+ | 
+0000ed54 | Image Word Len: 0x%08lx
+ | 
+0000ed70 | Data Word Len: 0x%08lx
+ | 
+0000ed8c | Partition Word Len:0x%08lx
+ | 
+0000edac | Load Addr: 0x%08lx
+ | 
+0000edc4 | Exec Addr: 0x%08lx
+ | 
+0000eddc | Partition Start: 0x%08lx
+ | 
+0000edf8 | Partition Attr: 0x%08lx
+ | 
+0000ee14 | Partition Checksum Offset: 0x%08lx
+ | 
+0000ee3c | Section Count: 0x%08lx
+ | 
+0000ee58 | Checksum: 0x%08lx
+ | 
+0000ee6c | Partition Header Offset:0x%08lx
+ | 
+0000ee90 | Header Information Load Failed
+ | 
+0000eeb4 | Partition Count: %lu
+ | 
+0000eecc | Invalid Partition Count
+ | 
+0000eee8 | There is no partition to load
+ | 
+0000ef08 | Error: Checksum 0x%8.8lx != 0x%8.8lx
+ | 
+0000ef30 | PARTITION_HEADER_CORRUPTION
+ | 
+0000ef50 | INVALID_PARTITION_LENGTH
+ | 
+0000ef6c | IMAGE_HAS_NO_PARTITIONS
+ | 
+0000ef88 | Move Image Failed
+ | 
+0000ef9c | PCAP Data Transfer Failed
+ | 
+0000efb8 | PCAP Bitstream Download Failed
+ | 
+0000efdc | PCAP Data Transfer failed 
+ | 
+0000effc | Actual checksum
+ | 
+0000f018 | Calculated checksum
+ | 
+0000f030 | Error: Partition DataChecksum 0x%0x!= 0x%0x
+ | 
+0000f060 | Reboot status register: 0x%08lx
+ | 
+0000f084 | Reboot status shows previous run falls back
+ | 
+0000f0b4 | Multiboot Register: 0x%08lx
+ | 
+0000f0d4 | Image Start Address: 0x%08lx
+ | 
+0000f0f4 | Partition Header Load Failed
+ | 
+0000f114 | RSA enabled for Chip
+ | 
+0000f12c | Read Partition Header signature Failed
+ | 
+0000f158 | Partition Header signature Failed
+ | 
+0000f17c | Partition Number: %lu
+ | 
+0000f194 | INVALID_HEADER_FAIL
+ | 
+0000f1ac | Skipping partition %0lx
+ | 
+0000f1c8 | Bitstream
+ | 
+0000f1d4 | 
+FSBL Warning !!!Bitstream not loaded into PL
+ | 
+0000f208 | Partition order invalid
+ | 
+0000f224 | Application
+ | 
+0000f234 | Encrypted
+ | 
+0000f240 | RSA Signed
+ | 
+0000f250 | INVALID_LOAD_ADDRESS_FAIL
+ | 
+0000f26c | FSBL_BEFORE_BSTREAM_HOOK_FAIL
+ | 
+0000f28c | PARTITION_MOVE_FAIL
+ | 
+0000f2a4 | PARTITION_CHECKSUM_FAIL
+ | 
+0000f2c0 | Partition Validation Done
+ | 
+0000f2dc | AUTHENTICATION_FAIL
+ | 
+0000f2f4 | Authentication Done
+ | 
+0000f30c | DECRYPTION_FAIL
+ | 
+0000f320 | BITSTREAM_DOWNLOAD_FAIL
+ | 
+0000f33c | FSBL_AFTER_BSTREAM_HOOK_FAIL
+ | 
+0000f35c | EFUSE_SEC_EN bit is set, Encryption is mandatory
+ | 
+0000f390 | FSBL Status = 0x%.4lx
+ | 
+0000f3a8 | Silicon Version 3.1
+ | 
+0000f3c0 | Silicon Version %lu.0
+ | 
+0000f3d8 | Checksum = %8.8lx
+ | 
+0000f3ec | Searching For Next Valid Image | 
+0000f410 | 
+Image found, offset: 0x%.8lx
+ | 
+0000f434 | 
+This Boot Mode Doesn't Support Fallback
+ | 
+0000f460 | Updated MultiBootReg = 0x%08lx
+ | 
+0000f484 | 
+No Image Found
+ | 
+0000f498 | System Initialization Failed
+ | 
+0000f4b8 | 
+No Image Search
+ | 
+0000f4cc | FSBL_HANDOFF_HOOK_FAIL
+ | 
+0000f4e8 | No Execution Address JTAG handoff 
+ | 
+0000f510 | SUCCESSFUL_HANDOFF
+ | 
+0000f528 | FIQ_HANDLER 
+ | 
+0000f538 | IRQ_HANDLER 
+ | 
+0000f548 | DATA_ABORT_HANDLER 
+ | 
+0000f560 | PREFETCH_ABORT_HANDLER 
+ | 
+0000f57c | SVC_HANDLER 
+ | 
+0000f58c | UNDEFINED_HANDLER
+ | 
+0000f5a0 | Check RSA Key Hash: 
+ | 
+0000f5c0 | RSA Key Auth Failed! | 
+0000f61c | PS Data Initialization failed
+ | 
+0000f63c | PS status read failed
+ | 
+0000f654 | EfusePS status bits : 0x%x 
+ | 
+0000f674 | EfusePS status bits : 128k CRC check on ROM enabled
+ | 
+0000f6ac | EfusePS status bits : 128k CRC check on ROM disabled
+ | 
+0000f6e4 | EfusePS status bits : DFT JTAG is disabled
+ | 
+0000f714 | EfusePS status bits : DFT JTAG is enabled
+ | 
+0000f740 | EfusePS status bits : DFT mode is disabled
+ | 
+0000f770 | EfusePS status bits : DFT mode is enabled
+ | 
+0000f79c | EfusePS status bits : RSA authentication of fsbl enabled
+ | 
+0000f7d8 | PS EFUSE reading failed
+ | 
+0000f7f4 | EfusePS status bits : RSA authentication of fsbl disabled
+ | 
+0000f830 | EfusePS status bits : Write protect enabled
+ | 
+0000f860 | EfusePS status bits : Write protect disabled
+ | 
+0000f890 | PS EFUSE writing failed
+ | 
+0000f8ac | 
+eFUSE operations exit status: %08X
+ | 
+0000f8d4 | PS7_INIT_FAIL : %s
+ | 
+0000f8ec | 
+Xilinx First Stage Boot Loader 
+ | 
+0000f91c | Release %d.%d	%s-%s
+ | 
+0000f940 | DDR_INIT_FAIL 
+ | 
+0000f954 | PCAP_INIT_FAIL 
+ | 
+0000f968 | Devcfg driver initialized 
+ | 
+0000f988 | User not allowed to do any system resets
+ | 
+0000f9b4 | Boot mode is NAND
+ | 
+0000f9c8 | NAND_INIT_FAIL 
+ | 
+0000f9dc | NAND Init Done 
+ | 
+0000f9f0 | Boot mode is NOR
+ | 
+0000fa04 | NOR Init Done 
+ | 
+0000fa18 | Boot mode is SD
+ | 
+0000fa2c | BOOT.BIN | 
+0000fa38 | SD_INIT_FAIL
+ | 
+0000fa48 | SD Init Done 
+ | 
+0000fa58 | Booting Device is MMC
+ | 
+0000fa70 | MMC_INIT_FAIL
+ | 
+0000fa80 | MMC Init Done 
+ | 
+0000fa94 | Boot mode is JTAG
+ | 
+0000faa8 | ILLEGAL_BOOT_MODE 
+ | 
+0000fac0 | Flash Base Address: 0x%08lx
+ | 
+0000fae0 | INVALID_FLASH_ADDRESS 
+ | 
+0000fafc | Linear Boot Device
+ | 
+0000fb14 | EFUSE STATS ERROR, fallback
+ | 
+0000fb34 | Handoff Address: 0x%08lx
+ | 
+0000fb50 | Nand Driver failed 
+  | 
+0000fb68 | NAND intialization failed 
+  | 
+0000fb88 | InitNand: Geometry = 0x%x
+ | 
+0000fba4 | Nand driver initialized 
+ | 
+0000fbc0 | XDcfg_CfgInitialize failed 
+ | 
+0000fbe0 | Level Shifter Value = 0x%lx 
+ | 
+0000fc00 | Fabric not powered up
+ | 
+0000fc18 | Devcfg Status register = 0x%lx 
+ | 
+0000fc3c | PCAP:Fabric is Initialized done
+ | 
+0000fc60 | Fabric Init failed
+ | 
+0000fc78 | FATAL errors in PCAP %lx
+ | 
+0000fc94 | PCAP:StatusReg = 0x%.8lx
+ | 
+0000fcb0 | PCAP_DEVICE_BUSY
+ | 
+0000fcc4 | PCAP:device ready
+ | 
+0000fcd8 | PCAP:IntStatus indicates error
+ | 
+0000fcfc | PCAP:Clear done
+ | 
+0000fd10 | PCAP register dump:
+ | 
+0000fd28 | PCAP CTRL 0x%x: 0x%08lx
+ | 
+0000fd44 | PCAP LOCK 0x%x: 0x%08lx
+ | 
+0000fd60 | PCAP CONFIG 0x%x: 0x%08lx
+ | 
+0000fd7c | PCAP ISR 0x%x: 0x%08lx
+ | 
+0000fd98 | PCAP IMR 0x%x: 0x%08lx
+ | 
+0000fdb4 | PCAP STATUS 0x%x: 0x%08lx
+ | 
+0000fdd0 | PCAP DMA SRC ADDR 0x%x: 0x%08lx
+ | 
+0000fdf4 | PCAP DMA DEST ADDR 0x%x: 0x%08lx
+ | 
+0000fe18 | PCAP DMA SRC LEN 0x%x: 0x%08lx
+ | 
+0000fe3c | PCAP DMA DEST LEN 0x%x: 0x%08lx
+ | 
+0000fe60 | PCAP ROM SHADOW CTRL 0x%x: 0x%08lx
+ | 
+0000fe88 | PCAP MBOOT 0x%x: 0x%08lx
+ | 
+0000fea4 | PCAP SW ID 0x%x: 0x%08lx
+ | 
+0000fec0 | PCAP UNLOCK 0x%x: 0x%08lx
+ | 
+0000fedc | PCAP MCTRL 0x%x: 0x%08lx
+ | 
+0000fef8 | PCAP transfer timed out 
+ | 
+0000ff14 | PCAP_CLEAR_STATUS_FAIL 
+ | 
+0000ff30 | Status of XDcfg_Transfer = %lu  
+ | 
+0000ff54 | PCAP_DMA_DONE_FAIL 
+ | 
+0000ff6c | DMA Done ! 
+ | 
+0000ff7c | Errors in PCAP 
+ | 
+0000ff90 | PCAP_FPGA_DONE_FAIL
+ | 
+0000ffa8 | FPGA Done ! 
+ | 
+0000ffb8 | Undefined error status | 
+0000ffd0 | PS7 initialization successful | 
+0000fff0 | PS7 init Data Corrupted | 
+00010008 | PS7 init mask poll timeout | 000629a8 
+00010024 | Mask Poll failed for DDR Init | 
+00010044 | Mask Poll failed for PLL Init | 
+00010064 | Mask Poll failed for DMA done bit | 
+00010088 | Partition SPK Signature Authentication failed
+ | 
+000100b8 | Partition Signature Authentication failed
+ | 
+000100e8 | SD: rc= %.8x
+ | 
+000100f8 | SD: Unable to open file %s: %d
+ | 
+00010118 | SD: Unable to seek to %lx
+ | 
+00010134 | *** ERROR: f_read returned %d
+ | 
+00010154 | 0123456789ABCDEF | 
+00010168 | xnandps_bbm.c | 
+00010188 | xnandps.c | 
+000101a0 | xdevcfg_intr.c | 
+000101b0 | xnandps_onfi.c | 
+000101e4 | xsdps_options.c | 
+000101f4 | 0123456789abcdefABCDEF | 
+0001020c | xadcps_selftest.c | 

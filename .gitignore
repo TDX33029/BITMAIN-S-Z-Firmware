@@ -1,0 +1,19 @@
+# ---- BM1476: heavy binaries & machine-local artifacts (kept on disk, not tracked) ----
+BM1476/original/FR-1.9(260427-Z15 Pro).bmu
+BM1476/sdcard/uramdisk.ext2.img
+BM1476/sdcard/uramdisk.image.gz
+BM1476/analysis/ghidra_proj/
+BM1476/analysis/ghidra_proj_cgminer/
+# rootfs trees: dense small binaries; track only top-level trees' key configs? keep tracked but exclude bulky blobs
+BM1476/rootfs_1/usr/lib/
+BM1476/rootfs_2/usr/lib/
+BM1476/sdcard/rootfs_sd/usr/lib/
+BM1476/sdcard/rootfs_sd/usr/bin/gdb
+BM1476/sdcard/rootfs_sd/usr/bin/openssl
+BM1476/sdcard/rootfs_sd/usr/bin/ntpd
+BM1476/sdcard/rootfs_sd/usr/bin/screen-4.0.3
+BM1476/sdcard/rootfs_sd/usr/bin/curl
+BM1476/sdcard/rootfs_sd/usr/bin/stunnel
+*.ext4.img
+*.rep/
+BM1476/analysis/minerfs_recheck.img

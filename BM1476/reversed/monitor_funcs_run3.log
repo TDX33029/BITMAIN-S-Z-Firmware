@@ -1,0 +1,90 @@
+INFO  Using log config file: jar:file:/D:/Document/tempPrj/BITMAIN-S19Hyd-151T-Firmware/Firmware/S19/analysis/tools/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Users\Lenovo\AppData\Roaming\ghidra\ghidra_12.2_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Lenovo\AppData\Roaming\ghidra\ghidra_12.2_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (852 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Loaded 53 trusted CA certificates from the OS trust store. (DefaultTrustManagerFactory)  
+INFO  Loaded 118 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (1997 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 60 extension points (19 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\Document\tempPrj\ZEC\_unpack\analysis\scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\Swift\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: D:\Document\tempPrj\ZEC\_unpack\analysis\ghidra_proj\ZECproj (HeadlessAnalyzer)  
+INFO  Opening project: D:\Document\tempPrj\ZEC\_unpack\analysis\ghidra_proj\ZECproj (HeadlessProject)  
+INFO  REPORT: Processing project file: /miner-monitor (HeadlessAnalyzer)  
+INFO  ANALYZING all memory and code: /miner-monitor (HeadlessAnalyzer)  
+INFO  DWARF external debug information found: [BuildIdDebugInfo [buildId=[52, -93, 47, 34, 28, 23, 90, 32, -48, -94, -119, -62, -4, -67, -9, 124, 9, -124, 36, 45], objectType=DEBUGINFO, ], DebugLinkDebugInfo [filename=miner-monitor, crc=1276748157]] (ExternalDebugFileSectionProvider)  
+INFO  DWARF external debug file found with mismatching crc, ignored: D:\Document\tempPrj\ZEC\_unpack\sdcard\rootfs_sd\usr\bin\miner-monitor, (72454fda) (SameDirDebugInfoProvider)  
+INFO  Unable to find DWARF information, skipping DWARF analysis (DWARFAnalyzer)  
+INFO  Packed database cache: C:\Users\Lenovo\AppData\Local\ghidra\packed-db-cache (PackedDatabaseCache)  
+INFO  Applied data type archive: generic_clib (ApplyDataArchiveAnalyzer)  
+INFO  Resolving External Symbols of [/miner-monitor] - 110 unresolved symbols, no external libraries configured - skipping (ExternalSymbolResolverAnalyzer)  
+INFO  -----------------------------------------------------
+    ARM Constant Reference Analyzer            0.397 secs
+    ARM Symbol                                 0.008 secs
+    ASCII Strings                              0.250 secs
+    Apply Data Archives                        0.368 secs
+    Call Convention ID                         0.002 secs
+    Call-Fixup Installer                       0.004 secs
+    Create Address Tables                      0.023 secs
+    Create Address Tables - One Time           0.013 secs
+    Create Function                            0.005 secs
+    DWARF                                      0.009 secs
+    Data Reference                             0.092 secs
+    Decompiler Switch Analysis                 0.520 secs
+    Demangler GNU                              0.034 secs
+    Disassemble Entry Points                   0.046 secs
+    Embedded Media                             0.004 secs
+    External Entry References                  0.001 secs
+    External Symbol Resolver                   0.005 secs
+    Function ID                                0.070 secs
+    Function Start Pre Search                  0.007 secs
+    Function Start Search                      0.169 secs
+    Function Start Search After Code           0.072 secs
+    Function Start Search After Data           0.048 secs
+    GCC Exception Handlers                     0.010 secs
+    Non-Returning Functions - Discovered       0.027 secs
+    Non-Returning Functions - Known            0.011 secs
+    Reference                                  0.104 secs
+    Shared Return Calls                        0.014 secs
+    Source Language Support                    0.011 secs
+    Stack                                      0.085 secs
+    Subroutine References                      0.040 secs
+    Variadic Function Signature Override       4.688 secs
+-----------------------------------------------------
+     Total Time   7 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: /miner-monitor (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: ExportFuncs.java 'D:/Document/tempPrj/ZEC/_unpack/reversed/monitor_funcs'  (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\Document\tempPrj\ZEC\_unpack\analysis\scripts\ExportFuncs.java (HeadlessAnalyzer)  
+INFO  ExportFuncs.java> exported 113 functions to D:/Document/tempPrj/ZEC/_unpack/reversed/monitor_funcs (GhidraScript)  
+INFO  ANALYZING changes made by post scripts: /miner-monitor (HeadlessAnalyzer)  
+INFO  REPORT: Post-analysis succeeded for file: /miner-monitor (HeadlessAnalyzer)  
+INFO  REPORT: Save succeeded for processed file: /miner-monitor (HeadlessAnalyzer)  

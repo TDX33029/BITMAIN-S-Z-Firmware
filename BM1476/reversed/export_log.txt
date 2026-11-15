@@ -1,0 +1,19 @@
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:78)
+	at ghidra.Ghidra.main(Ghidra.java:41)
+请按任意键继续. . . 
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:78)
+	at ghidra.Ghidra.main(Ghidra.java:41)
+请按任意键继续. . . 
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:78)
+	at ghidra.Ghidra.main(Ghidra.java:41)
+请按任意键继续. . . 
+	... 9 more
+ 
+INFO  REPORT: Save succeeded for processed file: /bitmain_axi.ko (HeadlessAnalyzer)  
+	... 9 more
+ 
+INFO  REPORT: Save succeeded for processed file: /ph2_raw.bin (HeadlessAnalyzer)  
+	... 9 more
+ 
+INFO  REPORT: Save succeeded for processed file: /fsbl_ph1_raw.bin (HeadlessAnalyzer)  
+ALL-DONE

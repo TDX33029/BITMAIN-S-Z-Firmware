@@ -1,0 +1,222 @@
+FUN_0000a3e0	send or recv: Broken pipe
+FUN_0000a3ec	oops! stop by ctrl+c or kill!!!----------------------------------------
+FUN_0000a3ec	unlock fd_pid_conf failed!
+FUN_0000a3ec	unlock fd_pid_conf succeed!
+FUN_0000a514	/config/minermonitor.conf
+FUN_0000a514	Delete node:%s,%s---------- 
+FUN_0000a514	no cmd for responding!
+FUN_0000a514	respond queue  empty
+FUN_0000a514	response node:%s,%s---------- 
+FUN_0000a680	Web  Switch is OFF!
+FUN_0000a680	after deal_cmd()
+FUN_0000a680	get a command head:%s! 
+FUN_0000a680	get a command nonce:%s! 
+FUN_0000a680	get a command:%s! 
+FUN_0000a680	new node:%s,%s========== 
+FUN_0000a680	next command!
+FUN_0000a680	queue empty1
+FUN_00009fa0	Bad Package REV!
+FUN_00009fa0	Create pthread error!
+FUN_00009fa0	Web  Switch is OFF!
+FUN_00009fa0	encrypt connect failed.
+FUN_00009fa0	process exist!
+FUN_00009fa0	the queue is full
+FUN_00009fa0	this is command
+FUN_00009fa0	this is respond 
+FUN_0000aa14	/config/minermonitor.conf
+FUN_0000aa14	Web  Switch is OFF!
+FUN_0000aa14	connect failed
+FUN_0000aa14	gethostbyname
+FUN_0000aa14	ip_server
+FUN_0000aa14	server connected
+FUN_0000aa14	socket
+FUN_0000ad18	Connect to normal!!!
+FUN_0000ad18	Off Line!!! in tcp_state()
+FUN_0000ad18	Web  Switch is OFF!
+FUN_0000ad18	encrypt connect failed.
+FUN_0000ad18	receive signal :%d 
+FUN_0000ad18	tcp_state, sock_connect_server failed!
+FUN_0000a7f4	/config/minermonitor.conf
+FUN_0000a7f4	api-switch
+FUN_0000a7f4	key_switch = %s 
+FUN_0000a7f4	will bi exited###################
+FUN_0000fa54	api-switch
+FUN_0000fa54	api-uid
+FUN_0000fa54	ip_server
+FUN_0000fa54	open error
+FUN_0000fa54	port_local
+FUN_0000fa54	port_server
+FUN_0000fc84	api-switch
+FUN_0000fc84	api-uid
+FUN_0000fc84	ip_server
+FUN_0000fc84	open error
+FUN_0000fc84	port_local
+FUN_0000fc84	port_server
+FUN_0000a8a0	A digital certificate information:
+FUN_0000a8a0	Issued by the: %s 
+FUN_0000a8a0	certificate: %s 
+FUN_0000a938	(NONE)
+FUN_0000a938	Connected with %s encryption 
+FUN_0000e284	:No Such Device %s/n
+FUN_0000e284	socket
+FUN_0000e340	%02X:%02X:%02X:%02X:%02X:%02X
+FUN_0000e340	ioctl
+FUN_0000e340	socket
+FUN_0000adb0	OFF LINE !!!!Please Wait!!! in recv_serpkg_struct() in client
+FUN_0000ae50	Bad Package REV!
+FUN_0000ae50	the queue is full
+FUN_0000ae50	this is command
+FUN_0000ae50	this is respond 
+FUN_0000b020	/root/test
+FUN_0000b088	/tmp/miner-monitor/pid
+FUN_0000b088	The thread executing miner-monitor:%d
+FUN_0000b088	created!
+FUN_0000b088	exist,write and lock!
+FUN_0000b088	locked!
+FUN_00010004	api-allow
+FUN_00010004	api-listen
+FUN_00010004	api-network
+FUN_00010004	bitmain-freq
+FUN_00010004	bitmain-nobeeper
+FUN_00010004	bitmain-notempoverctrl
+FUN_00010004	bitmain-voltage
+FUN_00010004	open error
+FUN_00010004	pools
+FUN_00010210	api-allow
+FUN_00010210	api-listen
+FUN_00010210	api-network
+FUN_00010210	bitmain-freq
+FUN_00010210	bitmain-nobeeper
+FUN_00010210	bitmain-notempoverctrl
+FUN_00010210	bitmain-voltage
+FUN_00010210	open error
+FUN_00010210	pools
+FUN_0000f410	/config/cgminer.conf
+FUN_0000edfc	/config/minermonitor.conf
+FUN_0000edfc	IP=%s,
+FUN_0000edfc	TYPE=%d
+FUN_0000edfc	api-uid
+FUN_0000edfc	get ip error!
+FUN_0000edfc	send pakge str :%s 
+FUN_0000f108	/config/minermonitor.conf
+FUN_0000f108	get IP error
+FUN_0000f108	nothing returned form callapi    
+FUN_0000f108	port_local
+FUN_0000f108	result of callapi:%s  
+FUN_0000f108	send pakge str :%s 
+FUN_0000f108	sendbytes=%d 
+FUN_0000f108	state_len=%d 
+FUN_0000f4c0	/config/minermonitor.conf
+FUN_0000f4c0	/etc/init.d/cgminer restart
+FUN_0000f4c0	Cgminer!Socket connect failed: %s 
+FUN_0000f4c0	Failed to resolve host 
+FUN_0000f4c0	Socket initialisation failed: %s 
+FUN_0000f4c0	get IP error
+FUN_0000f4c0	port_local
+FUN_0000f4c0	restart OK!
+FUN_0000f4c0	restart not well!! wait next 5s......
+FUN_0000f4c0	restart timeout!
+FUN_0000b340	option
+FUN_0000b46c	can't open '%s' as config file: %s 
+FUN_0000b46c	config
+FUN_0000b46c	error parsing %s, line %d:%d 
+FUN_0000b46c	line too long, conf line skipped %s, line %d 
+FUN_0000b46c	too many vars in  %s, line %d:%d 
+FUN_0000b46c	value to long %s, line %d:%d 
+FUN_0000b46c	var name to long %s, line %d:%d 
+FUN_0000b6d4	can't open '%s' as config file: %s 
+FUN_0000b6d4	error parsing %s, line %d:%d 
+FUN_0000b6d4	line too long, conf line skipped %s, line %d 
+FUN_0000b6d4	too many vars in  %s, line %d:%d 
+FUN_0000b6d4	value to long %s, line %d:%d 
+FUN_0000b6d4	var name to long %s, line %d:%d 
+FUN_0000ba78	get %s failed 
+FUN_0000b9c4	%s = %s 
+FUN_0000b9c4	g_var_num == %d 
+FUN_0000bea4	Call API Failed wait 5s !!
+FUN_0000bea4	Call API error.Disconnect with server!
+FUN_0000bea4	Failed to resolve host %s 
+FUN_0000bea4	Recv failed: %s 
+FUN_0000bea4	Recved n: %d 
+FUN_0000bea4	Send failed: %s 
+FUN_0000bea4	Send succed
+FUN_0000bea4	Socket initialisation failed: %s 
+FUN_0000bea4	begin to Recv
+FUN_0000bea4	callapi
+FUN_0000bea4	cgminer_api.c
+FUN_0000bea4	the result of callapi about %s: %s  
+FUN_0000ba9c	open error0
+FUN_0000bc44	%s=%s
+FUN_0000bc44	after format :%s  
+FUN_0000bc44	sum = %d 
+FUN_0000c69c	u%04x
+FUN_0000c83c	false
+FUN_0000d05c	false
+FUN_0000e75c	first_2byte=%s  ser_cmd=%s ser_len=%s body=%s 
+FUN_0000e8dc	PAKGE ERROR!!!!!
+FUN_0000e8dc	r_connect = %d. 
+FUN_0000e8dc	recv data failed1.
+FUN_0000e8dc	recv package.pkg_head:%s. 
+FUN_0000e8dc	recvbytes:%d,sum:%d,pkgnonce=%s 
+FUN_0000e8dc	rev from server cmd =  %s 
+FUN_0000e8dc	rev from server sum= %d 
+FUN_0000e8dc	the first two byte not 00   it is 0
+FUN_0000eb78	F6 exit!!!!!!
+FUN_0000eb78	Server respond  F1 
+FUN_0000eb78	Server respond  F2 
+FUN_0000eb78	Server respond  F3 
+FUN_0000eb78	Server respond  F4 
+FUN_0000eb78	Server respond  F5 
+FUN_0000eb78	Server respond  F6 
+FUN_0000eb78	Server respond  F7 
+FUN_0000eb78	respond rev : %s
+FUN_0000ecd0	body_len1=%d 
+FUN_0000ecd0	body_len2=%d 
+FUN_0000ecd0	send head
+FUN_0000f064	02revbody_size=%d 
+FUN_0000f064	send what I rev: %s 
+FUN_0000f69c	,result=
+FUN_0000f69c	send cgminer state :%s 
+FUN_0000f854	after send_getstatus_res()
+FUN_0000f854	restart cgminer FAILD 
+FUN_0000f854	restart cgminer OK OK 
+FUN_0000f990	open error1111
+FUN_00010a34	            
+FUN_00010a34	  option pool1url  '%s' 
+FUN_00010a34	 option api_allow  '%s' 
+FUN_00010a34	 option bitmain_nobeeper   '%s' 
+FUN_00010a34	 option bitmain_notempoverctrl '%s' 
+FUN_00010a34	 option freq   '%s' 
+FUN_00010a34	 option more_options '%s' 
+FUN_00010a34	 option pool1pw   '%s' 
+FUN_00010a34	 option pool1user '%s' 
+FUN_00010a34	 option pool2pw   '%s' 
+FUN_00010a34	 option pool2url  '%s' 
+FUN_00010a34	 option pool2user '%s' 
+FUN_00010a34	 option pool3pw   '%s' 
+FUN_00010a34	 option pool3url  '%s' 
+FUN_00010a34	 option pool3user '%s' 
+FUN_00010a34	 option pool_balance '%s' 
+FUN_00010a34	 option voltage   '%s' 
+FUN_00010a34	config cgminer 'default' 
+FUN_00010a34	open error
+FUN_0000feb0	Pools Config Data is Wrong
+FUN_00010474	change->pools_count = %d 
+FUN_00010710	api_allow
+FUN_00010710	bitmain_nobeeper
+FUN_00010710	bitmain_notempoverctrl
+FUN_00010710	more_options
+FUN_00010710	pool1pw
+FUN_00010710	pool1url
+FUN_00010710	pool1user
+FUN_00010710	pool2pw
+FUN_00010710	pool2url
+FUN_00010710	pool2user
+FUN_00010710	pool3pw
+FUN_00010710	pool3url
+FUN_00010710	pool3user
+FUN_00010710	pool_balance
+FUN_00010bfc	/etc/config/auth_tmp.txt
+FUN_00010e24	delete one cmd:%s,nonce:%s. 
+FUN_00010e24	there is no cmd for this response.
+FUN_00010ec0	L_cmd is full!

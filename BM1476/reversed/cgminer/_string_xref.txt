@@ -1,0 +1,1453 @@
+FUN_00011c8c	Thread %d being disabled
+FUN_00011c8c	Thread %d being re-enabled
+FUN_00011c8c	Waiting on sem in miner thread
+FUN_00011c8c	cgminer.c
+FUN_00011c8c	mt_disable
+FUN_00011e24	%d/Miner
+FUN_00011e24	Waiting on sem in miner thread
+FUN_00011e24	cgminer.c
+FUN_00011e24	miner_thread
+FUN_00016150	.cgminer/
+FUN_00016150	cgminer.conf
+FUN_00016dec	!(opt->type & OPT_SUBTABLE)
+FUN_00016dec	--logfile-openflag
+FUN_00016dec	--version-file
+FUN_00016dec	Invalid config option %s: %s
+FUN_00016dec	Invalid value
+FUN_00016dec	Parsing JSON option %s: %s
+FUN_00016dec	cgminer.c
+FUN_00016dec	include
+FUN_00016dec	parse_config
+FUN_00017744	%s%d 
+FUN_00017744	(%ds):%s (avg):%sh/s | A:%.0f R:%.0f HW:%d WU:%.1f/m
+FUN_00017744	cgminer.c
+FUN_00017744	get_statline
+FUN_00017744	tailsprintf buffer overflow in %s %s line %d
+FUN_00017a3c	Failed to malloc pool in add_pool
+FUN_00017a3c	Failed to pthread_cond_init in add_pool
+FUN_00017a3c	add_pool
+FUN_00017a3c	{"method": "getwork", "params": [], "id":0} 
+FUN_00017fe4	lock_curses
+FUN_00017fe4	unlock_curses
+FUN_00027ba0	lock_curses
+FUN_00027ba0	unlock_curses
+FUN_00018068	unlock_curses
+FUN_00018178	unlock_curses
+FUN_00018ad8	unlock_curses
+FUN_00018b44	unlock_curses
+FUN_00018bc0	unlock_curses
+FUN_000199e8	%s%s 
+FUN_000199e8	unlock_curses
+FUN_00019adc	unlock_curses
+FUN_00023344	                                    
+FUN_00023344	 %*d: %s %-8s: 
+FUN_00023344	 A:%.0f  R:%.0f  HW:%d  WU:%.1f/m | ST: %d  SS: %lld  NB: %d  LW: %d  GF: %d  RF: %d
+FUN_00023344	 Block: %s...  Diff:%s  Started: %s  Best share: %s   
+FUN_00023344	 Connected to %s diff %s with stratum as user %s
+FUN_00023344	 Connected to %s diff %s with%s %s as user %s
+FUN_00023344	 Connected to multiple pools with%s block change notify
+FUN_00023344	 ST: %d  SS: %lld  NB: %d  LW: %d  GF: %d  RF: %d
+FUN_00023344	 cgminer version 4.9.0 - Started: %s
+FUN_00023344	%6s / %6sh/s WU:%*.1f/m
+FUN_00023344	%s %d
+FUN_00023344	%s | 
+FUN_00023344	%s: Attempting to restart
+FUN_00023344	%s: Idle for more than 60 seconds, declaring SICK!
+FUN_00023344	%s: Not responded for more than 10 minutes, declaring DEAD!
+FUN_00023344	%s: Recovered, declaring WELL!
+FUN_00023344	A:%*.0f R:%*.0f HW:%*d
+FUN_00023344	DEAD  
+FUN_00023344	Pausing execution as per stop time %02d:%02d scheduled
+FUN_00023344	Pushing sem post to thread %d
+FUN_00023344	REST  
+FUN_00023344	Restarting execution as per start time %02d:%02d scheduled
+FUN_00023344	SICK  
+FUN_00023344	Terminating execution as planned
+FUN_00023344	Watchdog
+FUN_00023344	Will pause execution as scheduled at %02d:%02d
+FUN_00023344	Will restart execution as scheduled at %02d:%02d
+FUN_00023344	[P]ool management [S]ettings [D]isplay options [Q]uit
+FUN_00023344	cgminer.c
+FUN_00023344	unlock_curses
+FUN_00023344	watchdog_thread
+FUN_00026f50	 Accepted difficulty shares: %1.f 
+FUN_00026f50	 Accepted shares: %lld 
+FUN_00026f50	 Current pool management strategy: %s 
+FUN_00026f50	 Discarded work due to new blocks: %d 
+FUN_00026f50	 Items worked on: %d 
+FUN_00026f50	 Queued work requests: %d 
+FUN_00026f50	 Reject ratio: %.1f%% 
+FUN_00026f50	 Rejected difficulty shares: %1.f 
+FUN_00026f50	 Rejected shares: %lld 
+FUN_00026f50	 Share submissions: %lld 
+FUN_00026f50	 Stale submissions discarded due to new blocks: %d 
+FUN_00026f50	 Submitting work remotely delay occasions: %d  
+FUN_00026f50	 Unable to get work from server occasions: %d 
+FUN_00026f50	%d: %s 
+FUN_00026f50	%s Quota %d Prio %d: %s  User:%s 
+FUN_00026f50	%s own long-poll support 
+FUN_00026f50	Alive
+FUN_00026f50	Cannot disable last pool
+FUN_00026f50	Cannot remove last pool
+FUN_00026f50	Disabled 
+FUN_00026f50	Does not have
+FUN_00026f50	Enabled 
+FUN_00026f50	Failover
+FUN_00026f50	Invalid negative quota 
+FUN_00026f50	Invalid selection 
+FUN_00026f50	Or press any other key to continue 
+FUN_00026f50	Pool [A]dd [R]emove [D]isable [E]nable [Q]uota change 
+FUN_00026f50	Pool: %s 
+FUN_00026f50	Rejecting 
+FUN_00026f50	Round Robin
+FUN_00026f50	SOLVED %d BLOCK%s! 
+FUN_00026f50	Select interval in minutes
+FUN_00026f50	Select pool number
+FUN_00026f50	Select strategy number type
+FUN_00026f50	Set quota
+FUN_00026f50	Set to rotate every %d minutes 
+FUN_00026f50	Unable to remove pool due to activity 
+FUN_00026f50	[C]hange management strategy [S]witch pool [I]nformation 
+FUN_00026f50	[F]ailover only %s 
+FUN_00026f50	enabled
+FUN_00026f50	unlock_curses
+FUN_000181f4	restart_wait
+FUN_000182f4	Lost %d shares due to stratum disconnect on pool %d
+FUN_000182f4	clear_stratum_shares
+FUN_000185c8	Cleared %d work items due to stratum disconnect on pool %d
+FUN_000185c8	clear_pool_work
+FUN_00018834	pool_tset
+FUN_000188a8	total_staged
+FUN_00018924	inc_dev_status
+FUN_000189a4	%s %d: invalid nonce - HW error
+FUN_000189a4	inc_hw_errors
+FUN_00018c2c	pool_tclear
+FUN_000193b4	Waiting for work to be available from pools.
+FUN_000193b4	Work available from pools, resuming.
+FUN_000193b4	hash_pop
+FUN_00019840	wake_gws
+FUN_00019bf8	Switching to pool %d %s
+FUN_00019bf8	switch_pools
+FUN_00019f54	add_queued
+FUN_00019fc8	age_queued_work
+FUN_0001a0b8	work_completed
+FUN_0001a134	take_queued_work_bymidstate
+FUN_0001a1e8	total_work_inc
+FUN_0001a4b4	New best share: %s
+FUN_0001a4b4	share_diff
+FUN_0001a730	Found block for pool %d!
+FUN_0001a730	update_work_stats
+FUN_0001aa18	Discarded queued work item
+FUN_0001aa18	flush_queue
+FUN_0001ab4c	clone_queued_work_bymidstate
+FUN_0001ac00	clone_queued_work_byid
+FUN_0001acc4	[THR%d] Generated stratum header %s
+FUN_0001acc4	[THR%d] job_id %s, nonce1 %s, nonce2 %llu, ntime %s
+FUN_0001acc4	gen_stratum_work
+FUN_0001b074	find_queued_work_byid
+FUN_0001b124	get_thread
+FUN_0001b600	%lu,%s,%s,%s,%s%u,%u,%s,%s 
+FUN_0001b600	sharelog
+FUN_0001b600	sharelog fwrite error
+FUN_0001b600	sharelog printf error
+FUN_0001b83c	get_devices
+FUN_0001b8b4	zero_stats
+FUN_0001bba4	%s          
+FUN_0001bba4	(%ds):%s (1m):%s (5m):%s (15m):%s (avg):%sh/s
+FUN_0001bba4	cgminer time error total_secs = %f last_total_secs = %f
+FUN_0001bba4	hashmeter
+FUN_0001c3f4	%s %d failure, disabling!
+FUN_0001c3f4	hash_driver_work
+FUN_0001d9b4	find_queued_work_bymidstate
+FUN_0001da58	current_pool
+FUN_0001db0c	%sLONGPOLL from pool %d detected new block
+FUN_0001db0c	%sLONGPOLL from pool %d requested work restart
+FUN_0001db0c	Deleted block %d from database
+FUN_0001db0c	Network diff set to %s
+FUN_0001db0c	New block detected on network
+FUN_0001db0c	New block detected on network before pool notification
+FUN_0001db0c	New block: %s... diff %s
+FUN_0001db0c	Pool %d now up to date
+FUN_0001db0c	Stale data from pool %d
+FUN_0001db0c	Stratum from pool %d detected new block
+FUN_0001db0c	Stratum from pool %d requested work restart
+FUN_0001db0c	[%02d:%02d:%02d]
+FUN_0001db0c	block_exists
+FUN_0001db0c	set_curblock
+FUN_0001db0c	test_work_current
+FUN_0001db0c	test_work_current OOM
+FUN_0001f17c	Pushing work from pool %d to hash queue
+FUN_0001f17c	hash_push
+FUN_0001f938	inc_work_stats
+FUN_0001fb7c	cp_prio
+FUN_00020088	 BLOCK!
+FUN_00020088	%08lx Diff %s/%llu%s
+FUN_00020088	%d/RStratum
+FUN_00020088	(unknown reason)
+FUN_00020088	Accepted %s %s %d %s%s
+FUN_00020088	Accepted %s %s %d pool %d %s%s
+FUN_00020088	Accepted untracked stratum share from pool %d
+FUN_00020088	JSON decode failed(%d): %s
+FUN_00020088	JSON-RPC non method decode failed: %s
+FUN_00020088	PROOF OF WORK RESULT: false (booooo)
+FUN_00020088	PROOF OF WORK RESULT: true (yay!!!)
+FUN_00020088	Pool %d rejected %d sequential shares, disabling!
+FUN_00020088	Pool %d stratum share result lag time %d seconds
+FUN_00020088	Rejected %s %s %d %s%s %s%s
+FUN_00020088	Rejected untracked stratum share from pool %d
+FUN_00020088	Rejecting pool %d now accepting shares, re-enabling!
+FUN_00020088	Stratum connection to pool %d interrupted
+FUN_00020088	Stratum select failed on pool %d with value %d
+FUN_00020088	Successfully mined %d accepted shares as requested and exiting.
+FUN_00020088	Unknown stratum msg: %s
+FUN_00020088	accept
+FUN_00020088	parse_stratum_response
+FUN_00020088	reject
+FUN_00020088	reject-reason
+FUN_00020088	result
+FUN_00020088	share_result
+FUN_00020088	supports_resume
+FUN_00020088	wait_lpcurrent
+FUN_00021850	Lost %d shares due to no stratum share response from pool %d
+FUN_00021850	Pool %d %s stable for 5 mins
+FUN_00021850	Reaped %d curl%s from pool %d
+FUN_00021850	Watchpool
+FUN_00021850	prune_stratum_shares
+FUN_00021850	reap_curl
+FUN_00021fe8	%d/SStratum
+FUN_00021fe8	%s: calloc() failed on sshare.
+FUN_00021fe8	Failed to create stratum_q in stratum_sthread
+FUN_00021fe8	Lowmem option prevents resubmitting stratum share
+FUN_00021fe8	No matching session id for resubmitting stratum share
+FUN_00021fe8	Pool %d communication resumed, submitting work
+FUN_00021fe8	Pool %d stratum share submission failure
+FUN_00021fe8	Pool %d stratum share submission lag time %d seconds
+FUN_00021fe8	Stratum q returned empty work
+FUN_00021fe8	Successfully submitted, adding to stratum_shares db
+FUN_00021fe8	stratum_sthread
+FUN_00021fe8	{"id": %d, "method": "mining.submit", "params": ["%s", "%s", "%s", "%s", "%s"]}
+FUN_00022b44	Work stale due to block mismatch
+FUN_00022b44	Work stale due to expiry
+FUN_00022b44	Work stale due to fail only pool mismatch
+FUN_00022b44	Work stale due to stratum inactive
+FUN_00022b44	Work stale due to stratum job_id mismatch
+FUN_00022b44	stale_work
+FUN_00022f88	Discarded %d stales that didn't match current hash
+FUN_00022f88	discard_stale
+FUN_000231f0	restart_thread
+FUN_00024aa8	%s %d failure, disabling!
+FUN_00024aa8	fill_queue
+FUN_000256a4	Accepted %s %d benchmark share nonce %08x
+FUN_000256a4	Discarding work from removed pool
+FUN_000256a4	Failed to create submit_work_thread
+FUN_000256a4	Get A Error Data To Push!DROP! 
+FUN_000256a4	Pool %d stale share detected, discarding
+FUN_000256a4	Pool %d stale share detected, submitting as pool requested
+FUN_000256a4	Pool %d stale share detected, submitting as user requested
+FUN_000256a4	Pushing pool %d work to stratum queue
+FUN_000256a4	Pushing submit work to work thread
+FUN_000256a4	discard
+FUN_000256a4	submit_work_async
+FUN_00025e5c	%s %s %d: Share above target
+FUN_00025e5c	submit_tested_work
+FUN_00027f10	enable_device
+FUN_00028008	add_cgpu
+FUN_0000b928	%s %s
+FUN_0000b928	%s%02d.txt
+FUN_0000b928	%s%02d_%02d.txt
+FUN_0000b928	%s.txt
+FUN_0000b928	%s_diff_%02d.txt
+FUN_0000b928	/bin/bash
+FUN_0000b928	/usr/bin
+FUN_0000b928	000000029c6bf469abe4ad37605c097a860cff3cf5c1ef4377618f74000000000000000082b1514e7b6565941e5824f084292164ec5f97e7ea20c494
+FUN_0000b928	00000002c01f502cb3e9fdb053230ec12a4954c1021a6b35862b5e29000000000000000084d1b83ae44057025e8c5b5756b44f04df5fffe4a7a30e5c
+FUN_0000b928	00000002e790c23987181950eeb144591c3ac4d06c0705f2801d097600000000000000009ebbce2f5f0d6cc0aca284ecb1059c856ef2f7f42e7edd40
+FUN_0000b928	API thread create failed
+FUN_0000b928	All devices disabled, cannot mine!
+FUN_0000b928	Benchfile
+FUN_0000b928	Benchmark
+FUN_0000b928	Cannot use benchmark mode with scrypt
+FUN_0000b928	Configuration file could not be used.
+FUN_0000b928	Error in configuration file, partially loaded.
+FUN_0000b928	Failed to calloc control_thr
+FUN_0000b928	Failed to calloc mining_thr
+FUN_0000b928	Failed to calloc mining_thr[%d]
+FUN_0000b928	Failed to create getq
+FUN_0000b928	Failed to malloc userpass
+FUN_0000b928	Failed to pthread_cond_init gws_cond
+FUN_0000b928	Failed to pthread_cond_init lp_cond
+FUN_0000b928	Failed to pthread_cond_init restart_cond
+FUN_0000b928	Fatal JSON error in configuration file.
+FUN_0000b928	Generated benchfile work
+FUN_0000b928	Generated benchmark work
+FUN_0000b928	Generated stratum work
+FUN_0000b928	Invalid value passed to set temp cutoff
+FUN_0000b928	Loaded configuration file %s
+FUN_0000b928	Log file path: %s Open flag: %s
+FUN_0000b928	Log work asic num empty
+FUN_0000b928	Log work asic num must be 1, 32, 64
+FUN_0000b928	Log work open asic %d file %s
+FUN_0000b928	Log work open diff file %s
+FUN_0000b928	Log work open file %s
+FUN_0000b928	Log work path: %s
+FUN_0000b928	Log work path: %s Asic num: %s
+FUN_0000b928	Miner compile time: %s type: %s
+FUN_0000b928	Most likely you have input the wrong URL, forgotten to add a port, or have not set up workers
+FUN_0000b928	Need to specify at least one pool server.
+FUN_0000b928	No login credentials supplied for pool %u %s
+FUN_0000b928	No servers could be used! Exiting.
+FUN_0000b928	No servers were found that could be used to get work from.
+FUN_0000b928	Open miner version file %s error
+FUN_0000b928	Options for both config file and command line
+FUN_0000b928	Options for command line only
+FUN_0000b928	Please check the details from the list below of the servers you have input
+FUN_0000b928	Pool setup failed
+FUN_0000b928	Pool: %d  URL: %s  User: %s  Password: %s
+FUN_0000b928	Press any key to exit, or cgminer will wait indefinitely for an alive pool.
+FUN_0000b928	Probing for an alive pool
+FUN_0000b928	Pushing sem post to thread %d
+FUN_0000b928	Read miner version file %s error %d
+FUN_0000b928	Selecting pool %d for work
+FUN_0000b928	Start cgminer with -T to see what failed to load.
+FUN_0000b928	Started %s
+FUN_0000b928	Too many values passed to set temp cutoff
+FUN_0000b928	Unable to set thread to high priority
+FUN_0000b928	Unexpected extra commandline arguments
+FUN_0000b928	Work update message received
+FUN_0000b928	cgminer.c
+FUN_0000b928	cgminer.log
+FUN_0000b928	close - failed to close read end of pipe for --monitor
+FUN_0000b928	close - failed to close write end of pipe for --monitor
+FUN_0000b928	dup2 - failed to alias stderr to write end of pipe for --monitor
+FUN_0000b928	dup2 - in child, failed to alias read end of pipe to stdin for --monitor
+FUN_0000b928	execl - in child failed to exec user specified command for --monitor
+FUN_0000b928	fork - failed to fork child process for --monitor
+FUN_0000b928	incorrect total_control_threads (%d) should be 8
+FUN_0000b928	input thread create failed
+FUN_0000b928	load_temp_cutoffs
+FUN_0000b928	main OOM
+FUN_0000b928	pipe - failed to create pipe for --monitor
+FUN_0000b928	signal - failed to edit signal mask for --monitor
+FUN_0000b928	signal_work_update
+FUN_0000b928	thread %d create failed
+FUN_0000b928	watchdog thread create failed
+FUN_0000b928	watchpool thread create failed
+FUN_0000f7e8	%s %d duplicate share detected as HW error
+FUN_0000f9c0	%s Built with bitmain_zcash mining support. 
+FUN_0000fa18	Failed to open %s for share log
+FUN_0000fa18	Failed to open fd %u for share log
+FUN_0000fa18	Standard output missing for share log
+FUN_00011580	%*.*f%s
+FUN_00011580	%.3g%s
+FUN_00011814	BENCHFILE nonce %u=0x%08x for work=%s
+FUN_0000b414	WTF MUTEX ERROR ON LOCK! errno=%d in %s %s():%d
+FUN_0000b414	cgminer.c
+FUN_0000b480	WTF WRLOCK ERROR ON LOCK! errno=%d in %s %s():%d
+FUN_0000b480	cgminer.c
+FUN_0000b4ec	Failed to pthread_mutex_init errno=%d in %s %s():%d
+FUN_0000b4ec	cgminer.c
+FUN_0000b558	Failed to pthread_rwlock_init errno=%d in %s %s():%d
+FUN_0000b558	cgminer.c
+FUN_0000b5c4	WTF MUTEX ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_0000b5c4	cgminer.c
+FUN_0000b630	WTF RWLOCK ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_0000b630	cgminer.c
+FUN_0000b69c	WTF RDLOCK ERROR ON LOCK! errno=%d in %s %s():%d
+FUN_0000b69c	cgminer.c
+FUN_00011f60	regen:%s
+FUN_00012038	WTF No pool %d found!
+FUN_000120f4	Unable to set thread to low priority
+FUN_000121b0	Value out of range
+FUN_00012200	Value out of range
+FUN_0001545c	Value out of range
+FUN_00014e38	%d:%d
+FUN_00014e38	Invalid time set, should be HH:MM
+FUN_00014e38	Invalid time set.
+FUN_00014eb4	%d:%d
+FUN_00014eb4	Invalid time set, should be HH:MM
+FUN_00014eb4	Invalid time set.
+FUN_00014fd0	htarget %08lx diff1 %08lx hash %08lx
+FUN_000150f8	Failed to malloc scratchbuf in scanhash_scrypt
+FUN_00015264	[%d-%02d-%02d %02d:%02d:%02d]
+FUN_000152e0	Global quota greatest common denominator set to %lu
+FUN_0001557c	stratum+tcp://
+FUN_00017100	Failed to malloc httpinput
+FUN_00017100	https://
+FUN_00017100	stratum+tcp://
+FUN_000155f0	Invalid parameters for set temp cutoff
+FUN_000155f0	Invalid value passed to set temp cutoff
+FUN_000159b4	Discarded cloned or rolled work
+FUN_00015b64	   "pass" : "%s"  }
+FUN_00015b64	%s  {   "quota" : "%s%s%s%d;%s",
+FUN_00015b64	%s  {   "url" : "%s%s%s%s",
+FUN_00015b64	, "%s" : "%.1f"
+FUN_00015b64	, "%s" : "%d"
+FUN_00015b64	, "%s" : "%s"
+FUN_00015b64	, "%s" : true
+FUN_00015b64	, "balance" : true
+FUN_00015b64	, "load-balance" : true
+FUN_00015b64	, "round-robin" : true
+FUN_00015b64	--logfile-openflag
+FUN_00015b64	--version-file
+FUN_00015b64	Set miner version file
+FUN_00016244	Diff zero passed to set_target
+FUN_00016244	Generated target %s
+FUN_00016d98	JSON decode of file '%s' failed  %s
+FUN_00016d98	Malloc failure in json error
+FUN_00016d98	Too many levels of JSON includes (limit 10) or a loop
+FUN_00026d10	Failed to malloc httpinput
+FUN_00026d10	Input server details. 
+FUN_00026d10	Password
+FUN_00026d10	Username
+FUN_00026d10	https://
+FUN_0000b3c8	Failed to create restart thread
+FUN_00017254	%08lx
+FUN_00017254	0000000%c
+FUN_00017254	BENCHFILE Failed to open benchfile '%s'
+FUN_00017254	BENCHFILE Failed to read benchfile '%s'
+FUN_00017254	BENCHFILE Invalid benchfile NULL
+FUN_00017254	BENCHFILE Invalid input file line %d - field count is %d but should be %d
+FUN_00017254	BENCHFILE Invalid input file line %d field %d (%s) length is %d but should be %d
+FUN_00017254	BENCHFILE Invalid input file line %d field %d (%s) length is %d but should be least %d
+FUN_00017254	BENCHFILE No work in benchfile '%s'
+FUN_00017254	NonceTime
+FUN_00017254	Version
+FUN_000178f8	Shutdown signal received.
+FUN_0000b708	WTF MUTEX ERROR ON LOCK! errno=%d in %s %s():%d
+FUN_0000b708	util.c
+FUN_0000b774	WTF MUTEX ERROR ON LOCK! errno=%d in %s %s():%d
+FUN_0000b774	api.c
+FUN_000388e4	WTF MUTEX ERROR ON LOCK! errno=%d in %s %s():%d
+FUN_000388e4	logging.c
+FUN_000388e4	my_log_curses
+FUN_00039f2c	%s%d: Duplicate nonce %08x
+FUN_00039f2c	WTF MUTEX ERROR ON LOCK! errno=%d in %s %s():%d
+FUN_00039f2c	WTF MUTEX ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_00039f2c	WTF RWLOCK ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_00039f2c	WTF WRLOCK ERROR ON LOCK! errno=%d in %s %s():%d
+FUN_00039f2c	isdupnonce
+FUN_00039f2c	noncedup.c
+FUN_0003af90	%s %d: work %02x not find error
+FUN_0003af90	ChainID Cause Error! ChainID:[%d]
+FUN_0003af90	Error:scanhash chainid=%u 
+FUN_0003af90	WTF MUTEX ERROR ON LOCK! errno=%d in %s %s():%d
+FUN_0003af90	WTF MUTEX ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_0003af90	WTF RDLOCK ERROR ON LOCK! errno=%d in %s %s():%d
+FUN_0003af90	WTF RWLOCK ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_0003af90	Which Nonce Cause Err![%d] %08x
+FUN_0003af90	bitmain_scanhash
+FUN_0003af90	driver-btm-zcash.c
+FUN_000299ac	%s: Failed to calloc pool->nonce1bin in %s %s():%d
+FUN_000299ac	Pool %d extranonce set to %s
+FUN_000299ac	WTF MUTEX ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_000299ac	WTF RWLOCK ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_000299ac	WTF WRLOCK ERROR ON LOCK! errno=%d in %s %s():%d
+FUN_000299ac	parse_extranonce_equihash
+FUN_000299ac	util.c
+FUN_0002b8e8	%s: Failed to get parse extranonce.
+FUN_0002b8e8	(unknown reason)
+FUN_0002b8e8	Attempting to negotiate with %s:%s SOCKS5 proxy
+FUN_0002b8e8	Bad response from %s:%s SOCKS5 server
+FUN_0002b8e8	Failed sock connect
+FUN_0002b8e8	Failed socket
+FUN_0002b8e8	Failed to calloc pool sockbuf in %s %s():%d
+FUN_0002b8e8	Failed to connect to stratum on %s:%s
+FUN_0002b8e8	Failed to getaddrinfo for %s:%s
+FUN_0002b8e8	Failed to resolve (?wrong URL) %s:%s
+FUN_0002b8e8	Failed to resume stratum, trying afresh
+FUN_0002b8e8	Failed to send s in initiate_stratum
+FUN_0002b8e8	Initiate stratum failed
+FUN_0002b8e8	JSON decode failed(%d): %s
+FUN_0002b8e8	JSON-RPC decode failed: %s
+FUN_0002b8e8	Pool %d confirmed mining.subscribe with extranonce1 %s extran2size %d
+FUN_0002b8e8	Select timeout/failed connect
+FUN_0002b8e8	Succeeded delayed connect
+FUN_0002b8e8	Succeeded immediate connect
+FUN_0002b8e8	Success negotiating with %s:%s SOCKS5 proxy
+FUN_0002b8e8	Timed out waiting for response in initiate_stratum
+FUN_0002b8e8	Unsupported proxy type for %s:%s
+FUN_0002b8e8	WTF MUTEX ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_0002b8e8	WTF RWLOCK ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_0002b8e8	WTF WRLOCK ERROR ON LOCK! errno=%d in %s %s():%d
+FUN_0002b8e8	initiate_stratum
+FUN_0002b8e8	recv mining.extranonce.subscribe failed 
+FUN_0002b8e8	result
+FUN_0002b8e8	setup_stratum_socket
+FUN_0002b8e8	util.c
+FUN_0002b8e8	{"id": %d, "method": "mining.extranonce.subscribe", "params": []}
+FUN_0002b8e8	{"id": %d, "method": "mining.subscribe", "params": ["cgminer/4.9.0", "%s"]}
+FUN_0002b8e8	{"id": %d, "method": "mining.subscribe", "params": []}
+FUN_0002b8e8	{"id":%d, "method":"mining.subscribe", "params":["cgminer/4.9.0", null, "%s", "%s"]}
+FUN_0002cf40	%s%s%s%s%s%s%s
+FUN_0002cf40	%s: Failed to convert header to header_bin, got %s
+FUN_0002cf40	%s: Failed to malloc header. in %s %s():%d
+FUN_0002cf40	%s: pool->swork.header_len = %d
+FUN_0002cf40	0000000000000000000000000000000000000000
+FUN_0002cf40	Denied stratum reconnect request for pool without domain '%s'
+FUN_0002cf40	Denied stratum reconnect request to non-matching domain url '%s'
+FUN_0002cf40	Denied stratum reconnect request to url without domain '%s'
+FUN_0002cf40	JSON decode failed(%d): %s
+FUN_0002cf40	JSON-RPC method decode failed: %s
+FUN_0002cf40	Pool %d difficulty changed to %.1f
+FUN_0002cf40	Pool %d difficulty changed to %d
+FUN_0002cf40	Pool %d difficulty set to %f
+FUN_0002cf40	Pool %d message: %s
+FUN_0002cf40	Pool %d ping
+FUN_0002cf40	Stratum reconnect requested from pool %d to %s
+FUN_0002cf40	Valid Notify 
+FUN_0002cf40	WTF MUTEX ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_0002cf40	WTF RWLOCK ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_0002cf40	WTF WRLOCK ERROR ON LOCK! errno=%d in %s %s():%d
+FUN_0002cf40	clean: %s
+FUN_0002cf40	client.get_version
+FUN_0002cf40	client.reconnect
+FUN_0002cf40	client.show_message
+FUN_0002cf40	job_id: %s
+FUN_0002cf40	merkle: %s
+FUN_0002cf40	method
+FUN_0002cf40	mining.notify
+FUN_0002cf40	mining.ping
+FUN_0002cf40	mining.set_difficulty
+FUN_0002cf40	mining.set_extranonce
+FUN_0002cf40	mining.set_target
+FUN_0002cf40	nbit: %s
+FUN_0002cf40	ntime: %s
+FUN_0002cf40	params
+FUN_0002cf40	parse_diff
+FUN_0002cf40	parse_notify_equihash
+FUN_0002cf40	parse_reconnect
+FUN_0002cf40	parse_target
+FUN_0002cf40	parse_target: Missing an array value.
+FUN_0002cf40	prev_hash: %s
+FUN_0002cf40	reserved: %s
+FUN_0002cf40	stime.tv_sec %lu, block_ntime %lu 
+FUN_0002cf40	util.c
+FUN_0002cf40	version: %s
+FUN_0002cf40	{"id": %d, "result": "cgminer/4.9.0", "error": null}
+FUN_0002cf40	{"id": %d, "result": "pong", "error": null}
+FUN_00032534	%.15f
+FUN_00032534	%ld.%06ld
+FUN_00032534	API: unknown2 data type %d ignored
+FUN_00032534	Unknown
+FUN_00032534	WTF WRLOCK ERROR ON LOCK! errno=%d in %s %s():%d
+FUN_00032534	api.c
+FUN_00032534	print_data
+FUN_0000b8b8	Failed to pthread_mutex_init errno=%d in %s %s():%d
+FUN_0000b8b8	bitmain_ZCASH_prepare
+FUN_0000b8b8	driver-btm-zcash.c
+FUN_00036764	 - API will not be available
+FUN_00036764	0.0.0.0
+FUN_00036764	::ffff:%s
+FUN_00036764	API bind to port %d failed (%s)%s
+FUN_00036764	API bind to port %d failed - trying again in 30sec
+FUN_00036764	API duplicate group name '%c'
+FUN_00036764	API failed (%s)%s (%d)
+FUN_00036764	API failed to initiate a clean quit - aborting
+FUN_00036764	API failed to initiate a restart - aborting
+FUN_00036764	API failed to resolve %s
+FUN_00036764	API group name can't be '%c'
+FUN_00036764	API initialisation failed (%s)%s
+FUN_00036764	API invalid group name '%c'
+FUN_00036764	API invalid group name '%s'
+FUN_00036764	API not running (no valid IPs specified)%s
+FUN_00036764	API not running%s
+FUN_00036764	API running in IP access mode on port %d (%d)
+FUN_00036764	API running in UNRESTRICTED read access mode on port %d (%d)
+FUN_00036764	API running in local read access mode on port %d (%d)
+FUN_00036764	API setsockopt SO_REUSEADDR failed (ignored): %s
+FUN_00036764	API unknown command '%s' in group '%c'
+FUN_00036764	API3 initialisation failed (%s)%s
+FUN_00036764	API: access denied to '%s' for '%s' command
+FUN_00036764	API: connection from %s - %s
+FUN_00036764	API: recv command: (%d) '%s'
+FUN_00036764	API: recv failed: %s
+FUN_00036764	API: terminating due to: %s
+FUN_00036764	Accepted
+FUN_00036764	Failed to calloc ipaccess
+FUN_00036764	Failed to malloc group commands buf
+FUN_00036764	Failed to malloc ipaccess buf
+FUN_00036764	Failed to malloc ipgroups buf
+FUN_00036764	Failed to malloc noprivgroup commands buf
+FUN_00036764	Failed to pthread_mutex_init errno=%d in %s %s():%d
+FUN_00036764	Ignored
+FUN_00036764	OOM cmdsbuf in %s %s():%d
+FUN_00036764	RESTART
+FUN_00036764	StrBufs
+FUN_00036764	api.c
+FUN_00038f3c	Failed to calloc list %s in %s %s():%d
+FUN_00038f3c	Failed to calloc lock for list %s in %s %s():%d
+FUN_00038f3c	Failed to pthread_mutex_init errno=%d in %s %s():%d
+FUN_00038f3c	Failed to pthread_rwlock_init errno=%d in %s %s():%d
+FUN_00038f3c	Invalid new list %s with allocate %d must be > 0 in %s %s():%d
+FUN_00038f3c	Invalid new list %s with limit %d must be >= 0 in %s %s():%d
+FUN_00038f3c	_k_new_list
+FUN_00038f3c	klist.c
+FUN_0003af0c	Failed to pthread_rwlock_init errno=%d in %s %s():%d
+FUN_0003af0c	bitmain_ZCASH_prepare
+FUN_0003af0c	driver-btm-zcash.c
+FUN_00017c4c	Failed to find : delimited user info
+FUN_00017c4c	Use only user + pass or userpass, but not both
+FUN_00017f68	Use only user + pass or userpass, but not both
+FUN_00017e20	Invalid negative parameter for quota set
+FUN_00017e20	No parameter for URL found
+FUN_00017e20	No parameter for quota found
+FUN_00017e20	No semicolon separated quota;URL pair found
+FUN_00017e20	Setting pool %d to quota %d
+FUN_0000b84c	WTF MUTEX ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_0000b84c	api.c
+FUN_00029388	WTF MUTEX ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_00029388	util.c
+FUN_0002aee0	Closing socket for stratum pool %d
+FUN_0002aee0	WTF MUTEX ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_0002aee0	suspend_stratum
+FUN_0002aee0	util.c
+FUN_0002b5c8	Failed to send in stratum_send
+FUN_0002b5c8	SEND: %s
+FUN_0002b5c8	Stratum send failed due to no pool stratum_active
+FUN_0002b5c8	WTF MUTEX ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_0002b5c8	Write select failed on pool %d sock
+FUN_0002b5c8	stratum_send
+FUN_0002b5c8	util.c
+FUN_0003896c	WTF MUTEX ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_0003896c	logging.c
+FUN_0003896c	my_log_curses
+FUN_00018ca0	CURL initialisation failed
+FUN_00018ca0	FAILED to retrieve work from pool %u %s
+FUN_00018ca0	Failed to create stratum rthread
+FUN_00018ca0	Failed to create stratum sthread
+FUN_00018ca0	GBT coinbase + append support found, switching to GBT protocol
+FUN_00018ca0	GBT coinbase without append found, switching to GBT solo protocol
+FUN_00018ca0	No GBT coinbase + append support found, using getwork protocol
+FUN_00018ca0	Pool %u slow/down or URL or credentials invalid
+FUN_00018ca0	Probing for GBT support
+FUN_00018ca0	Retrieving block template from pool %s
+FUN_00018ca0	Switching pool %d %s to %s
+FUN_00018ca0	Testing pool %d stratum %s
+FUN_00018ca0	Testing pool %s
+FUN_00038730	 [%d-%02d-%02d %02d:%02d:%02d] 
+FUN_00038730	%s%s 
+FUN_0000b7e0	WTF RWLOCK ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_0000b7e0	api.c
+FUN_0002930c	WTF RWLOCK ERROR ON UNLOCK! errno=%d in %s %s():%d
+FUN_0002930c	util.c
+FUN_0001a3d4	Failed to calloc work in make_work
+FUN_0001a914	Share above target
+FUN_00032190	WTF RDLOCK ERROR ON LOCK! errno=%d in %s %s():%d
+FUN_00032190	api.c
+FUN_00024db0	%s %d failure, disabling!
+FUN_00024db0	Driver %s working diff changed to %.0f
+FUN_00024db0	work prepare failed, exiting mining thread %d
+FUN_0001c668	 Accepted difficulty shares: %1.f
+FUN_0001c668	 Accepted shares: %lld
+FUN_0001c668	 Items worked on: %d
+FUN_0001c668	 Reject ratio: %.1f%%
+FUN_0001c668	 Rejected difficulty shares: %1.f
+FUN_0001c668	 Rejected shares: %lld
+FUN_0001c668	 Share submissions: %lld
+FUN_0001c668	 Stale submissions discarded due to new blocks: %d
+FUN_0001c668	 Submitting work remotely delay occasions: %d 
+FUN_0001c668	 Summary of runtime statistics: 
+FUN_0001c668	 Unable to get work from server occasions: %d
+FUN_0001c668	Accepted difficulty shares: %1.f
+FUN_0001c668	Accepted shares: %lld
+FUN_0001c668	Average hashrate: %.1f Mhash/s
+FUN_0001c668	Best share difficulty: %s
+FUN_0001c668	Hardware errors: %d
+FUN_0001c668	Mined %.0f accepted shares of %d requested 
+FUN_0001c668	New blocks detected on network: %d 
+FUN_0001c668	Pool: %s
+FUN_0001c668	Reject ratio: %.1f%%
+FUN_0001c668	Rejected difficulty shares: %1.f
+FUN_0001c668	Rejected shares: %lld
+FUN_0001c668	Runtime: %d hrs : %d mins : %d secs
+FUN_0001c668	SOLVED %d BLOCK%s!
+FUN_0001c668	Share submissions: %lld
+FUN_0001c668	Solved blocks: %d
+FUN_0001c668	Stale submissions discarded due to new blocks: %lld
+FUN_0001c668	Started at %s
+FUN_0001c668	Submitting work remotely delay occasions: %d
+FUN_0001c668	Summary of per device statistics: 
+FUN_0001c668	Unable to get work from server occasions: %d
+FUN_0001c668	Utility (accepted shares / min): %.2f/min
+FUN_0001c668	WARNING - Mined only %.0f shares of %d requested.
+FUN_0001c668	Work Utility (diff1 shares solved / min): %.2f/min 
+FUN_0001c668	Work items generated locally: %d
+FUN_0001d7c8	Attempting to restart %s
+FUN_0001d7c8	Failed to restart application
+FUN_0001fa14	Pool %d %s failed to return work
+FUN_0001fa14	Pool %d %s not responding!
+FUN_0001fc34	Pool %d %s alive
+FUN_0001fc34	Pool %d %s alive, testing stability
+FUN_0001fd64	Stratum connection to pool %d resumed
+FUN_0002e69c	(unknown reason)
+FUN_0002e69c	Cannot subscribe to mining.extranonce for pool %d
+FUN_0002e69c	Method 'subscribe' not found for service 'mining.extranonce'
+FUN_0002e69c	Pool %d JSON extranonce subscribe failed: %s
+FUN_0002e69c	Stratum extranonce subscribe for pool %d
+FUN_0002e69c	Timed out waiting for response extranonce.subscribe
+FUN_0002e69c	Unrecognized request provided
+FUN_0002e69c	result
+FUN_0002e69c	{"id": %d, "method": "mining.extranonce.subscribe", "params": []}
+FUN_0002ea38	(unknown reason)
+FUN_0002ea38	Stratum authorisation success for pool %d
+FUN_0002ea38	pool %d JSON stratum auth failed: %s
+FUN_0002ea38	result
+FUN_0002ea38	{"id": %d, "method": "mining.authorize", "params": ["%s", "%s"]}
+FUN_0002ea38	{"id": %d, "method": "mining.multi_version", "params": [%d]}
+FUN_0002ea38	{"id": %d, "method": "mining.suggest_difficulty", "params": [%d]}
+FUN_0003a354	%s %d
+FUN_0003a354	reset_all_hash_board_low
+FUN_00046434	%s %d
+FUN_00046434	%s chainid %d
+FUN_00046434	reset_chain
+FUN_00046434	reset_hash_board_high
+FUN_00046434	reset_hash_board_low
+FUN_00049cc8	%s %d
+FUN_00049cc8	%s done
+FUN_00049cc8	%s: config_parameter.crc = 0x%x, but we calculate it as 0x%x
+FUN_00049cc8	%s: config_parameter.token_type != 0x%x, it is 0x%x
+FUN_00049cc8	%s: fan_eft : %d  fan_pwm : %d
+FUN_00049cc8	/tmp/delete_freq
+FUN_00049cc8	No valid pools, please configure them first!!!
+FUN_00049cc8	bitmain_ZCASH_init
+FUN_00049cc8	delete freq data and scan freq again 
+FUN_00049cc8	dev.timeout = %d us
+FUN_00049cc8	recheck: chainid %d exist %d asicnum %d realnum %d
+FUN_00049cc8	reset_all_hash_board_high
+FUN_00049cc8	reset_all_hash_board_low
+FUN_00049cc8	rm /tmp/delete_freq
+FUN_00049cc8	z15 init... 
+FUN_0004b0c0	%s %d
+FUN_0004b0c0	Start A New Asic Response.Chain Id:[%d]
+FUN_0004b0c0	get_asic_response
+FUN_000247d4	Get work blocked for %d seconds
+FUN_000247d4	Got work from get queue to get work for thread %d
+FUN_000247d4	Popping work from get queue to get work
+FUN_00025cc0	%s %d: Share above target
+FUN_00025fdc	Failed to malloc input
+FUN_000260fc	Compact mode %s 
+FUN_000260fc	Debug mode %s 
+FUN_000260fc	Interval in seconds
+FUN_000260fc	Invalid selection 
+FUN_000260fc	Log interval set to %d seconds 
+FUN_000260fc	Output mode reset to normal 
+FUN_000260fc	Per-device stats %s 
+FUN_000260fc	Quiet mode %s 
+FUN_000260fc	RPC protocol debugging %s 
+FUN_000260fc	Select an option or any other key to return 
+FUN_000260fc	Verbose mode %s 
+FUN_000260fc	WorkTime details %s 
+FUN_000260fc	[D]ebug:%s [P]er-device:%s [Q]uiet:%s [V]erbose:%s [R]PC debug:%s [W]orkTime details:%s co[M]pact: %s [T]oggle status sw
+FUN_000260fc	[N]ormal [C]lear [S]ilent mode (disable all output) 
+FUN_000260fc	enabled
+FUN_000267b0	Are you sure? 
+FUN_000267b0	Cannot open or create file 
+FUN_000267b0	Config filename to write (Enter for default) [%s]
+FUN_000267b0	Extra work items to queue
+FUN_000267b0	File exists, overwrite? 
+FUN_000267b0	Invalid selection 
+FUN_000267b0	Select an option or any other key to return 
+FUN_000267b0	Set expiry time in seconds
+FUN_000267b0	Set scantime in seconds
+FUN_000267b0	[Q]ueue: %d [S]cantime: %d [E]xpiry: %d [W]rite config file [C]gminer restart 
+FUN_00026bcc	Failed to malloc userpass
+FUN_00027a98	Input
+FUN_00028a40	Failed to allocate device_drv copy of %s (%s)
+FUN_00028a40	original
+FUN_0003107c	 - API multicast listener will not be available
+FUN_0003107c	%s%s-
+FUN_0003107c	224.0.0.75
+FUN_0003107c	API mcast bind to port %d failed (%s)%s
+FUN_0003107c	API mcast could not open socket
+FUN_0003107c	API mcast could not open socket to client %s
+FUN_0003107c	API mcast failed count=%d (%s) (%d)
+FUN_0003107c	API mcast from %s - %s
+FUN_0003107c	API mcast join failed (%s)%s
+FUN_0003107c	API mcast request OK port %s=%d
+FUN_0003107c	API mcast request ignored - invalid port (%s)
+FUN_0003107c	API mcast request rep=%d (%s) from [%s]:%s
+FUN_0003107c	API mcast request was no good
+FUN_0003107c	API mcast send reply (%s) succeeded (%d) (%d)
+FUN_0003107c	API mcast send reply failed (%s) (%d)
+FUN_0003107c	API mcast setsockopt SO_REUSEADDR failed (%s)%s
+FUN_0003107c	Accepted
+FUN_0003107c	Failed to malloc mcast expect_code
+FUN_0003107c	Ignored
+FUN_0003107c	Invalid API Multicast Address
+FUN_0003107c	Invalid client address %s
+FUN_0003107c	cgm-FTW-%d-%s
+FUN_0003107c	cgminer-
+FUN_0003305c	%d Pool(s)
+FUN_0003305c	Description
+FUN_0003305c	STATUS
+FUN_0003305c	cgminer 4.9.0
+FUN_0003305c	{"STATUS":[
+FUN_000295a8	clear_sock
+FUN_0002a230	tq_freezethaw
+FUN_000296d8	0123456789abcdefbin2hex
+FUN_00029730	0123456789abcdefbin2hex
+FUN_00029730	Failed to calloc in %s %s():%d
+FUN_00029730	util.c
+FUN_0002a240	tq_push
+FUN_0002a300	tq_pop
+FUN_0002ace0	Failed to malloc rpc_proxy in %s %s():%d
+FUN_0002ace0	get_proxy
+FUN_0002ace0	http0:
+FUN_0002ace0	util.c
+FUN_0002b040	Failed to parse a \n terminated string in recv_line
+FUN_0002b040	Failed to realloc pool sockbuf in %s %s():%d
+FUN_0002b040	Failed to recv sock in recv_line
+FUN_0002b040	RECVD: %s
+FUN_0002b040	Socket closed waiting in recv_line
+FUN_0002b040	Timed out waiting for data on socket_full
+FUN_0002b040	recalloc_sock
+FUN_0002b040	util.c
+FUN_0002ee78	Failed to malloc in %s %s():%d
+FUN_0002ee78	realloc_strcat
+FUN_0002ee78	util.c
+FUN_0002ef64	Failed to malloc null in %s %s():%d
+FUN_0002ef64	Failed to malloc txt in %s %s():%d
+FUN_0002ef64	str_text
+FUN_0002ef64	util.c
+FUN_0002f174	thr_info_create
+FUN_0002f174	util.c
+FUN_0002f23c	completion_thread
+FUN_0002f23c	util.c
+FUN_0002f438	cg_completion_timeout
+FUN_0002f438	util.c
+FUN_00028bec	CONNECT %s:%s HTTP/1.0  
+FUN_00028bec	CONNECT %s:%s HTTP/1.1 Host: %s:%s  
+FUN_00028bec	Couldn't read HTTP byte from proxy %s:%s
+FUN_00028bec	Couldn't read from proxy %s:%s after sending CONNECT
+FUN_00028bec	HTTP Error from proxy %s:%s - %s
+FUN_00028bec	HTTP/1.0 200
+FUN_00028bec	HTTP/1.1 200
+FUN_00028bec	Received from proxy %s:%s - %s
+FUN_00028bec	Sending proxy %s:%s - %s
+FUN_00028bec	Success negotiating with %s:%s HTTP proxy
+FUN_00028fc8	Bad response from %s:%s SOCKS4 server
+FUN_00028fc8	CGMINER
+FUN_00028fc8	Invalid IP address specified for socks4 proxy: %s
+FUN_00029830	hex2bin scan failed
+FUN_00029830	hex2bin str truncated
+FUN_00029e48	Failed to malloc ret in ser_string
+FUN_00029f54	 Proof: %s Target: %s TrgVal? %s
+FUN_00029f54	YES (hash <= target)
+FUN_00029f54	no (false positive; hash > target)
+FUN_0002aa68	#xnsub
+FUN_0002aa68	Pool %d extranonce subscribing enabled.
+FUN_0002f0b4	cg@%s
+FUN_0002f0f4	Failed to sem_init ret=%d errno=%d in %s %s():%d
+FUN_0002f1bc	Failed to sem_post errno=%d cgsem=0x%p in %s %s():%d
+FUN_0002f280	Failed to sem_wait errno=%d cgsem=0x%p in %s %s():%d
+FUN_0002f304	Failed to sem_timedwait errno=%d cgsem=0x%p in %s %s():%d
+FUN_0002f4f0	ERR: Asked to memcpy %u bytes from %s %s():%d
+FUN_0002f934	%s %08x work %s midstate %s data %s nonce %s hash %s diff %lld
+FUN_0002f934	midstate %s data %s nonce %s hash %s
+FUN_0002f934	screen
+FUN_0002f934	work %s nonce %s
+FUN_0002f934	work diff %lld diffnum %d
+FUN_00029690	http0:
+FUN_00030500	Failed to malloc escape buf %d in %s %s():%d
+FUN_00030500	api.c
+FUN_00030500	escape_string
+FUN_000306b4	OOM buf siz=%d tot=%d ext=%d in %s %s():%d
+FUN_000306b4	add_item_buf
+FUN_000306b4	api.c
+FUN_00032248	API: restarting cgminer
+FUN_00032248	restart_thread
+FUN_00032340	API: killing cgminer
+FUN_00032340	quit_thread
+FUN_0003243c	tidyup
+FUN_00034830	switchpool
+FUN_0003561c	,"COIN":[
+FUN_0003561c	COIN,
+FUN_0003561c	Current Block Hash
+FUN_0003561c	Current Block Time
+FUN_0003561c	Hash Method
+FUN_0003561c	Network Difficulty
+FUN_0003561c	minecoin
+FUN_0003561c	sha256
+FUN_000357c8	,"SUMMARY":[
+FUN_000357c8	Accepted
+FUN_000357c8	Best Share
+FUN_000357c8	Device Hardware%
+FUN_000357c8	Device Rejected%
+FUN_000357c8	Difficulty Accepted
+FUN_000357c8	Difficulty Rejected
+FUN_000357c8	Difficulty Stale
+FUN_000357c8	Discarded
+FUN_000357c8	Elapsed
+FUN_000357c8	Found Blocks
+FUN_000357c8	GHS 5s
+FUN_000357c8	GHS av
+FUN_000357c8	Get Failures
+FUN_000357c8	Getworks
+FUN_000357c8	Hardware Errors
+FUN_000357c8	Last getwork
+FUN_000357c8	Local Work
+FUN_000357c8	Network Blocks
+FUN_000357c8	Pool Rejected%
+FUN_000357c8	Pool Stale%
+FUN_000357c8	Rejected
+FUN_000357c8	Remote Failures
+FUN_000357c8	SUMMARY,
+FUN_000357c8	Stale
+FUN_000357c8	Total MH
+FUN_000357c8	Utility
+FUN_000357c8	Work Utility
+FUN_000357c8	summary
+FUN_000357c8	z9-mini
+FUN_000309e8	127.0.0.1
+FUN_000309e8	::ffff:%s
+FUN_00030b88	API: send (%d:%d) failed: %s
+FUN_00030b88	API: send reply: (%d) '%.10s%s'
+FUN_00030b88	API: send select failed (%d)
+FUN_00030b88	API: sent %d of %d first go
+FUN_00030b88	API: sent %d of remaining %d (sendc=%d)
+FUN_00030b88	API: sent all of %d first go
+FUN_00030b88	API: sent all of remaining %d (sendc=%d)
+FUN_00035e88	%d:%02d:%02d
+FUN_00035e88	,"POOLS":[
+FUN_00035e88	Accepted
+FUN_00035e88	Best Share
+FUN_00035e88	Diff1 Shares
+FUN_00035e88	Difficulty Accepted
+FUN_00035e88	Difficulty Rejected
+FUN_00035e88	Difficulty Stale
+FUN_00035e88	Disabled
+FUN_00035e88	Discarded
+FUN_00035e88	Get Failures
+FUN_00035e88	Getworks
+FUN_00035e88	Has Stratum
+FUN_00035e88	Last Share Difficulty
+FUN_00035e88	Last Share Time
+FUN_00035e88	Long Poll
+FUN_00035e88	Pool Rejected%
+FUN_00035e88	Pool Stale%
+FUN_00035e88	Priority
+FUN_00035e88	Proxy
+FUN_00035e88	Proxy Type
+FUN_00035e88	Quota
+FUN_00035e88	Rejected
+FUN_00035e88	Remote Failures
+FUN_00035e88	Stale
+FUN_00035e88	Status
+FUN_00035e88	Stratum Active
+FUN_00035e88	Stratum URL
+FUN_00031ca0	APIMcast
+FUN_00031cdc	API: unknown1 data type %d ignored
+FUN_00031cdc	Unknown
+FUN_0003204c	Failed to malloc pooldetails buf
+FUN_00033488	,"ASCS":[
+FUN_00033488	ASCS,
+FUN_00033c34	,"CHECK":[
+FUN_00033c34	Access
+FUN_00033c34	CHECK,
+FUN_00033c34	Exists
+FUN_00033dcc	,"DEVDETAILS":[
+FUN_00033dcc	DEVDETAILS
+FUN_00033dcc	Device Path
+FUN_00033dcc	Driver
+FUN_00033dcc	Kernel
+FUN_00033dcc	Model
+FUN_00034ab8	ASC Count
+FUN_00034ab8	CONFIG,
+FUN_00034ab8	Device Code
+FUN_00034ab8	Expiry
+FUN_00034ab8	Failover-Only
+FUN_00034ab8	Hotplug
+FUN_00034ab8	Linux
+FUN_00034ab8	Log Interval
+FUN_00034ab8	PGA Count
+FUN_00034ab8	Pool Count
+FUN_00034ab8	Queue
+FUN_00034ab8	ScanTime
+FUN_00034ab8	Strategy
+FUN_00034c60	,"VERSION":[
+FUN_00034c60	CGMiner
+FUN_00034c60	CompileTime
+FUN_00034c60	Miner
+FUN_00034c60	VERSION,
+FUN_00034ed4	,"POOLS":[
+FUN_00034ed4	GHS5s
+FUN_00034ed4	GHSavg
+FUN_00035154	Calls
+FUN_00035154	Elapsed
+FUN_00035154	GHS 5s
+FUN_00035154	GHS av
+FUN_00035154	STATS
+FUN_0003a4ec	%2.2f
+FUN_0003a4ec	Device Hardware%
+FUN_0003a4ec	chain_acn%d
+FUN_0003a4ec	chain_acs%d
+FUN_0003a4ec	chain_hw%d
+FUN_0003a4ec	chain_rate%d
+FUN_0003a4ec	fan%d
+FUN_0003a4ec	fan_num
+FUN_0003a4ec	frequency%d
+FUN_0003a4ec	miner_count
+FUN_0003a4ec	no_matching_work
+FUN_0003a4ec	temp%d
+FUN_0003a4ec	temp2_%d
+FUN_0003a4ec	temp_max
+FUN_0003a4ec	temp_num
+FUN_000363fc	*Dev Comms Error
+FUN_000363fc	*Dev Dead Idle 600s
+FUN_000363fc	*Dev Nostart
+FUN_000363fc	*Dev Over Heat
+FUN_000363fc	*Dev Sick Idle 60s
+FUN_000363fc	*Dev Thermal Cutoff
+FUN_000363fc	*Dev Throttle
+FUN_000363fc	*Thread Fail Init
+FUN_000363fc	*Thread Fail Queue
+FUN_000363fc	*Thread Zero Hash
+FUN_000363fc	Last Not Well
+FUN_000363fc	Last Well
+FUN_000363fc	NOTIFY
+FUN_000363fc	Reason Not Well
+FUN_000363fc	Unknown reason - code bug
+FUN_000365d0	,"NOTIFY":[
+FUN_0003669c	API mcast thread create failed
+FUN_0003669c	Failed to calloc mcast thr
+FUN_000389f4	                     
+FUN_00038b58	List %s data_memory failed to realloc count=%d in %s %s():%d
+FUN_00038b58	List %s failed to calloc %d new items - total was %d, limit was %d in %s %s():%d
+FUN_00038b58	List %s failed to calloc item data in %s %s():%d
+FUN_00038b58	List %s item_memory failed to realloc count=%d in %s %s():%d
+FUN_00038b58	List %s store can't %s() - from %s %s() line %d in %s %s():%d
+FUN_00038b58	k_alloc_items
+FUN_00038b58	klist.c
+FUN_00038e94	Failed to calloc store for %s in %s %s():%d
+FUN_00038e94	k_new_store
+FUN_00038e94	klist.c
+FUN_000392a8	List %s can't %s() - do_tail is false - from %s %s() line %d in %s %s():%d
+FUN_000392a8	_k_unlink_tail
+FUN_000392a8	klist.c
+FUN_00039370	List %s can't %s() a %s item - from %s %s() line %d in %s %s():%d
+FUN_00039370	_k_add_head
+FUN_00039370	klist.c
+FUN_00039460	List %s can't %s() - do_tail is false - from %s %s() line %d in %s %s():%d
+FUN_00039460	List %s can't %s() a %s item - from %s %s() line %d in %s %s():%d
+FUN_00039460	_k_add_tail
+FUN_00039460	klist.c
+FUN_0003a940	%s detect new device
+FUN_0003a940	Failed to calloc cgpu_info data
+FUN_0003a940	add_cgpu(cgpu)
+FUN_0003a940	bitmain_ZCASH_detect
+FUN_0003a940	driver-btm-zcash.c
+FUN_0003ade0	%s: i2c always busy, break 
+FUN_0003ade0	i2c_write
+FUN_0003ae24	%s: i2c always busy, break 
+FUN_0003ae24	i2c_read
+FUN_0003ae6c	%s input param error: str length = %u 
+FUN_0003ae6c	bm1740_makeup_set_config_cmd
+FUN_0003aebc	%s input param error: str length = %u 
+FUN_0003aebc	bm1740_makeup_get_status_cmd
+FUN_0003b844	  --- %s 
+FUN_0003b844	bitmain_axi_close
+FUN_0003b844	munmap failed!
+FUN_0003ba70	 --- %s 
+FUN_0003ba70	init_fpga
+FUN_0003bb00	%s: Don't support ASIC baud = %d, error!!! 
+FUN_0003bb00	asic_baud_to_fpga_baud
+FUN_0003bb78	%s: The uart%d is not supported!!! 
+FUN_0003bb78	check_how_many_uart_data_in_fpga
+FUN_0003bd44	%s: The uart%d is not supported!!! 
+FUN_0003bd44	read_uart_data_in_fpga
+FUN_0003bf0c	%s: The uart%d is not supported!!! 
+FUN_0003bf0c	%s: uart%d always dose not has enough send fifo space, break 
+FUN_0003bf0c	%s: waiting fpga uart%d clear send fifo space ... 
+FUN_0003bf0c	--- %s 
+FUN_0003bf0c	clear_uart_send_fifo
+FUN_0003c0a0	%s: uart%d clear rx fifo error. nbytes = %d, len = %d 
+FUN_0003c0a0	clear_uart_rx_fifo
+FUN_0003c150	%s: The uart%d is not supported!!! 
+FUN_0003c150	%s: uart%d always busy, break 
+FUN_0003c150	%s: uart%d always dose not has enough send fifo space, break 
+FUN_0003c150	uart_send
+FUN_0003c7e0	--- %s failed! read_back_data[0] = 0x%02x, read_back_data[1] = 0x%02x, read_back_data[2] = 0x%02x, read_back_data[3] = 0
+FUN_0003c7e0	write_dc_dc
+FUN_0003ca38	--- %s failed! read_back_data[0] = 0x%02x, read_back_data[1] = 0x%02x, read_back_data[2] = 0x%02x, read_back_data[3] = 0
+FUN_0003ca38	read_dc_dc
+FUN_0003d000	%s chain %d failed! read_back_data[0] = 0x%02x, read_back_data[1] = 0x%02x  
+FUN_0003d000	%s ok
+FUN_0003d000	set_PIC16F1704_flash_pointer_new
+FUN_0003d1ac	%s chain %d failed! read_back_data[0] = 0x%02x, read_back_data[1] = 0x%02x  
+FUN_0003d1ac	%s ok
+FUN_0003d1ac	send_data_to_PIC16F1704_new
+FUN_0003d3b4	%s chain %d failed! read_back_data[0] = 0x%x, read_back_data[1] = 0x%x, read_back_data[2] = 0x%x, read_back_data[3] = 0x
+FUN_0003d3b4	%s failed!!! read_back_data[0] = 0x%x, read_back_data[1] = 0x%x, read_back_data[2] = 0x%x, read_back_data[3] = 0x%x, rea
+FUN_0003d3b4	%s ok! flash_addr_h = 0x%02x, flash_addr_l = 0x%02x
+FUN_0003d3b4	read_PIC16F1704_flash_pointer_new
+FUN_0003d67c	%s chain %d failed!
+FUN_0003d67c	%s failed! crc = 0x%04x  
+FUN_0003d67c	%s ok
+FUN_0003d67c	%s: read_back_data[0] = 0x%x, read_back_data[1] = 0x%x, read_back_data[2] = 0x%x, read_back_data[3] = 0x%x,   read_back_
+FUN_0003d67c	read_PIC16F1704_flash_data_new
+FUN_0003da84	%s chain %d failed! read_back_data[0] = 0x%02x, read_back_data[1] = 0x%02x  
+FUN_0003da84	%s ok
+FUN_0003da84	erase_PIC16F1704_flash_new
+FUN_0003dc28	%s chain %d failed! read_back_data[0] = 0x%02x, read_back_data[1] = 0x%02x  
+FUN_0003dc28	%s ok  
+FUN_0003dc28	write_data_into_PIC16F1704_flash_new
+FUN_0003ddd0	%s chain %d failed! read_back_data[0] = 0x%02x, read_back_data[1] = 0x%02x
+FUN_0003ddd0	%s ok
+FUN_0003ddd0	jump_from_loader_to_app_PIC16F1704_new
+FUN_0003df78	%s chain %d failed! read_back_data[0] = 0x%02x, read_back_data[1] = 0x%02x  
+FUN_0003df78	%s ok
+FUN_0003df78	reset_PIC16F1704_pic_new
+FUN_0003eec8	chain%d asic%d addr %02x, %s set vol %d, get vol %d
+FUN_0003eec8	every_asic_set_isl_voltage
+FUN_0003f308	%s chain %d failed! read_back_data[0] = 0x%02x, read_back_data[1] = 0x%02x  
+FUN_0003f308	%s ok, voltage = 0x%02x
+FUN_0003f308	set_PIC16F1704_voltage_new
+FUN_0003f4bc	%s chain %d failed! read_back_data[0] = 0x%02x, read_back_data[1] = 0x%02x  
+FUN_0003f4bc	%s ok
+FUN_0003f4bc	write_hash_ID_PIC16F1704_new
+FUN_0003f6cc	%s chain %d failed!  
+FUN_0003f6cc	%s failed! crc = 0x%04x
+FUN_0003f6cc	%s ok
+FUN_0003f6cc	%s: read_back_data[0] = 0x%x, read_back_data[1] = 0x%x, read_back_data[2] = 0x%x, read_back_data[3] = 0x%x,  read_back_d
+FUN_0003f6cc	read_hash_id_PIC16F1704_new
+FUN_0003fa7c	%s chain %d failed! read_back_data[0] = 0x%02x, read_back_data[1] = 0x%02x
+FUN_0003fa7c	%s ok
+FUN_0003fa7c	enable_PIC16F1704_dc_dc_new
+FUN_0003fc24	%s chain %d failed! read_back_data[0] = 0x%02x, read_back_data[1] = 0x%02x
+FUN_0003fc24	%s ok
+FUN_0003fc24	disable_PIC16F1704_dc_dc_new
+FUN_0003fdc4	%s chain %d failed!
+FUN_0003fdc4	%s ok
+FUN_0003fdc4	heart_beat_PIC16F1704_new
+FUN_00040128	%s chain %d failed!
+FUN_00040128	%s failed! crc = 0x%04x
+FUN_00040128	%s: read_back_data[0] = 0x%x, read_back_data[1] = 0x%x, read_back_data[2] = 0x%x, read_back_data[3] = 0x%x, read_back_da
+FUN_00040128	get_PIC16F1704_software_version_new
+FUN_000405ac	%s chain %d failed!
+FUN_000405ac	%s failed! crc = 0x%04x
+FUN_000405ac	%s ok, voltage = 0x%02x
+FUN_000405ac	%s: read_back_data[0] = 0x%x, read_back_data[1] = 0x%x, read_back_data[2] = 0x%x, read_back_data[3] = 0x%x, read_back_da
+FUN_000405ac	get_PIC16F1704_voltage_new
+FUN_00040888	%s failed! read_back_data[0] = 0x%02x, read_back_data[1] = 0x%02x
+FUN_00040888	%s ok
+FUN_00040888	write_temperature_offset_PIC16F1704_new
+FUN_00040a84	%s failed!
+FUN_00040a84	%s failed! crc = 0x%04x
+FUN_00040a84	%s ok
+FUN_00040a84	%s: read_back_data[0] = 0x%x, read_back_data[1] = 0x%x, read_back_data[2] = 0x%x, read_back_data[3] = 0x%x,   read_back_
+FUN_00040a84	read_temperature_offset_PIC16F1704_new
+FUN_00040dec	%s: erase_loop = %d 
+FUN_00040dec	erase_PIC16F1704_app_flash_new
+FUN_00040e94	%s: erase flash error!  
+FUN_00040e94	%s: open pic16f1704_app_new.txt failed 
+FUN_00040e94	%s: pic_flash_length = %d 
+FUN_00040e94	%s: reset pic error!  
+FUN_00040e94	%s: set flash pointer error!  
+FUN_00040e94	/sbin/pic.txt
+FUN_00040e94	PIC1704_update_pic_app_program_new
+FUN_00040e94	buf[%d] = 0x%02x
+FUN_00040e94	send pic program time: %d
+FUN_00041308	chain%d %s
+FUN_00041308	every_chain_reset_PIC16F1704_pic_new
+FUN_000413f0	chain%d %s
+FUN_000413f0	every_chain_jump_from_loader_to_app_PIC16F1704_new
+FUN_000414d8	every_chain_disable_PIC16F1704_dc_dc_new
+FUN_00041614	every_chain_enable_PIC16F1704_dc_dc_new
+FUN_000416ec	%s: create thread error for pic_heart_beat_func
+FUN_000416ec	send_heart_beat_to_every_chain
+FUN_00041b8c	 --- %s failed!  
+FUN_00041b8c	 --- %s failed! crc = 0x%04x  
+FUN_00041b8c	 --- %s ok, freq = %d  
+FUN_00041b8c	--- %s: read_back_data[0] = 0x%x, read_back_data[1] = 0x%x, read_back_data[2] = 0x%x, read_back_data[3] = 0x%x, read_bac
+FUN_00041b8c	get_PIC16F1704_freq_new
+FUN_00041e7c	 --- %s failed! read_back_data[0] = 0x%02x, read_back_data[1] = 0x%02x, read_back_data[2] = 0x%02x  
+FUN_00041e7c	 --- %s ok  
+FUN_00041e7c	write_data_to_PIC16F1704_flash
+FUN_00042100	 --- %s failed! crc = 0x%04x  
+FUN_00042100	 --- %s ok  
+FUN_00042100	read_data_from_PIC16F1704_flash
+FUN_00042a60	%s len error 
+FUN_00042a60	bm1740_makeup_work
+FUN_00042f7c	%s chainID%d asics %d addrInterval %d
+FUN_00042f7c	software_set_address_chain
+FUN_000430a0	chainid%d %s: core timeout = %08x
+FUN_000430a0	set_core_timeout_chain
+FUN_000431ac	chainid%d %s: nonce shift = %08x
+FUN_000431ac	set_nonce_shift_chain
+FUN_000434a0	chainid%d %s: analog mux = %08x
+FUN_000434a0	set_analog_mux_control_chain
+FUN_000435e0	chainid%d %s freq=%d
+FUN_000435e0	set_frequency_chain
+FUN_00043734	%s %d %d freq=%d 
+FUN_00043734	set_freq_asic
+FUN_00043f04	%s: bt8d = %d
+FUN_00043f04	set_baud
+FUN_00044004	%s chainID%d ticket_mask = 0x%08x
+FUN_00044004	set_ticket_mask_chain
+FUN_000445e8	%s chainid = %d
+FUN_000445e8	create rx read thread for chain %d failed
+FUN_000445e8	create rx read thread for chain %d ok
+FUN_000445e8	create tx read thread for chain %d failed
+FUN_000445e8	create tx read thread for chain %d ok
+FUN_000445e8	open device over
+FUN_000445e8	tty_init_chain
+FUN_000448bc	tty_init
+FUN_00044978	Chain %d existed!
+FUN_00044978	check_chain
+FUN_00044b5c	%s: We have lost internet for %d seconds, so don't send work to hashboard anymore
+FUN_00044b5c	%s: avg_num %d asic_num %d
+FUN_00044b5c	%s: chain %d asic %d asic_nonce_num %d
+FUN_00044b5c	%s: the temperature pcb:%d/chip:%d is too high, close PIC and need reboot!!!
+FUN_00044b5c	Fan Err! Disable PIC! Fan num is %d
+FUN_00044b5c	Fan Err! Disable PIC! Fan1 speed is too low %d pwm %d 
+FUN_00044b5c	Fan Err! Disable PIC! Fan1:%d Fan2:%d pwm %d
+FUN_00044b5c	Fan Err! Disable PIC! Fan2 speed is too low %d pwm %d 
+FUN_00044b5c	Temperature pcb:%d/chip:%d is higher than %d/%d'C for %d time, PWM is %d
+FUN_00044b5c	asic num err![%d]
+FUN_00044b5c	check_miner_status
+FUN_00044b5c	ret:%d [%d:%d]fan_error_num:%d fan_num %d fan_pwm %d fan1_speed_value %d fan2_speed_value %d
+FUN_00044b5c	x chain%d asic%d nonce_num=%d avg_num=%d 
+FUN_00045ec0	%s: Set PWM percent : %d
+FUN_00045ec0	set_PWM_according_to_temperature
+FUN_0004601c	%s: reg_value=0x%08x chainid %u
+FUN_0004601c	enable_read_temperature_from_asic_chain
+FUN_000467b0	%s:addrInterval = %d
+FUN_000467b0	calculate_address_interval
+FUN_00046880	%s: create thread for check miner_status
+FUN_00046880	create_bitmain_scan_freq_pthread
+FUN_00046964	%s: create thread for check miner_status
+FUN_00046964	create_bitmain_turbo_mode_monitor_pthread
+FUN_000470a8	%s open %s failed 
+FUN_000470a8	/config/chips_freq.config
+FUN_000470a8	pic write chain%d asic%d freq %d 
+FUN_000470a8	scan_freq_save_freq
+FUN_0004791c	%s Begin 
+FUN_0004791c	%s Done 
+FUN_0004791c	bitmain_ZCASH_reinit_chain
+FUN_000481ec	%s: chain J%d has %d ASIC
+FUN_000481ec	%s: check chain J%d mode %d chipaddr %02x regaddr %02x
+FUN_000481ec	%s: the asic IO strength is 0x%08x
+FUN_000481ec	%s: the asic address is 0x%08x
+FUN_000481ec	%s: the asic freq is 0x%08x
+FUN_000481ec	%s: the asic misc is 0x%08x
+FUN_000481ec	%s: the asic tm is 0x%08x
+FUN_000481ec	%s: the return data is from chain%d, but it should be from chain%d chipaddr=0x%02x reg=0x%02x 
+FUN_000481ec	%s: the start nonce offset is 0x%08x
+FUN_000481ec	check_asic_reg
+FUN_0004886c	%s unknow reg_type %d 
+FUN_0004886c	read_i2c_reg
+FUN_000490fc	%s: Chain%d Sensor%d temp offset : %02d, 
+FUN_000490fc	%s: Chain%d Sensor%d temp offset value set error. It should be %02d, but read back is %02d 
+FUN_000490fc	Chain %d %s
+FUN_000490fc	set_temperature_offset_value_chain_sensor
+FUN_000492b0	%d %s
+FUN_000492b0	calibration_sensor_offset_chain
+FUN_000492b0	chain:%d local:%d remote:%d
+FUN_00049578	check_every_chain_asic_number
+FUN_00049700	%s DONE!
+FUN_00049700	recheck_asic_num
+FUN_000498f4	%s: create thread for check miner_status
+FUN_000498f4	create_bitmain_check_fan_pthread
+FUN_000499d4	%s: create thread for check miner_status
+FUN_000499d4	create_bitmain_check_miner_status_pthread
+FUN_00049ac0	%s: create thread for get hashrate from asic failed
+FUN_00049ac0	create_bitmain_get_hash_rate_pthread
+FUN_00049be8	%s: create thread for read temp
+FUN_00049be8	create_bitmain_read_temp_pthread
+FUN_0004a754	%s CRC error. cal-crc=%x, chip-crc=%02x%02x 
+FUN_0004a754	%s chipid %d is not exist
+FUN_0004a754	%s: nonce fifo full!!!
+FUN_0004a754	bm1740_verify_nonce_integrality
+FUN_0004a754	chip_addr is different %02x != %02x 
+FUN_0004a754	nonce is not continous i=%d 
+FUN_0004a754	nonceID is different %02x != %02x chipid=%d 
+FUN_0004a754	nonce_handle
+FUN_0004a754	receive a error nonce. total = %u
+FUN_0004a754	workID is different %02x != %02x 
+FUN_0004acec	%s chain%d CRC error crc = %02x 
+FUN_0004acec	chain[%d] asic[%d] %02x %02x %02x %02x 
+FUN_0004acec	pm_handle
+FUN_0004ae48	%s CRC error crc = %02x 
+FUN_0004ae48	%s: p_wr = %d reg_value_num = %d
+FUN_0004ae48	%s: reg fifo full!!!
+FUN_0004ae48	Will Clean!
+FUN_0004ae48	reg_handle
+FUN_00047354	%s freq[%d-%d]: cur freq %d, [%d, %d], invalid nonce %d, ox status %d 
+FUN_00047354	/etc/init.d/cgminer.sh restart > /dev/null 2>&1 &
+FUN_00047354	chain%d %d %d %d 
+FUN_00047354	scan freq again, avg freq %d max %d 
+FUN_00047354	scan freq done, avg freq %d max %d, reboot cgminer 
+FUN_0003b704	/dev/axi_fpga_dev
+FUN_0003b704	/dev/axi_fpga_dev open failed. fd = %d 
+FUN_0003b704	/dev/fpga_mem
+FUN_0003b704	/dev/fpga_mem open failed. fd_fpga_mem = %d 
+FUN_0003b704	axi_fpga_addr data = 0x%x 
+FUN_0003b704	mmap axi_fpga_addr = 0x%x 
+FUN_0003b704	mmap axi_fpga_addr failed. axi_fpga_addr = 0x%x 
+FUN_0003b704	mmap fpga_mem_addr = 0x%x 
+FUN_0003b704	mmap fpga_mem_addr failed. fpga_mem_addr = 0x%x 
+FUN_0003b994	FPGA version: %04X
+FUN_0003e120	crc failed 0x%x 
+FUN_0003e120	pic read failed %d %d %d 
+FUN_0003e120	read pic i2c[%d] %02x 
+FUN_0003e120	write pic i2c[%d] %02x 
+FUN_0003e5a4	chain %d asic = %d vol=%u 
+FUN_0003e6e0	chain%d asic%d, set data slave:%02x addr:%02x %02x %02x, len=%d 
+FUN_0003e814	chain%d asic%d, slave:%02x, addr:%02x %02x 
+FUN_0003e814	chain%d asic%d, slave:%02x, addr:%02x %02x %02x 
+FUN_0003ea50	illegal voltage [%d, %d], set default voltage %d 
+FUN_0003ea50	set vol %d, get vol %d, set again! 
+FUN_0003f254	chain %d asic %d vol %d 
+FUN_00040454	chain%d pic version %02x 
+FUN_00040454	chain%d pic version read failed 
+FUN_00042b54	ChainID[%d] Wirte Work. workid=%d, jobid=%s
+FUN_00042b54	Start To Fill Work!ChainIndex:[%d]
+FUN_00042b54	Work Error![%d]
+FUN_0004388c	All asics arrive target freq 
+FUN_0004388c	low freq[%d-%d]: cur freq %d, [%d, %d], invalid nonce %d, ox status %d 
+FUN_000442b0	offset[%d] ERR
+FUN_00044ac0	echo %d > /sys/class/gpio/gpio%d/value
+FUN_00045b30	echo 1 > /sys/class/gpio/gpio954/value
+FUN_00045b30	echo 1 > /sys/class/gpio/gpio955/value
+FUN_00045b50	No %d Fan find, check again
+FUN_00045b50	fan-num %d fan-map %d 
+FUN_000466a4	actual_asic_number = %d, but it is error 
+FUN_00046a48	chain%d pic not support flash data storage, adopt file mode 
+FUN_00046cbc	/config/chips_freq.config
+FUN_00046cbc	1 Goto scan mode and find the best frequency 
+FUN_00046cbc	1 Goto turbo mode 
+FUN_00046cbc	2 Goto scan mode and find the best frequency 
+FUN_00046cbc	2 Goto turbo mode 
+FUN_00046cbc	open %s failed 
+FUN_00046cbc	pic read chain%d asic%d freq %d 
+FUN_0004df94	8 * sizeof(uint32_t) >= 7 + bit_len
+FUN_0004df94	bit_len >= 8
+FUN_0004df94	expandArray
+FUN_0004df94	out_len == 8 * out_width * in_len / bit_len
+FUN_0004df94	sort-verify.c
+FUN_0004eaf4	Invalid solution: Index tree incorrectly ordered
+FUN_0004eaf4	Invalid solution: duplicate indices
+FUN_0004eaf4	Invalid solution: invalid collision length between StepRows
+FUN_0004eee0	ZcashPoW
+FUN_000559d0	/productName
+FUN_000559d0	/rate
+FUN_000559d0	:statusServiceThread recvfrom<=0
+FUN_000559d0	BUFSIZE is too small!
+FUN_000559d0	Cache-Control: no-cache%s
+FUN_000559d0	Connection: Keep-Alive%s
+FUN_000559d0	Content-Length: %d%s
+FUN_000559d0	Content-Type: text/plain%s
+FUN_000559d0	HTTP/1.0  200  OK%s
+FUN_000559d0	Pragma: no-cache%s
+FUN_000559d0	Server: SearchFreqServer%s
+FUN_000559d0	cmd : get miner type
+FUN_000559d0	cmd : get rate
+FUN_000559d0	find http request end flag!
+FUN_000559d0	get http=%s
+FUN_000559d0	one client disconnected!
+FUN_000559d0	search_failed_info
+FUN_000559d0	searchfailed
+FUN_000559d0	searching
+FUN_000559d0	send http data ret=%d
+FUN_000559d0	send http data...
+FUN_000559d0	send http response... 
+FUN_000559d0	setsockopt SO_RCVTIMEO failed
+FUN_000559d0	setsockopt SO_SNDTIMEO failed
+FUN_000559d0	statusServiceThread exit for Error cmd!
+FUN_000559d0	statusServiceThread not support http command
+FUN_000559d0	statusServiceThread send http data error
+FUN_000559d0	statusServiceThread send http response error
+FUN_000559d0	statusServiceThread send http timeout, try again...
+FUN_0005664c	*******************setsockopt(SO_REUSEADDR) failed
+FUN_0005664c	http listen failed! try again after 10s...
+FUN_0005664c	http port bind failed! try again after 10s...
+FUN_0005664c	one client connected sock=%d
+FUN_0005664c	socket creating failed, try again after 10s...
+FUN_0005664c	start listen on 6060 ...
+FUN_00056a90	httpListenThread start ret=%d
+FUN_00056b3c	XXTEA encode failes, N <= 1 found. 
+FUN_00056cd8	XXTEA decode failes, N <= 1 found. 
+FUN_000570d4	                                
+FUN_00057178	do_dump
+FUN_00057178	dump.c
+FUN_00057178	i == size
+FUN_00056e6c	\u%04x
+FUN_00056e6c	\u%04x\u%04x
+FUN_00058274	load.c
+FUN_00058274	stream->buffer[stream->buffer_pos] == c
+FUN_00058274	stream->buffer_pos > 0
+FUN_00058274	stream_unget
+FUN_0005832c	count >= 2
+FUN_0005832c	load.c
+FUN_0005832c	stream_get
+FUN_0005832c	unable to decode byte 0x%x
+FUN_000584b0	c == d
+FUN_000584b0	lex_unget_unsave
+FUN_000584b0	load.c
+FUN_0005852c	\u0000 is not allowed
+FUN_0005852c	control character 0x%x
+FUN_0005852c	end == saved_text + lex->saved_text.length
+FUN_0005852c	invalid Unicode '\u%04X'
+FUN_0005852c	invalid Unicode '\u%04X\u%04X'
+FUN_0005852c	invalid escape
+FUN_0005852c	lex_scan_number
+FUN_0005852c	lex_scan_string
+FUN_0005852c	load.c
+FUN_0005852c	premature end of input
+FUN_0005852c	real number overflow
+FUN_0005852c	too big integer
+FUN_0005852c	too big negative integer
+FUN_0005852c	unexpected newline
+FUN_00058034	%s near '%s'
+FUN_00058034	%s near end of file
+FUN_000581cc	load.c
+FUN_000581cc	str[0] == 'u'
+FUN_00058d00	':' expected
+FUN_00058d00	']' expected
+FUN_00058d00	'}' expected
+FUN_00058d00	duplicate object key
+FUN_00058d00	invalid token
+FUN_00058d00	real number overflow
+FUN_00058d00	string or '}' expected
+FUN_00058d00	unexpected token
+FUN_00059154	'[' or '{' expected
+FUN_00059154	end of file expected
+FUN_00059230	<string>
+FUN_00059230	wrong arguments
+FUN_000592c4	<buffer>
+FUN_000592c4	wrong arguments
+FUN_00059360	<stdin>
+FUN_00059360	<stream>
+FUN_00059360	wrong arguments
+FUN_0005940c	unable to open %s: %s
+FUN_0005940c	wrong arguments
+FUN_000594bc	<callback>
+FUN_000594bc	wrong arguments
+FUN_000597e8	end == strbuffer->value + strbuffer->length
+FUN_000597e8	jsonp_strtod
+FUN_000597e8	strconv.c
+FUN_000598a8	%.17g
+FUN_0005b1e0	'%s' is not a number
+FUN_0005b1e0	'%s' is out of range
+FUN_0005b264	'%s' is not a number
+FUN_0005b264	'%s' is out of range
+FUN_0005b310	'%s' is negative
+FUN_0005b35c	'%s' is negative
+FUN_0005b7c8	Option %s: description cannot be NULL
+FUN_0005b7c8	Option %s: does not begin with '-'
+FUN_0005b7c8	Option %s: does not take arguments '%s'
+FUN_0005b7c8	Option %s: invalid long option '--'
+FUN_0005b7c8	Option %s: invalid short option '%.*s'
+FUN_0005b7c8	Option %s: unknown entry type %u
+FUN_0005b120	Invalid argument '%s'
+FUN_0005bdec	%s: %.*s: %s
+FUN_0005bdec	*offset == 0
+FUN_0005bdec	POSIXLY_CORRECT
+FUN_0005bdec	doesn't allow an argument
+FUN_0005bdec	opt/parse.c
+FUN_0005bdec	parse_one
+FUN_0005bdec	requires an argument
+FUN_0005bdec	unrecognized option
+FUN_0005c20c	                    
+FUN_0005c20c	 (default: %s)
+FUN_0005c20c	Usage: %s

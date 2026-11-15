@@ -1,0 +1,88 @@
+INFO  Using log config file: jar:file:/D:/Document/tempPrj/BITMAIN-S19Hyd-151T-Firmware/Firmware/S19/analysis/tools/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Users\Lenovo\AppData\Roaming\ghidra\ghidra_12.2_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Lenovo\AppData\Roaming\ghidra\ghidra_12.2_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (788 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Loaded 53 trusted CA certificates from the OS trust store. (DefaultTrustManagerFactory)  
+INFO  Loaded 118 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (1949 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 60 extension points (19 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\Document\tempPrj\ZEC\_unpack\analysis\scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\Swift\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: D:\Document\tempPrj\ZEC\_unpack\analysis\ghidra_proj\ZECproj (HeadlessAnalyzer)  
+INFO  Opening project: D:\Document\tempPrj\ZEC\_unpack\analysis\ghidra_proj\ZECproj (HeadlessProject)  
+INFO  REPORT: Processing project file: /fsbl_ph1_raw.bin (HeadlessAnalyzer)  
+INFO  ANALYZING all memory and code: /fsbl_ph1_raw.bin (HeadlessAnalyzer)  
+INFO  Packed database cache: C:\Users\Lenovo\AppData\Local\ghidra\packed-db-cache (PackedDatabaseCache)  
+INFO  Applied data type archive: generic_clib (ApplyDataArchiveAnalyzer)  
+INFO  No functions detected that make variadic function calls with format strings containing format specifiers (FormatStringAnalyzer)  
+INFO  -----------------------------------------------------
+    ARM Constant Reference Analyzer            0.499 secs
+    ARM Symbol                                 0.006 secs
+    ASCII Strings                              0.283 secs
+    Apply Data Archives                        0.404 secs
+    Call Convention ID                         0.003 secs
+    Call-Fixup Installer                       0.002 secs
+    Create Address Tables                      0.269 secs
+    Create Function                            0.004 secs
+    Data Reference                             0.039 secs
+    Decompiler Switch Analysis                 0.332 secs
+    Demangler GNU                              0.037 secs
+    Disassemble Entry Points                   0.043 secs
+    Embedded Media                             0.012 secs
+    External Entry References                  0.000 secs
+    Function ID                                0.056 secs
+    Function Start Pre Search                  0.019 secs
+    Function Start Search                      0.207 secs
+    Function Start Search After Code           0.078 secs
+    Function Start Search After Data           0.083 secs
+    Non-Returning Functions - Discovered       0.055 secs
+    Reference                                  0.064 secs
+    Shared Return Calls                        0.015 secs
+    Source Language Support                    0.004 secs
+    Stack                                      0.137 secs
+    Subroutine References                      0.031 secs
+    Variadic Function Signature Override       0.229 secs
+-----------------------------------------------------
+     Total Time   2 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: /fsbl_ph1_raw.bin (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: ExportFuncs.java 'D:/Document/tempPrj/ZEC/_unpack/reversed/fsbl_funcs'  (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\Document\tempPrj\ZEC\_unpack\analysis\scripts\ExportFuncs.java (HeadlessAnalyzer)  
+WARN  Decompiling 00000000, pcode error at ffffff68: Could not follow disassembly flow into non-existing memory at ffffff68 (DecompileCallback)  
+WARN  Decompiling 00000004, pcode error at ffffff68: Could not follow disassembly flow into non-existing memory at ffffff68 (DecompileCallback)  
+WARN  Decompiling 00000008, pcode error at ffffff68: Could not follow disassembly flow into non-existing memory at ffffff68 (DecompileCallback)  
+WARN  Decompiling 0000000c, pcode error at ffffff68: Could not follow disassembly flow into non-existing memory at ffffff68 (DecompileCallback)  
+WARN  Decompiling 00000010, pcode error at ffffff68: Could not follow disassembly flow into non-existing memory at ffffff68 (DecompileCallback)  
+WARN  Decompiling 000071f8, pcode error at ffffd370: Could not follow disassembly flow into non-existing memory at ffffd370 (DecompileCallback)  
+INFO  ExportFuncs.java> exported 165 functions to D:/Document/tempPrj/ZEC/_unpack/reversed/fsbl_funcs (GhidraScript)  
+INFO  ANALYZING changes made by post scripts: /fsbl_ph1_raw.bin (HeadlessAnalyzer)  
+INFO  REPORT: Post-analysis succeeded for file: /fsbl_ph1_raw.bin (HeadlessAnalyzer)  
+INFO  REPORT: Save succeeded for processed file: /fsbl_ph1_raw.bin (HeadlessAnalyzer)  

@@ -1,0 +1,14 @@
+fpga_mem_mmap	fpga_mem_mmap error! 
+init_module	!!!*base_vir_addr = 0x%x 
+init_module	Err:failed in creating fpga mem class. 
+init_module	In fpga mem driver! 
+init_module	add fpga_mem fail! 
+init_module	alloc fpga_mem fail! 
+init_module	fpga mem virtual address is 0x%x 
+init_module	fpga_mem
+init_module	fpga_vir_mem
+init_module	ioremap fail! 
+init_module	kmalloc cdev fail! 
+init_module	request_mem_region OK! 
+init_module	request_mem_region failed! 
+cleanup_module	Bye Bye fpga mem driver! 

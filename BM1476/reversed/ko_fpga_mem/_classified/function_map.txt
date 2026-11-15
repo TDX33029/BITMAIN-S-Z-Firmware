@@ -1,0 +1,5 @@
+cleanup_module	z_misc
+fpga_mem_mmap	mmap_fops
+fpga_mem_open	z_misc
+fpga_mem_release	z_misc
+init_module	mem_region

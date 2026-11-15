@@ -1,0 +1,5 @@
+00010024 fpga_mem_open calls=0
+0001002c fpga_mem_mmap calls=0
+00010094 fpga_mem_release calls=0
+0001009c init_module calls=0
+00010254 cleanup_module calls=0

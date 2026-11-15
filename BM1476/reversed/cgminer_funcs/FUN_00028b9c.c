@@ -1,0 +1,12 @@
+//==================== FUN_00028b9c @ 00028b9c ====================
+
+void FUN_00028b9c(int param_1)
+
+{
+  uint uVar1;
+  
+  uVar1 = fcntl(param_1,3,0);
+  fcntl(param_1,4,uVar1 & 0xfffff7ff);
+  return;
+}
+

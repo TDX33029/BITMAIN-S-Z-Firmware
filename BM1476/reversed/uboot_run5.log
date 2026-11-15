@@ -1,0 +1,136 @@
+INFO  Using log config file: jar:file:/D:/Document/tempPrj/BITMAIN-S19Hyd-151T-Firmware/Firmware/S19/analysis/tools/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Users\Lenovo\AppData\Roaming\ghidra\ghidra_12.2_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Lenovo\AppData\Roaming\ghidra\ghidra_12.2_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (908 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Loaded 53 trusted CA certificates from the OS trust store. (DefaultTrustManagerFactory)  
+INFO  Loaded 118 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (2454 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 60 extension points (19 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\Document\tempPrj\ZEC\_unpack\analysis\scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\Swift\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: D:\Document\tempPrj\ZEC\_unpack\analysis\ghidra_proj\ZECproj (HeadlessAnalyzer)  
+INFO  Opening project: D:\Document\tempPrj\ZEC\_unpack\analysis\ghidra_proj\ZECproj (HeadlessProject)  
+INFO  REPORT: Processing project file: /uboot2.bin (HeadlessAnalyzer)  
+INFO  ANALYZING all memory and code: /uboot2.bin (HeadlessAnalyzer)  
+WARN  Decompiling 040069f0, pcode error at 04055a30: Could not follow disassembly flow into non-existing memory at 04055a30 (DecompileCallback)  
+WARN  Decompiling 040069f0, pcode error at 04055a5c: Could not follow disassembly flow into non-existing memory at 04055a5c (DecompileCallback)  
+WARN  Decompiling 040069f0, pcode error at 04055a3c: Could not follow disassembly flow into non-existing memory at 04055a3c (DecompileCallback)  
+WARN  Decompiling 040069f0, pcode error at 04055a44: Could not follow disassembly flow into non-existing memory at 04055a44 (DecompileCallback)  
+WARN  Decompiling 040069f0, pcode error at 04055a4c: Could not follow disassembly flow into non-existing memory at 04055a4c (DecompileCallback)  
+WARN  Decompiling 04004bd4, pcode error at 04053f24: Could not follow disassembly flow into non-existing memory at 04053f24 (DecompileCallback)  
+WARN  Decompiling 04004bd4, pcode error at 04053c0c: Could not follow disassembly flow into non-existing memory at 04053c0c (DecompileCallback)  
+WARN  Decompiling 04004bd4, pcode error at 04053c3c: Could not follow disassembly flow into non-existing memory at 04053c3c (DecompileCallback)  
+WARN  Decompiling 04004bd4, pcode error at 04053c60: Could not follow disassembly flow into non-existing memory at 04053c60 (DecompileCallback)  
+WARN  Decompiling 04004bd4, pcode error at 04053bd8: Could not follow disassembly flow into non-existing memory at 04053bd8 (DecompileCallback)  
+WARN  Decompiling 04009c68, pcode error at 04058c9c: Could not follow disassembly flow into non-existing memory at 04058c9c (DecompileCallback)  
+WARN  Decompiling 04009c68, pcode error at 04058c74: Could not follow disassembly flow into non-existing memory at 04058c74 (DecompileCallback)  
+WARN  Decompiling 04009c68, pcode error at 04058c88: Could not follow disassembly flow into non-existing memory at 04058c88 (DecompileCallback)  
+WARN  Decompiling 04009c68, pcode error at 04058d58: Could not follow disassembly flow into non-existing memory at 04058d58 (DecompileCallback)  
+WARN  Decompiling 04009c68, pcode error at 04058c50: Could not follow disassembly flow into non-existing memory at 04058c50 (DecompileCallback)  
+WARN  Decompiling 04004930, pcode error at 040539f4: Could not follow disassembly flow into non-existing memory at 040539f4 (DecompileCallback)  
+WARN  Decompiling 04004930, pcode error at 040539ec: Could not follow disassembly flow into non-existing memory at 040539ec (DecompileCallback)  
+WARN  Decompiling 04004930, pcode error at 040539e4: Could not follow disassembly flow into non-existing memory at 040539e4 (DecompileCallback)  
+WARN  Decompiling 04004930, pcode error at 040539e8: Could not follow disassembly flow into non-existing memory at 040539e8 (DecompileCallback)  
+WARN  Decompiling 04004930, pcode error at 04053a14: Could not follow disassembly flow into non-existing memory at 04053a14 (DecompileCallback)  
+INFO  Packed database cache: C:\Users\Lenovo\AppData\Local\ghidra\packed-db-cache (PackedDatabaseCache)  
+INFO  Applied data type archive: generic_clib (ApplyDataArchiveAnalyzer)  
+INFO  No functions detected that make variadic function calls with format strings containing format specifiers (FormatStringAnalyzer)  
+INFO  -----------------------------------------------------
+    ARM Constant Reference Analyzer            0.419 secs
+    ARM Symbol                                 0.006 secs
+    ASCII Strings                              0.380 secs
+    Apply Data Archives                        0.406 secs
+    Call Convention ID                         0.004 secs
+    Call-Fixup Installer                       0.004 secs
+    Create Address Tables                      0.064 secs
+    Create Function                            0.008 secs
+    Data Reference                             0.015 secs
+    Decompiler Switch Analysis                 1.447 secs
+    Demangler GNU                              0.003 secs
+    Disassemble Entry Points                   0.037 secs
+    Embedded Media                             0.012 secs
+    External Entry References                  0.000 secs
+    Function ID                                0.063 secs
+    Function Start Pre Search                  0.014 secs
+    Function Start Search                      0.191 secs
+    Function Start Search After Code           0.233 secs
+    Function Start Search After Data           0.099 secs
+    Function Start Search delayed - One Time   0.000 secs
+    Non-Returning Functions - Discovered       0.057 secs
+    Reference                                  0.024 secs
+    Shared Return Calls                        0.014 secs
+    Source Language Support                    0.005 secs
+    Stack                                      0.082 secs
+    Subroutine References                      0.035 secs
+    Variadic Function Signature Override       0.089 secs
+-----------------------------------------------------
+     Total Time   3 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: /uboot2.bin (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: ExportFuncs.java 'D:/Document/tempPrj/ZEC/_unpack/reversed/uboot_funcs'  (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\Document\tempPrj\ZEC\_unpack\analysis\scripts\ExportFuncs.java (HeadlessAnalyzer)  
+WARN  Decompiling 04002fdc, pcode error at 03ffc3c8: Could not follow disassembly flow into non-existing memory at 03ffc3c8 (DecompileCallback)  
+WARN  Decompiling 04004930, pcode error at 040539f4: Could not follow disassembly flow into non-existing memory at 040539f4 (DecompileCallback)  
+WARN  Decompiling 04004930, pcode error at 040539ec: Could not follow disassembly flow into non-existing memory at 040539ec (DecompileCallback)  
+WARN  Decompiling 04004930, pcode error at 040539e4: Could not follow disassembly flow into non-existing memory at 040539e4 (DecompileCallback)  
+WARN  Decompiling 04004930, pcode error at 040539e8: Could not follow disassembly flow into non-existing memory at 040539e8 (DecompileCallback)  
+WARN  Decompiling 04004930, pcode error at 04053a14: Could not follow disassembly flow into non-existing memory at 04053a14 (DecompileCallback)  
+WARN  Decompiling 04004bd4, pcode error at 04053f24: Could not follow disassembly flow into non-existing memory at 04053f24 (DecompileCallback)  
+WARN  Decompiling 04004bd4, pcode error at 04053c0c: Could not follow disassembly flow into non-existing memory at 04053c0c (DecompileCallback)  
+WARN  Decompiling 04004bd4, pcode error at 04053c3c: Could not follow disassembly flow into non-existing memory at 04053c3c (DecompileCallback)  
+WARN  Decompiling 04004bd4, pcode error at 04053c60: Could not follow disassembly flow into non-existing memory at 04053c60 (DecompileCallback)  
+WARN  Decompiling 04004bd4, pcode error at 04053bd8: Could not follow disassembly flow into non-existing memory at 04053bd8 (DecompileCallback)  
+WARN  Decompiling 040069f0, pcode error at 04055a30: Could not follow disassembly flow into non-existing memory at 04055a30 (DecompileCallback)  
+WARN  Decompiling 040069f0, pcode error at 04055a5c: Could not follow disassembly flow into non-existing memory at 04055a5c (DecompileCallback)  
+WARN  Decompiling 040069f0, pcode error at 04055a3c: Could not follow disassembly flow into non-existing memory at 04055a3c (DecompileCallback)  
+WARN  Decompiling 040069f0, pcode error at 04055a44: Could not follow disassembly flow into non-existing memory at 04055a44 (DecompileCallback)  
+WARN  Decompiling 040069f0, pcode error at 04055a4c: Could not follow disassembly flow into non-existing memory at 04055a4c (DecompileCallback)  
+WARN  Decompiling 040078a8, pcode error at 040568e8: Could not follow disassembly flow into non-existing memory at 040568e8 (DecompileCallback)  
+WARN  Decompiling 040078a8, pcode error at 04056918: Could not follow disassembly flow into non-existing memory at 04056918 (DecompileCallback)  
+WARN  Decompiling 040078a8, pcode error at 040568e4: Could not follow disassembly flow into non-existing memory at 040568e4 (DecompileCallback)  
+WARN  Decompiling 040078a8, pcode error at 040568e0: Could not follow disassembly flow into non-existing memory at 040568e0 (DecompileCallback)  
+WARN  Decompiling 04008f30, pcode error at 03fd1098: Could not follow disassembly flow into non-existing memory at 03fd1098 (DecompileCallback)  
+WARN  Decompiling 040096d4, pcode error at 03fe3090: Could not follow disassembly flow into non-existing memory at 03fe3090 (DecompileCallback)  
+WARN  Decompiling 04009754, pcode error at 03fbeb7c: Could not follow disassembly flow into non-existing memory at 03fbeb7c (DecompileCallback)  
+WARN  Decompiling 04009a20, pcode error at 0405a25c: Could not follow disassembly flow into non-existing memory at 0405a25c (DecompileCallback)  
+WARN  Decompiling 04009a20, pcode error at 0405a244: Could not follow disassembly flow into non-existing memory at 0405a244 (DecompileCallback)  
+WARN  Decompiling 04009a20, pcode error at 0405a234: Could not follow disassembly flow into non-existing memory at 0405a234 (DecompileCallback)  
+WARN  Decompiling 04009a20, pcode error at 0405a22c: Could not follow disassembly flow into non-existing memory at 0405a22c (DecompileCallback)  
+WARN  Decompiling 04009a20, pcode error at 0405a21c: Could not follow disassembly flow into non-existing memory at 0405a21c (DecompileCallback)  
+WARN  Decompiling 04009c68, pcode error at 04058c9c: Could not follow disassembly flow into non-existing memory at 04058c9c (DecompileCallback)  
+WARN  Decompiling 04009c68, pcode error at 04058c74: Could not follow disassembly flow into non-existing memory at 04058c74 (DecompileCallback)  
+WARN  Decompiling 04009c68, pcode error at 04058c88: Could not follow disassembly flow into non-existing memory at 04058c88 (DecompileCallback)  
+WARN  Decompiling 04009c68, pcode error at 04058d58: Could not follow disassembly flow into non-existing memory at 04058d58 (DecompileCallback)  
+WARN  Decompiling 04009c68, pcode error at 04058c50: Could not follow disassembly flow into non-existing memory at 04058c50 (DecompileCallback)  
+INFO  ExportFuncs.java> exported 140 functions to D:/Document/tempPrj/ZEC/_unpack/reversed/uboot_funcs (GhidraScript)  
+INFO  ANALYZING changes made by post scripts: /uboot2.bin (HeadlessAnalyzer)  
+INFO  REPORT: Post-analysis succeeded for file: /uboot2.bin (HeadlessAnalyzer)  
+INFO  REPORT: Save succeeded for processed file: /uboot2.bin (HeadlessAnalyzer)  

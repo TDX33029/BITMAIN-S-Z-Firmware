@@ -1,0 +1,103 @@
+0x1e71	perror
+0x211f	strerror
+0x5571c	clear_stratum_shares
+0x55770	inc_hw_errors
+0x557a4	inc_hw_errors_with_diff
+0x55888	gen_stratum_work
+0x559bc	parse_stratum_response
+0x559d4	share_result
+0x55a14	prune_stratum_shares
+0x55a2c	stratum_sthread
+0x583b4	%s %d duplicate share detected as HW error
+0x5867c	stratum+tcp://
+0x58860	Malloc failure in json error
+0x58cfc	{"method": "getwork", "params": [], "id":0}
+0x58e68	Lost %d shares due to stratum disconnect on pool %d
+0x58e9c	Cleared %d work items due to stratum disconnect on pool %d
+0x58ed8	%s %d: invalid nonce - HW error
+0x58f30	Failed to create stratum sthread
+0x58f54	Failed to create stratum rthread
+0x59070	Testing pool %d stratum %s
+0x59158	%s%d: invalid nonce - HW error
+0x592a0	[THR%d] Generated stratum header %s
+0x593bc	sharelog printf error
+0x593d4	sharelog fwrite error
+0x593fc	cgminer time error total_secs = %f last_total_secs = %f
+0x595dc	Hardware errors: %d
+0x59c98	result
+0x59ce0	Accepted untracked stratum share from pool %d
+0x59d10	Rejected untracked stratum share from pool %d
+0x59d40	Pool %d stratum share result lag time %d seconds
+0x59ef0	Unknown stratum msg: %s
+0x59f34	Lost %d shares due to no stratum share response from pool %d
+0x59fa0	Failed to create stratum_q in stratum_sthread
+0x5a010	{"id": %d, "method": "mining.submit", "params": ["%s", "%s", "%s", "%s", "%s"]}
+0x5a090	Successfully submitted, adding to stratum_shares db
+0x5a0c4	Pool %d stratum share submission failure
+0x5a0f0	Lowmem option prevents resubmitting stratum share
+0x5a124	No matching session id for resubmitting stratum share
+0x5a15c	Pool %d stratum share submission lag time %d seconds
+0x5a1b8	Work stale due to stratum inactive
+0x5a1dc	Work stale due to stratum job_id mismatch
+0x5a3a8	 Connected to %s diff %s with stratum as user %s
+0x5a8a4	Pushing pool %d work to stratum queue
+0x5b310	Open miner version file %s error
+0x5b334	Read miner version file %s error %d
+0x5b4c0	Fatal JSON error in configuration file.
+0x5bb44	Generated stratum work
+0x5c438	Do not redirect to a different getwork protocol (eg. stratum)
+0x5c734	Disable logging output, display status and errors
+0x5caf4	Use system log for output messages (default: standard error)
+0x5d4b0	suspend_stratum
+0x5d4d0	stratum_send
+0x5d4e0	setup_stratum_socket
+0x5d4f8	initiate_stratum
+0x5db14	Closing socket for stratum pool %d
+0x5dc4c	Failed to send in stratum_send
+0x5dc6c	Stratum send failed due to no pool stratum_active
+0x5dd64	Failed to connect to stratum on %s:%s
+0x5de60	{"id": %d, "method": "mining.subscribe", "params": []}
+0x5de98	{"id": %d, "method": "mining.subscribe", "params": ["cgminer/4.9.0", "%s"]}
+0x5dee4	{"id":%d, "method":"mining.subscribe", "params":["cgminer/4.9.0", null, "%s", "%s"]}
+0x5df3c	Failed to send s in initiate_stratum
+0x5df64	Timed out waiting for response in initiate_stratum
+0x5dfd8	Pool %d confirmed mining.subscribe with extranonce1 %s extran2size %d
+0x5e020	{"id": %d, "method": "mining.extranonce.subscribe", "params": []}
+0x5e064	recv mining.extranonce.subscribe failed
+0x5e090	Failed to resume stratum, trying afresh
+0x5e0b8	Initiate stratum failed
+0x5e10c	mining.notify
+0x5e274	mining.set_extranonce
+0x5e28c	mining.set_difficulty
+0x5e320	Denied stratum reconnect request for pool without domain '%s'
+0x5e360	Denied stratum reconnect request to url without domain '%s'
+0x5e39c	Denied stratum reconnect request to non-matching domain url '%s'
+0x5e424	{"id": %d, "result": "cgminer/4.9.0", "error": null}
+0x5e484	mining.ping
+0x5e4a0	{"id": %d, "result": "pong", "error": null}
+0x5e4cc	mining.set_target
+0x5e53c	Method 'subscribe' not found for service 'mining.extranonce'
+0x5e57c	Cannot subscribe to mining.extranonce for pool %d
+0x5e62c	{"id": %d, "method": "mining.authorize", "params": ["%s", "%s"]}
+0x5e670	pool %d JSON stratum auth failed: %s
+0x5e6c4	{"id": %d, "method": "mining.suggest_difficulty", "params": [%d]}
+0x5e708	{"id": %d, "method": "mining.multi_version", "params": [%d]}
+0x60364	Device comms error
+0x61f24	%s input param error: str length = %u
+0x61fac	%s %d: work %02x not find error
+0x62140	%s: Don't support ASIC baud = %d, error!!!
+0x6220c	%s: uart%d clear rx fifo error. nbytes = %d, len = %d
+0x62f34	%s: reset pic error!
+0x62f4c	%s: erase flash error!
+0x62f68	%s: set flash pointer error!
+0x62fc4	%s: create thread error for pic_heart_beat_func
+0x63238	%s len error
+0x636d0	ret:%d [%d:%d]fan_error_num:%d fan_num %d fan_pwm %d fan1_speed_value %d fan2_speed_value %d
+0x638e4	actual_asic_number = %d, but it is error
+0x63f4c	%s: Chain%d Sensor%d temp offset value set error. It should be %02d, but read back is %02d
+0x641f0	%s CRC error. cal-crc=%x, chip-crc=%02x%02x
+0x642bc	receive a error nonce. total = %u
+0x642f8	%s chain%d CRC error crc = %02x
+0x64344	%s CRC error crc = %02x
+0x648e8	statusServiceThread send http response error
+0x64944	statusServiceThread send http data error

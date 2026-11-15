@@ -1,0 +1,59 @@
+FUN_000108f8	  -f [minerType] [fileName] [rootPublicKeyFile]:     Only Check If Filename was Valided. 
+FUN_000108f8	  -n [nandBinFile]:     Splite SigImg To Single File To "/tmp/tmpNand/" 
+FUN_000108f8	  -p [minerType] [fileName] [rootPublicKeyFile]:     Check If Filename Was Valided, and Dump BmuComments 
+FUN_000108f8	  -q:     Generate A 256Bytes 0xff File To "/tmp/256BFF" 
+FUN_000108f8	  -s [minerType] [fileName] [rootPublicKeyFile]:     Check If Filename Was Valided, and Splite Bmu To "/tmp/tmpfw/" 
+FUN_000108f8	  -x [minerType] [fileName] [rootPublicKeyFile]:     Check If Filename Was FullSize BMU 
+FUN_000108f8	  0:     Well Done! 
+FUN_000108f8	  Others:     Something Wrong! 
+FUN_000108f8	 %s [option] [paramaters]  
+FUN_000108f8	 Option:{-f} {-s} {-p} {-n} {-x} {-q} 
+FUN_000108f8	 Returns:
+FUN_000108f8	Useage:
+FUN_000109a8	Load Nand Image File Failed!
+FUN_000109a8	Try To Write To File '%s' Failed! 
+FUN_00010b9c	/tmp/256BFF
+FUN_00010b9c	GenFile Failed!
+FUN_00010c70	Check miner.pem Failed!
+FUN_00010c70	OpenSSL error: %s 
+FUN_00010c70	Read Root PubK Failed!
+FUN_00012c40	'%s' Not A Btmu File! 
+FUN_00012c40	/tmp/tmpfw/miner.pem
+FUN_00012c40	/tmp/tmpfw/miner.pem.sig
+FUN_00012c40	/usr/bin/fw_version
+FUN_00012c40	All Done!
+FUN_00012c40	Cannot Open Root PublicKey '%s'! 
+FUN_00012c40	Check File Sig failed!
+FUN_00012c40	Check FileSize Failed, FileSize Should Be [%d]Bytes, But It Was [%d] Bytes, And Total Says[%d] 
+FUN_00012c40	Check pem payload failed! ret:[%d] 
+FUN_00012c40	Content Doesn't Match![%d][%d] 
+FUN_00012c40	Dump Miner.pem Failed!
+FUN_00012c40	Dump Miner.pem.sig Failed!
+FUN_00012c40	File '%s' Not Enough %d, Something Wrong! 
+FUN_00012c40	Load Pem Failed!
+FUN_00012c40	OpenSSL error: %s 
+FUN_00012c40	Read File '%s' Failed! 
+FUN_00012c40	This Comment Of This Package:
+FUN_00012c40	This Package Was Not Full Package!
+FUN_00012c40	content:%x 
+FUN_00012c40	file[%d] size:[%d] 
+FUN_00012c40	fw version data: %02X %02X %02X %02X %02X %02X %02X %02X 
+FUN_00012c40	input miner_type and bmu miner type donot match!
+FUN_00012c40	miner_type %s 
+FUN_00012c40	miner_type_hash %16llx, bmu_hash %16llx 
+FUN_00010de8	BOOT.bin
+FUN_00010de8	Create File '%s' Failed! 
+FUN_00010de8	crl.tar.gz
+FUN_00010de8	datafile
+FUN_00010de8	devicetree.dtb
+FUN_00010de8	fileName:'%s', size:[%d] 
+FUN_00010de8	miner.btm.tar.gz
+FUN_00010de8	minerfs.image.gz
+FUN_00010de8	reserve
+FUN_00010de8	uImage
+FUN_00010de8	update.image.gz
+FUN_00013808	Command Not Support!
+FUN_00013808	Param Err!
+FUN_00013808	fileName Too Long!
+FUN_00013808	pemName Too Long!
+thunk_EXT_FUN_706d742e	/tmp/unused

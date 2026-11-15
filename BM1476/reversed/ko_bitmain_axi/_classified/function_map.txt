@@ -1,0 +1,5 @@
+axi_fpga_dev_mmap	mmap_fops
+axi_fpga_dev_open	z_misc
+axi_fpga_dev_release	z_misc
+cleanup_module	z_misc
+init_module	z_misc

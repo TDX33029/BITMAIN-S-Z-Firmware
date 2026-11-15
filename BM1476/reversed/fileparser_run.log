@@ -1,0 +1,110 @@
+INFO  Using log config file: jar:file:/D:/Document/tempPrj/BITMAIN-S19Hyd-151T-Firmware/Firmware/S19/analysis/tools/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Users\Lenovo\AppData\Roaming\ghidra\ghidra_12.2_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Lenovo\AppData\Roaming\ghidra\ghidra_12.2_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (739 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Loaded 53 trusted CA certificates from the OS trust store. (DefaultTrustManagerFactory)  
+INFO  Loaded 118 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (3254 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 188 extension points (87 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\Document\tempPrj\ZEC\_unpack\analysis\scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\Swift\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: D:\Document\tempPrj\ZEC\_unpack\analysis\ghidra_proj\ZECproj (HeadlessAnalyzer)  
+INFO  Opening project: D:\Document\tempPrj\ZEC\_unpack\analysis\ghidra_proj\ZECproj (HeadlessProject)  
+INFO  REPORT: Processing input files:  (HeadlessAnalyzer)  
+INFO       project: D:\Document\tempPrj\ZEC\_unpack\analysis\ghidra_proj\ZECproj (HeadlessAnalyzer)  
+INFO  IMPORTING: file:///D:/Document/tempPrj/ZEC/_unpack/rootfs_1/usr/bin/FileParser (HeadlessAnalyzer)  
+WARN  Using unknown opinion: Executable and Linking Format (ELF), ARM:LE:32:v7:default (LcsHintLoadSpecChooser)  
+INFO  Using Loader: Executable and Linking Format (ELF) (ProgramLoader)  
+INFO  Using Language/Compiler: ARM:LE:32:v7:default (ProgramLoader)  
+INFO  Using Library Search Path: [., C:\windows\SysWOW64, D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\jdk-25.0.5+8\bin, C:\windows\Sun\Java\bin, C:\windows\system32, C:\windows, C:\Users\Lenovo\bin, C:\Program Files\Git\mingw64\bin, C:\Program Files\Git\usr\local\bin, C:\Program Files\Git\usr\bin, C:\Program Files\Eclipse Adoptium\jdk-21.0.13.9-hotspot\bin, C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin, C:\Program Files (x86)\VMware\VMware Workstation\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Windows\system32, C:\Windows, C:\Windows\System32\Wbem, C:\Windows\System32\WindowsPowerShell\v1.0, C:\Windows\System32\OpenSSH, C:\Program Files\Bandizip, C:\Program Files\nodejs, C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn, C:\Program Files\Microsoft SQL Server\160\Tools\Binn, C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn, C:\Program Files\Microsoft SQL Server\160\DTS\Binn, C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit, C:\Program Files\MATLAB\R2024b\bin, C:\Program Files\Tailscale, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit, C:\Program Files\Git\cmd, C:\Program Files\Go\bin, C:\Program Files\Graphviz\bin, C:\Program Files (x86)\eHiWay\eLinx3.0.9\bin\Passkey\bin, C:\Program Files\dotnet, C:\Users\Lenovo\AppData\Local\Programs\Python\Python310\Scripts, C:\Users\Lenovo\AppData\Local\Programs\Python\Python310, C:\Users\Lenovo\AppData\Local\Programs\OpenAI\Codex\bin, C:\Users\Lenovo\AppData\Local\Programs\Python\Python314\Scripts, C:\Users\Lenovo\AppData\Local\Programs\Python\Python314, C:\Users\Lenovo\AppData\Local\Programs\Python\Launcher, C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps, C:\Users\Lenovo\AppData\Local\GitHubDesktop\bin, C:\Users\Lenovo\AppData\Roaming\npm, C:\Users\Lenovo\AppData\Local\Programs\DockerDesktop\resources\bin, C:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\bin, D:\FlutterSDK\flutter\bin, C:\Users\Lenovo\AppData\Local\Microsoft\WinGet\Packages\Genymobile.scrcpy_Microsoft.Winget.Source_8wekyb3d8bbwe\scrcpy-win64-v4.1, C:\Users\Lenovo\AppData\Local\Programs\Fiddler, C:\Users\Lenovo\go\bin, C:\Users\Lenovo\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin, C:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim, C:\intelFPGA\18.0\modelsim_ase\win32aloem, C:\Users\Lenovo\.dotnet\tools, C:\Program Files\Zcode\resources\tools\ripgrep, C:\Program Files\Zcode\resources\tools\ugrep, C:\Program Files\Git\usr\bin\vendor_perl, C:\Program Files\Git\usr\bin\core_perl] (ProgramLoader)  
+INFO  Additional info:
+Loading file:///D:/Document/tempPrj/ZEC/_unpack/rootfs_1/usr/bin/FileParser?MD5=f4d8cabd84af2c149e14c4c9b1a46ee0...
+9 of 26 section headers are truncated/missing from file
+ELF does not contain a dynamic string table (DT_STRTAB)
+ELF does not contain a dynamic symbol table (DT_SYMTAB)
+Truncating block load for _elfSectionHeaders which exceeds file length
+ELF data markup conflict while applying Elf32_Shdr[26] at _elfSectionHeaders::00000000
+Setting block segment_4 to read-only (block split was required)
+------------------------------------------------
+
+ (ProgramLoader)  
+INFO  IMPORTING: Loaded 0 additional files (HeadlessAnalyzer)  
+INFO  ANALYZING all memory and code: file:///D:/Document/tempPrj/ZEC/_unpack/rootfs_1/usr/bin/FileParser (HeadlessAnalyzer)  
+INFO  Unable to find DWARF information, skipping DWARF analysis (DWARFAnalyzer)  
+INFO  Packed database cache: C:\Users\Lenovo\AppData\Local\ghidra\packed-db-cache (PackedDatabaseCache)  
+INFO  Applied data type archive: generic_clib (ApplyDataArchiveAnalyzer)  
+INFO  No functions detected that make variadic function calls with format strings containing format specifiers (FormatStringAnalyzer)  
+INFO  -----------------------------------------------------
+    ARM Constant Reference Analyzer            0.095 secs
+    ARM Symbol                                 0.001 secs
+    ASCII Strings                              0.185 secs
+    Apply Data Archives                        0.294 secs
+    Call Convention ID                         0.001 secs
+    Call-Fixup Installer                       0.002 secs
+    Create Address Tables                      0.007 secs
+    Create Address Tables - One Time           0.001 secs
+    Create Function                            0.045 secs
+    DWARF                                      0.002 secs
+    Data Reference                             0.021 secs
+    Decompiler Switch Analysis                 3.602 secs
+    Demangler GNU                              0.025 secs
+    Disassemble                                0.116 secs
+    Disassemble Entry Points                   0.097 secs
+    Embedded Media                             0.005 secs
+    External Entry References                  0.000 secs
+    Function ID                                0.044 secs
+    Function Start Pre Search                  0.006 secs
+    Function Start Search                      0.068 secs
+    Function Start Search After Code           0.012 secs
+    Function Start Search After Data           0.015 secs
+    Function Start Search delayed - One Time   0.001 secs
+    Non-Returning Functions - Discovered       0.010 secs
+    Non-Returning Functions - Known            0.001 secs
+    Reference                                  0.038 secs
+    Shared Return Calls                        0.003 secs
+    Source Language Support                    0.001 secs
+    Stack                                      0.154 secs
+    Subroutine References                      0.007 secs
+    Variadic Function Signature Override       0.009 secs
+-----------------------------------------------------
+     Total Time   4 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: file:///D:/Document/tempPrj/ZEC/_unpack/rootfs_1/usr/bin/FileParser (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: ExportFuncs.java 'D:/Document/tempPrj/ZEC/_unpack/reversed/fileparser_funcs'  (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\Document\tempPrj\ZEC\_unpack\analysis\scripts\ExportFuncs.java (HeadlessAnalyzer)  
+WARN  Decompiling 000106e8, pcode error at 000106ee: Unable to resolve constructor at 000106ee (DecompileCallback)  
+WARN  Decompiling 00010838, pcode error at 000106ee: Unable to resolve constructor at 000106ee (DecompileCallback)  
+INFO  ExportFuncs.java> exported 42 functions to D:/Document/tempPrj/ZEC/_unpack/reversed/fileparser_funcs (GhidraScript)  
+INFO  ANALYZING changes made by post scripts: file:///D:/Document/tempPrj/ZEC/_unpack/rootfs_1/usr/bin/FileParser (HeadlessAnalyzer)  
+INFO  REPORT: Post-analysis succeeded for file: file:///D:/Document/tempPrj/ZEC/_unpack/rootfs_1/usr/bin/FileParser (HeadlessAnalyzer)  
+INFO  /FileParser: file created (Lenovo) (LocalFileSystem)  
+INFO  REPORT: Save succeeded for: /FileParser (ZECproj:/FileParser) (HeadlessAnalyzer)  
+INFO  REPORT: Import succeeded (HeadlessAnalyzer)  

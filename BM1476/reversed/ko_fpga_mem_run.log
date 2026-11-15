@@ -1,0 +1,106 @@
+INFO  Using log config file: jar:file:/D:/Document/tempPrj/BITMAIN-S19Hyd-151T-Firmware/Firmware/S19/analysis/tools/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Users\Lenovo\AppData\Roaming\ghidra\ghidra_12.2_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Lenovo\AppData\Roaming\ghidra\ghidra_12.2_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (754 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Loaded 53 trusted CA certificates from the OS trust store. (DefaultTrustManagerFactory)  
+INFO  Loaded 118 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (3686 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 188 extension points (87 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\Document\tempPrj\ZEC\_unpack\analysis\scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\ghidra_12.2_PUBLIC\Ghidra\Features\Swift\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: D:\Document\tempPrj\ZEC\_unpack\analysis\ghidra_proj\ZECproj (HeadlessAnalyzer)  
+INFO  Opening project: D:\Document\tempPrj\ZEC\_unpack\analysis\ghidra_proj\ZECproj (HeadlessProject)  
+INFO  REPORT: Processing input files:  (HeadlessAnalyzer)  
+INFO       project: D:\Document\tempPrj\ZEC\_unpack\analysis\ghidra_proj\ZECproj (HeadlessAnalyzer)  
+INFO  IMPORTING: file:///D:/Document/tempPrj/ZEC/_unpack/rootfs_1/lib/modules/fpga_mem_driver.ko (HeadlessAnalyzer)  
+WARN  Using unknown opinion: Executable and Linking Format (ELF), ARM:LE:32:v7:default (LcsHintLoadSpecChooser)  
+INFO  Using Loader: Executable and Linking Format (ELF) (ProgramLoader)  
+INFO  Using Language/Compiler: ARM:LE:32:v7:default (ProgramLoader)  
+INFO  Using Library Search Path: [., C:\windows\SysWOW64, D:\Document\tempPrj\BITMAIN-S19Hyd-151T-Firmware\Firmware\S19\analysis\tools\jdk-25.0.5+8\bin, C:\windows\Sun\Java\bin, C:\windows\system32, C:\windows, C:\Users\Lenovo\bin, C:\Program Files\Git\mingw64\bin, C:\Program Files\Git\usr\local\bin, C:\Program Files\Git\usr\bin, C:\Program Files\Eclipse Adoptium\jdk-21.0.13.9-hotspot\bin, C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin, C:\Program Files (x86)\VMware\VMware Workstation\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Windows\system32, C:\Windows, C:\Windows\System32\Wbem, C:\Windows\System32\WindowsPowerShell\v1.0, C:\Windows\System32\OpenSSH, C:\Program Files\Bandizip, C:\Program Files\nodejs, C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn, C:\Program Files\Microsoft SQL Server\160\Tools\Binn, C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn, C:\Program Files\Microsoft SQL Server\160\DTS\Binn, C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit, C:\Program Files\MATLAB\R2024b\bin, C:\Program Files\Tailscale, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit, C:\Program Files\Git\cmd, C:\Program Files\Go\bin, C:\Program Files\Graphviz\bin, C:\Program Files (x86)\eHiWay\eLinx3.0.9\bin\Passkey\bin, C:\Program Files\dotnet, C:\Users\Lenovo\AppData\Local\Programs\Python\Python310\Scripts, C:\Users\Lenovo\AppData\Local\Programs\Python\Python310, C:\Users\Lenovo\AppData\Local\Programs\OpenAI\Codex\bin, C:\Users\Lenovo\AppData\Local\Programs\Python\Python314\Scripts, C:\Users\Lenovo\AppData\Local\Programs\Python\Python314, C:\Users\Lenovo\AppData\Local\Programs\Python\Launcher, C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps, C:\Users\Lenovo\AppData\Local\GitHubDesktop\bin, C:\Users\Lenovo\AppData\Roaming\npm, C:\Users\Lenovo\AppData\Local\Programs\DockerDesktop\resources\bin, C:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\bin, D:\FlutterSDK\flutter\bin, C:\Users\Lenovo\AppData\Local\Microsoft\WinGet\Packages\Genymobile.scrcpy_Microsoft.Winget.Source_8wekyb3d8bbwe\scrcpy-win64-v4.1, C:\Users\Lenovo\AppData\Local\Programs\Fiddler, C:\Users\Lenovo\go\bin, C:\Users\Lenovo\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin, C:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim, C:\intelFPGA\18.0\modelsim_ase\win32aloem, C:\Users\Lenovo\.dotnet\tools, C:\Program Files\Zcode\resources\tools\ripgrep, C:\Program Files\Zcode\resources\tools\ugrep, C:\Program Files\Git\usr\bin\vendor_perl, C:\Program Files\Git\usr\bin\core_perl] (ProgramLoader)  
+INFO  Additional info:
+Loading file:///D:/Document/tempPrj/ZEC/_unpack/rootfs_1/lib/modules/fpga_mem_driver.ko?MD5=fc136134f281da0bd6a03b50fd194a7f...
+Skipping section [.ARM.extab.init.text] with invalid size 0x0
+Skipping section [.ARM.extab.exit.text] with invalid size 0x0
+Skipping section [.ARM.extab] with invalid size 0x0
+Skipping section [.note.GNU-stack] with invalid size 0x0
+Unable to place symbol due to non-loaded section: .note.GNU-stack - value=0x0, section=.note.GNU-stack
+------------------------------------------------
+
+ (ProgramLoader)  
+INFO  IMPORTING: Loaded 0 additional files (HeadlessAnalyzer)  
+INFO  ANALYZING all memory and code: file:///D:/Document/tempPrj/ZEC/_unpack/rootfs_1/lib/modules/fpga_mem_driver.ko (HeadlessAnalyzer)  
+INFO  DWARF external debug information found: [BuildIdDebugInfo [buildId=[19, -124, 113, -68, 1, -1, -64, -83, -1, -96, -82, 70, 108, -27, 5, 108, 102, 46, -128, -19], objectType=DEBUGINFO, ]] (ExternalDebugFileSectionProvider)  
+INFO  Unable to find DWARF information, skipping DWARF analysis (DWARFAnalyzer)  
+INFO  Packed database cache: C:\Users\Lenovo\AppData\Local\ghidra\packed-db-cache (PackedDatabaseCache)  
+INFO  Applied data type archive: generic_clib (ApplyDataArchiveAnalyzer)  
+INFO  No functions detected that make variadic function calls with format strings containing format specifiers (FormatStringAnalyzer)  
+INFO  -----------------------------------------------------
+    ARM Constant Reference Analyzer            0.030 secs
+    ARM Symbol                                 0.000 secs
+    ASCII Strings                              0.205 secs
+    Apply Data Archives                        0.372 secs
+    Call Convention ID                         0.001 secs
+    Call-Fixup Installer                       0.001 secs
+    Create Address Tables                      0.005 secs
+    Create Address Tables - One Time           0.004 secs
+    Create Function                            0.014 secs
+    DWARF                                      0.008 secs
+    Data Reference                             0.003 secs
+    Decompiler Switch Analysis                 0.304 secs
+    Demangler GNU                              0.032 secs
+    Disassemble Entry Points                   0.058 secs
+    Embedded Media                             0.002 secs
+    External Entry References                  0.000 secs
+    Function ID                                0.048 secs
+    Function Start Pre Search                  0.003 secs
+    Function Start Search                      0.061 secs
+    Function Start Search After Code           0.002 secs
+    Function Start Search After Data           0.005 secs
+    Non-Returning Functions - Discovered       0.001 secs
+    Non-Returning Functions - Known            0.003 secs
+    Reference                                  0.006 secs
+    Shared Return Calls                        0.002 secs
+    Source Language Support                    0.003 secs
+    Stack                                      0.014 secs
+    Subroutine References                      0.002 secs
+    Variadic Function Signature Override       0.010 secs
+-----------------------------------------------------
+     Total Time   1 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: file:///D:/Document/tempPrj/ZEC/_unpack/rootfs_1/lib/modules/fpga_mem_driver.ko (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: ExportFuncs.java 'D:/Document/tempPrj/ZEC/_unpack/reversed/ko_fpga_mem'  (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\Document\tempPrj\ZEC\_unpack\analysis\scripts\ExportFuncs.java (HeadlessAnalyzer)  
+INFO  ExportFuncs.java> exported 5 functions to D:/Document/tempPrj/ZEC/_unpack/reversed/ko_fpga_mem (GhidraScript)  
+INFO  ANALYZING changes made by post scripts: file:///D:/Document/tempPrj/ZEC/_unpack/rootfs_1/lib/modules/fpga_mem_driver.ko (HeadlessAnalyzer)  
+INFO  REPORT: Post-analysis succeeded for file: file:///D:/Document/tempPrj/ZEC/_unpack/rootfs_1/lib/modules/fpga_mem_driver.ko (HeadlessAnalyzer)  
+INFO  /fpga_mem_driver.ko: file created (Lenovo) (LocalFileSystem)  
+INFO  REPORT: Save succeeded for: /fpga_mem_driver.ko (ZECproj:/fpga_mem_driver.ko) (HeadlessAnalyzer)  
+INFO  REPORT: Import succeeded (HeadlessAnalyzer)  

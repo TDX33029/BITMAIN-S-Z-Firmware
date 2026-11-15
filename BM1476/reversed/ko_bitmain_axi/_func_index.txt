@@ -1,0 +1,5 @@
+00010024 axi_fpga_dev_open calls=0
+0001002c axi_fpga_dev_mmap calls=0
+00010088 axi_fpga_dev_release calls=0
+00010090 init_module calls=0
+0001023c cleanup_module calls=0

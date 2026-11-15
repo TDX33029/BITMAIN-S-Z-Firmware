@@ -1,0 +1,15 @@
+axi_fpga_dev_mmap	axi_fpga_dev_mmap error! 
+init_module	!!!*base_vir_addr = 0x%x 
+init_module	*base_vir_addr = 0x%x 
+init_module	AXI fpga dev virtual address is 0x%x 
+init_module	Err:failed in creating axi fpga class. 
+init_module	In axi fpga driver! 
+init_module	add axi_fpga_dev fail! 
+init_module	alloc axi_fpga_dev fail! 
+init_module	axi_fpga_dev
+init_module	axi_fpga_vir_mem
+init_module	ioremap fail! 
+init_module	kmalloc cdev fail! 
+init_module	request_mem_region OK! 
+init_module	request_mem_region failed! 
+cleanup_module	Bye Bye axi fpga driver! 

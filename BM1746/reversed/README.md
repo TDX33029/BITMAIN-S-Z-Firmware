@@ -51,10 +51,10 @@ reversed/
 
 ## 三、关键机制速查 (重写固件必须复刻的 8 件事)
 
-1. **BM1746 UART 帧** (11B): `[AA 55][0x41|rw<<4][..][chip_addr][reg][32bit BE][4bit 校验]` — reg 0x0C=PLL, 0x14=ticket mask, 0x1C=baud/温度使能, 0x20=I2C 间接, 0x28=核心超时, 0x40=模拟 MUX, 0x50=nonce 位移
+1. **BM1746 UART 帧** (11B, TX 字序): `[55 AA][0x40|rw<<4|0x01][0x09][chip_addr][reg][32bit BE][chk&0x1f]` — 0x51=链广播写(rw=1), 0x41=带芯片地址(读); RX 字节流前导实测为 AA 55 (FPGA FIFO 字序)。reg 0x0C=PLL, 0x14=ticket mask (出厂 0x10), 0x1C=baud/温度使能, 0x20=I2C 间接, 0x28=核心超时 (默认 84000), 0x40=模拟 MUX, 0x50=nonce 位移 (已按字节级复核修正: 2026-11-20, 旧文前导/0x41/0x51 语义有误)
 2. **PLL**: 寄存器 0x0C, 值查 115 条表 (25MHz 参考钟), 800MHz=0x00800221
 3. **频率规则**: 配置 0/800/缺省→800; 扫频线程 775~815 起步, 二分逼近, nonce 错误率+OX 状态判据; 结果写 /config/chips_freq.config (合法窗 [775,900])
-4. **链初始化序**: PIC 断电→链复位 (base[0x34])→PIC 上电→设址 (interval=42)→波特率 (0x3C=bt8d×4)→0x0C 频率→0x28 超时 (80000)→0x14 ticket mask→0x1C 温度使能
+4. **链初始化序**: PIC 断电→链复位 (base[0x34])→PIC 上电→切高速 (reset_chain 尾部 reg 0x1C bt8d=0, 先于设址)→设址 (interval=42)→0x0C 频率→0x28 超时 (84000)→0x14 ticket mask (出厂 0x10)→0x1C 温度使能 (已按字节级复核修正: 2026-11-20)
 5. **PIC16F1704 命令** (同一 UART): `[55][AA][len][cmd][args]`+回显; 0x10=电压 (0x15 偏置), 0x15/1A/1B=DC-DC 开关, 0x06=loader→app, 0x07=PIC 复位, 心跳保活
 6. **电压**: PIC 0x10 + 每 ASIC reg 0x20 (I2C 间接) 写 ISL, 合法窗 [700,800]mV, ±4mV 回读校验
 7. **PL 窗口**: mmap /dev/axi_fpga_dev (物理 0x40000000, 0x1400B); 0x80=init 0x8080800F, 0x34=链复位, 0x3C=波特率, 0x180+4n=TX FIFO, 0x1F0+4n=RX 计数

@@ -61,28 +61,30 @@ per-ASIC 当前频率数组: DAT_0007c224[chain*3+asic] (4链×3组), 显示值�
 一、BM1746 串口帧格式 (命令帧, FUN_0003cdcc 构帧, 11 字节)
 --------------------------------------------------------------------------------
 偏移  长度  内容
-0..1   2   前导 0xAA 0x55
-2      1   帧类型 = 0x41 | (读写位<<4): 0x41=广播写(所有芯片), 0x51=单芯片写(param_2&1<<4)
-3      1   (帧类型域第二字节, 与类型相关)
-4      1   芯片地址 (chip_addr * asic_addr_interval; topol.conf: interval=42)
+0..1   2   前导 0x55 0xAA (TX 发送字序; RX 字节流实测前导为 AA 55, FPGA FIFO 字序,
+           收发不能共用同一匹配器)
+2      1   帧类型 = 0x40|(rw<<4)|0x01: 0x51=链广播写(rw=1, 不带芯片地址), 0x41=带芯片地址(读, rw=0)
+3      1   固定值 0x09 (FUN_0003cdcc 反汇编 strb #9@[sp+0xf], 非"保留0")
+4      1   芯片地址 (chip_addr * asic_addr_interval; topol.conf: interval=42; 链广播写时=0)
 5      1   寄存器/命令码 (见下表)
 6..9   4   32 位值 (字节内交换后大端发送)
 10     1   校验: 低 5 位 = FUN_0003cc6c 4-bit 校验(lane 校验), 高 3 位保留
-发送前置: 0x41 类型 = 广播; 单芯片寻址时 bit4 置位并给芯片地址。
+发送前置: 0x51 (bit4=1) = 链广播写; 0x41 (bit4=0) = 带芯片地址(读)。
+(已按字节级复核修正: 2026-11-20 — 旧文"0x41=广播写/0x51=单芯片写"两语义写反, byte[3] 非 0)
 
 二、BM1746 寄存器/命令码表 (cgminer 内使用的全部写操作)
 --------------------------------------------------------------------------------
 码    函数                          语义                     值域
 0x0C  set_frequency_chain(chain, f) PLL 分频值(整链广播)    频率表 pll 字段
       set_freq_asic(chain, chip, f) 单芯片 PLL               同上 (chip 寻址帧)
-0x14  set_ticket_mask_chain(chain)  ticket mask              8bit
+0x14  set_ticket_mask_chain(chain)  ticket mask              8bit (出厂静态初值 0x10, DAT_00076b60)
 0x1C  set_baud(chain, bt8d)         UART 波特率分频          (bt8d&0x1F)<<8 | 保留位
       enable_read_temperature_from_asic_chain: reg 0x1C = 0x4060|保留(开温度读回, 每芯片)
 0x20  read_i2c_reg(chain, chip, reg, type) / write (FUN_0004633c):
       值 = base[0x76B6C]&0xFF000000 | 0x01000000 | (i2c_reg&0x7F)<<17 | (type&0xFF)<<8 | data
       (0x20 = I2C 间接寄存器: 芯片内 I2C master, 访问电源芯片 ISL/温度 TMP451)
       type: 0/1/0x11/0xFE 四种 I2C 通道
-0x28  set_core_timeout_chain(chain, timeout)  核心超时
+0x28  set_core_timeout_chain(chain, timeout)  核心超时 (默认 84000=0x14820, DAT_00076b74 静态初值)
 0x40  set_analog_mux_control_chain(chain, sel) 模拟多路开关 (温度传感器通道选择, 3bit)
 0x50  set_nonce_shift_chain(chain, shift)      nonce 位移 (值<<27)
 
@@ -105,13 +107,18 @@ set_frequency_chain 未命中时默认取 0x40 槽位 = 587MHz@0x005E0221。
       - PIC 命令 5/0x15/0x1B (enable DC-DC), sleep 1s
       - reset_hash_board_low/high (PIC 命令 4/7: [55][AA][04][07], 回 7,01 = PIC 自身复位)
       - base[0x34]=0 释放复位
-      - tty_init_chain: 创建 rx/tx 线程; base[0x3C]=0x1A (初始 baud), 发 set_baud(reg 0x1C, 0)
+      - tty_init_chain: 创建 rx/tx 线程
+      - 切高速在 reset_chain 尾部 (FUN_00046434.c:48-53, 先于设址): base[0x3C]=0x1A (PL 初始分频)
+        → set_baud(reg 0x1C, bt8d=0) → base[0x3C]=0 (divider 0)
+        (已按字节级复核修正: 2026-11-20 — 旧文把切高速当作初始化最后一步, 实际在 reset_chain 内部)
    b. software_set_address_chain:
-      - 发 set_address 帧序列 (FUN_0003CD58: [55][AA]...固定帧) 复位芯片地址计数器
-      - 对 3 个芯片组: [55][AA][04?]+FUN_0003CE7C 帧 (0x40|param<<16...) 逐组设址
+      - 发 7 字节复位帧 [55][AA][53][05][00][00][chk] (FUN_0003CD58) 复位芯片地址计数器
+      - 对 3 个芯片组: 发 7 字节设址帧 [55][AA][40][05][addr][00][chk] (FUN_0003CE7C) 逐组设址
         (asic_addr_interval=42 => 地址 0,42,84 ...)
+        (已按字节级复核修正: 2026-11-20 — 旧文 "[55][AA][04]…" 有误, 依 FUN_0003cd58/3ce7c 反汇编:
+         复位帧=55 AA 53 05 00 00 chk, 设址帧=55 AA 40 05 addr 00 chk)
    c. check_every_chain_asic_number / check_every_chain_asic_pll: 读回校验芯片数/PLL
-   d. set_core_timeout_chain(0x28), set_nonce_shift_chain(0x50), set_ticket_mask_chain(0x14)
+   d. set_core_timeout_chain(0x28), set_nonce_shift_chain(0x50), set_ticket_mask_chain(0x14, 出厂值 0x10)
    e. set_frequency_chain(0x0C 广播) 或 set_freq_asic 逐片
    f. enable_read_temperature_from_asic_chain: reg 0x1C=0x4060 逐芯片 (开温度)
    g. set_io_drive_strength_chain / set_analog_mux_control_chain(0x40)
@@ -130,3 +137,22 @@ set_frequency_chain 未命中时默认取 0x40 槽位 = 587MHz@0x005E0221。
 SD 包 (2020-07, V0.1.18) 与 BMU 包 (2026-04, FR-1.9) 同为 Zynq7000 平台;
 SD 包携带完整 cgminer (BM1746 驱动); BMU 包只刷系统底座。
 BM1746 寄存器操作 = 本报告 + cgminer ELF; FR-1.9 的 ps7_init 表负责 PS 侧。
+
+六、修订记录
+--------------------------------------------------------------------------------
+2026-11-20  依据: cgminer_z15_bm1746.elf (md5 709cc6f0f12c0d14987e07a13c492c02) 机器码级复核
+            (CRC16 表 256/256 PASS、频率表 115/115 PASS、帧结构指令级确认, capstone 反汇编)。
+            修正条目:
+            [1] 第一节: 11B 命令帧 — byte[3]=固定 9 (非"保留0"); 0x51=链广播写、0x41=带芯片地址(读),
+                旧文两语义写反; TX 前导 55 AA (RX 字节流为 AA 55)。
+            [2] 第四节 4.b: 7B 帧 — 复位帧 [55 AA 53 05 00 00 chk]、设址帧 [55 AA 40 05 addr 00 chk],
+                旧文 "[55][AA][04]…" 有误。
+            [3] 第四节 4.a: 切高速 (reg 0x1C bt8d=0 → divider 0) 在 reset_chain 内部 (FUN_00046434.c:48-53),
+                先于设址, 非最后一步。
+            [4] 第二节: ticket mask 出厂静态初值 = 0x10 (DAT_00076b60); 核心超时默认 = 84000
+                (0x14820, DAT_00076b74), 旧值 80000 有误。
+            [5] workid: 任务帧帧[3] = work->id(计数器 DAT_000770a8)&0x7f (0..127), 帧[2] 恒 0x20;
+                下发线程 FUN_00042b54 维护 workid→work 映射表 128 槽 ((workid+0x1c)*4+6, 直接索引),
+                RX 侧 bitmain_scanhash (FUN_0003af90) 以同一偏移取回; 在飞上限源于 128 槽回绕,
+                非 32 — 详见 ESP32_single_chip_feasibility.md 第 6 节。
+            (旧文"workid 低 5 位在帧[2]、在飞≤32"表述有误)

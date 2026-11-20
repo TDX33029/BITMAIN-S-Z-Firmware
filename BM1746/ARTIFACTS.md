@@ -24,7 +24,7 @@
 | sdcard\ | 152M | SD 恢复镜像内容（V0.1.18, 2020）：BOOT.bin/uImage/uramdisk（100M ext2）+ rootfs_sd\ 解包树 |
 | rootfs_1\ | 15M | 2026 NAND 主文件系统解包（minerfs.image.gz） |
 | rootfs_2\ | 8.7M | 2026 升级 ramfs 解包（update.image.gz） |
-| analysis\ | 100M | 基准 ELF、裸 bin、vmlinux、Ghidra 工程（2 个 .rep）、7 个 Java 导出器、out\ 分析产物 |
+| analysis\ | 100M | 基准 ELF、裸 bin、vmlinux、Ghidra 工程（2 个 .rep）、7 个 Java 导出器、out\ 分析产物、dtb\ DTS 转储、gap_reports\ 缺口分析报告 |
 | reversed\ | 7.2M | 反编译函数库：1758 个 .c（按二进制分目录、cgminer 再按 16 功能类分子目录）+ 常量表 + 协议字符串 + 索引 |
 | bm1746\ | 1.5M | 核心报告：串口寄存器操作完整报告、单芯片可行性核验、频率表、cgminer 全量单文件反编译 |
 
@@ -129,6 +129,16 @@
 | strings_map.txt | FSBL 字符串 → 函数引用映射 |
 | all_decomp.c | FSBL 全量单文件反编译（检索用） |
 | out_axi\、out_uboot\、out_uboot2\、out_uboot3\ | 各二进制 all_decomp.c 平铺反编译（检索用） |
+
+### 3.4 dtb\ 与 gap_reports\（2026-11-20 缺口处理新增）
+
+| 路径 | 内容 |
+|---|---|
+| dtb\parts_devicetree.dts.txt | parts\devicetree.dtb（8014B, ad826c24）的 FDT v17 结构化转储：根/compatible/memory/chosen、UART0（0xe0000000, IRQ 27, 115200）、amba/PS 外设、SMCC+NAND 分区布局 |
+| dtb\sdcard_devicetree.dts.txt | sdcard\devicetree.dtb（7578B, 6b288d49）的同类转储 |
+| gap_reports\devicetree_analysis.md | 两份 DTB 对比：sdcard 删 I2C@e0005000 与 upgrade/sig/reserve 分区，改为 BOOT.bin-env-dts-kernel/reserve/ramfs-bak 布局；结论：DTB 反映 PS/PL 可见映射，不含 BM1746 ASIC 寄存器/协议，单芯片直驱仍需 bitstream/总线拓扑/原理图证据 |
+| gap_reports\ko_fileparser_diff.md | rootfs_sd vs rootfs_1 两个 ko（同源重编译，设备名/mmap/open-release-init-exit 一致，vermagic/工具链不同不可混装）、rootfs_2 vs rootfs_1 FileParser（`-s/-n/-q` 升级路径一致，rootfs_1 多 miner_type/hash 校验字符串）；结论：接口语义兼容，通常无需补反编译 |
+| gap_reports\vmlinux_jansson_info.md | vmlinux.bin 元信息（Linux 4.6.0-xilinx-g03c746f7, 2026-04-27 构建，与 parts\inner\extra_gz\0x2af3e1.gz.out 同源）；sdcard libjansson.so.4.5.0（SONAME libjansson.so.4，标准 jansson API，通用依赖无需反编译） |
 
 ---
 
@@ -251,15 +261,23 @@
 | function_name_catalog.txt | 208 个驱动函数自报名（`__func__` 字符串）——重写时的 API 清单 |
 | subtype | "zynq7007_BEZ36501"（机器码校验用） |
 
-### 4.5 未反编译清单（均不阻塞挖矿链）
+### 4.5 缺口资产处理状态（2026-11-20 更新，均不阻塞挖矿链）
 
-| 二进制 | 出处 | md5 前 8 位 | 状态 |
+此前“未反编译/未分析”资产已按可行性完成处理：辅助工具做静态逆向说明、ko/FileParser 做版本对比、vmlinux/jansson 提取元信息、DTB 完成转储与差异分析。未逐函数反编译的不影响单颗 BM1746 挖矿主链路二次开发。
+
+| 资产 | 出处 / 关键版本 | 处理结果 | 产物 |
 |---|---|---|---|
-| cgminer-api | rootfs_1\usr\bin | 41cd93a7 | 未反编译（cgminer 30_api_status 类已覆盖其服务端逻辑） |
-| monitor-ipsig / monitor-recobtn | rootfs_1\usr\bin、rootfs_sd | 未记录 | 未反编译 |
-| antlogin / update-daemon / id2mac | rootfs_1\usr\sbin、rootfs_1\sbin、rootfs_sd\usr\bin | 未记录 | 未反编译 |
-| vmlinux.bin | analysis\ | 6c3ef57d | 未反编译（11.75M ARM 内核 Image） |
-| rootfs_sd 版 bitmain_axi.ko / fpga_mem_driver.ko | sdcard\rootfs_sd\lib\modules | f2517c6f / 990edb34 | 未反编译（与 rootfs_1 版不同构建；协议层语义已由 rootfs_1 版覆盖） |
+| cgminer-api | rootfs_1 `41cd93a7` / sd `3ad30016` | 静态分析完成：本地 cgminer TCP API CLI（默认 127.0.0.1:4028）；服务端逻辑由 cgminer 30_api_status 覆盖；不阻塞 | reversed\aux_tools\cgminer-api.md、00_INDEX.md |
+| monitor-ipsig | rootfs_1 `1a08e517` / sd `3a109798` | 静态分析完成：UDP IP/MAC 上报与按键/GPIO 监控守护（S65）；非算力路径 | reversed\aux_tools\monitor-ipsig.md |
+| monitor-recobtn | rootfs_1 `794be2a6` / sd `11daa075` | 静态分析完成：恢复按键监控触发 factory reset（S66）；非算力路径 | reversed\aux_tools\monitor-recobtn.md |
+| antlogin | rootfs_1 `fb2a152f` | 静态分析完成：固定 `login -f root` 登录辅助；仅影响维护通道 | reversed\aux_tools\antlogin.md |
+| update-daemon | rootfs_1 `788a2031` | 静态分析完成：127.0.0.1:22322 IPC，调用 `updateporc.sh`；兼容原厂升级链路时需等价实现，但不阻塞核心挖矿 | reversed\aux_tools\update-daemon.md |
+| id2mac | rootfs_1 `a380ac2d` / sd `dcfa656b` | 静态分析完成：派生并输出 MAC（S38network）；可替换 | reversed\aux_tools\id2mac.md |
+| rootfs_sd 版 bitmain_axi.ko / fpga_mem_driver.ko | sd `f2517c6f` / `990edb34`（对照 rootfs_1 `5d00a362` / `fc136134`） | 版本对比完成：同源重编译，设备名/mmap/open-release-init-exit 与 rootfs_1 一致，无 ioctl 线索；vermagic/工具链不同不可混装；通常无需补反编译 | analysis\gap_reports\ko_fileparser_diff.md，参考 reversed\ko_bitmain_axi\、reversed\ko_fpga_mem\ |
+| FileParser（rootfs_2） | rootfs_2 `56358ea4`（对照 rootfs_1 `f4d8cabd`） | 版本对比完成：`-s/-n/-q` 与 Update.sh 升级路径一致，rootfs_1 多 miner_type/hash 校验字符串；通常无需优先补反编译 | analysis\gap_reports\ko_fileparser_diff.md，参考 reversed\fileparser_funcs\ |
+| devicetree.dtb（parts/sdcard） | parts `ad826c24` / sd `6b288d49` | 解析与对比完成：UART0 0xe0000000/115200、MTD 分区差异、PS 外设映射；不含 BM1746 ASIC 直驱所需细节 | analysis\dtb\*.dts.txt、analysis\gap_reports\devicetree_analysis.md |
+| vmlinux.bin | analysis `6c3ef57d` | 元信息提取完成：Linux 4.6.0-xilinx-g03c746f7（2026-04-27）；ko 语义已覆盖，完整反编译优先级低 | analysis\gap_reports\vmlinux_jansson_info.md |
+| libjansson.so.4.5.0 | sdcard/rootfs_sd `44278ad4` | 元信息提取完成：标准 jansson API（soname .4），通用第三方依赖无需反编译 | analysis\gap_reports\vmlinux_jansson_info.md |
 
 ---
 
@@ -344,7 +362,7 @@
 
 | 事项 | 影响 | 状态 |
 |---|---|---|
-| bt8d=0 时的主机侧波特率 | FUN_00046434 尾部切高速写 reg 0x1C bt8d=0 后，BM1746 芯片端高速波特率值未从主机代码侧推出 | 需上机实测 |
+| bt8d=0 时的主机侧波特率 | FUN_00046434 尾部切高速写 reg 0x1C bt8d=0 后，BM1746 芯片端高速波特率值未从主机代码侧推出 | 需上机实测（硬件环境缺口，工作区内无法闭环） |
 | 0x5B 子块 bit 级遥测 | RX 帧中 0x5B 类型子块的逐 bit 含义未解析 | 不影响 nonce 路径（nonce 走 0x5D/93B），留待后续 |
 
 ---
@@ -352,6 +370,8 @@
 ## 附：与既有索引的关系
 
 - 每函数级速查：reversed\cgminer\00_INDEX.md（带相对链接）、reversed\_classified\function_map.txt（644 行 TSV）、reversed\cgminer\_func_index.txt / _callgraph.txt / _string_xref.txt
+- 辅助工具静态分析：reversed\aux_tools\00_INDEX.md（cgminer-api、monitor-ipsig、monitor-recobtn、antlogin、update-daemon、id2mac）
+- DTB 转储与缺口报告：analysis\dtb\*.dts.txt、analysis\gap_reports\devicetree_analysis.md、analysis\gap_reports\ko_fileparser_diff.md、analysis\gap_reports\vmlinux_jansson_info.md
 - 方法论与解包细节：METHODOLOGY.md、SUMMARY.md（BMU 容器格式 §一~§九）
 - 协议细节（帧格式/PIC 命令/频率规则）：bm1746\BM1746_uart_register_ops.md
 - 单芯片可行性论证：bm1746\ESP32_single_chip_feasibility.md

@@ -28,11 +28,12 @@ reversed/
 │   ├── ps7_init 540 条寄存器序列 → ../analysis/out/ps7_init_full.txt
 │   └── 内嵌 PL 位流 @0x21E30 (254KB, 7z007s)
 ├── fileparser_funcs/           FileParser BMU 解析/烧写 (42 函数 + _classified/)
-├── monitor_funcs/              miner-monitor 监控守护 (112 函数 + _classified/)
+├── monitor_funcs/              miner-monitor 监控守护 (113 函数 + _classified/)
 ├── uboot_funcs/                U-Boot 2016.07 (140 函数, 基址 0x40000000)
 ├── ko_bitmain_axi/             bitmain_axi.ko (5 函数, mmap 0x40000000 窗口)
 ├── ko_fpga_mem/                fpga_mem_driver.ko (5 函数, DDR 窗口)
 ├── cgminer_funcs/              cgminer 原始平铺导出 (全部单文件, 644)
+├── aux_tools/                  辅助用户态工具静态分析 (2026-11-20, 6 工具 + 00_INDEX.md)
 ├── tables/                     常量表/配置事实 (见下)
 └── protocols/                  协议字符串 (stratum 103 条)
 ```
@@ -80,3 +81,5 @@ reversed/
 - `../analysis/out/ASIC_INIT_REPORT.md` — PS/FSBL 初始化分析
 - `../bm1746/cgminer_all_decomp.c` — cgminer 全量单文件反编译 (检索用; 分类版在 cgminer/)
 - `../analysis/ghidra_proj*/` — Ghidra 工程 (可复查任何函数)
+- `aux_tools/00_INDEX.md` — 辅助用户态工具静态分析（cgminer-api、monitor-ipsig、monitor-recobtn、antlogin、update-daemon、id2mac，2026-11-20）
+- `../analysis/dtb/*.dts.txt`、`../analysis/gap_reports/*` — DTB 解析/对比、ko 与 FileParser 版本差异、vmlinux/jansson 元信息（2026-11-20 缺口处理）

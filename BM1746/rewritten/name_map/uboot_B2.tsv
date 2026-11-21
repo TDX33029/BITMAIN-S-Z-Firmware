@@ -1,0 +1,27 @@
+# uboot-B2 name_map (续): addr<TAB>name<TAB>basis
+FUN_0400a00c	net_set_udp_handler	body
+FUN_0400a02c	net_get_arp_handler	body
+FUN_0400a03c	net_set_icmp_handler	body
+FUN_0400a04c	net_set_timeout_handler	body
+FUN_0400a0a8	net_process_received_packet	body
+FUN_0400a3e0	net_eth_hdr_size	body
+FUN_0400a41c	net_set_ether	body
+FUN_0400a4b8	net_update_ether	body
+FUN_0400a538	net_set_ip_header	body
+FUN_0400a5c0	net_set_udp_header	body
+FUN_0400a644	net_send_udp_packet	body
+FUN_0400a748	copy_filename	body
+FUN_0400ac64	basename	body
+FUN_0400ac9c	rpc_add_credentials	body
+FUN_0400ad48	rpc_req	body
+FUN_0400ae4c	nfs_mount_req	body
+FUN_0400aff0	nfs_read_req	body
+FUN_0400b068	nfs_readlink_req	body
+FUN_0400b0c0	nfs_read_reply	body
+FUN_0400b900	ping_receive	body
+FUN_0400b9e0	tftp_complete	body
+FUN_0400c65c	ub_un_00c65c	fallback
+FUN_0400c66c	aeabi_uidiv	body
+FUN_0400c708	aeabi_idiv	body
+FUN_0400c7d4	aeabi_uidivmod	body
+FUN_0400c7ec	aeabi_idivmod	body

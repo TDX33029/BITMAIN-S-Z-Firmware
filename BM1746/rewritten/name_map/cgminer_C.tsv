@@ -1,0 +1,18 @@
+# cgminer-C name_map (21_pool_net/30_api_status/22_json_rpc/10_uart_protocol): addr<TAB>name<TAB>basis
+FUN_0002b5c8	stratum_send	__func__
+FUN_0003bb78	check_how_many_uart_data_in_fpga	__func__
+FUN_0003bd44	read_uart_data_in_fpga	__func__
+FUN_0003bf0c	clear_uart_send_fifo	__func__
+FUN_0003c0a0	clear_uart_rx_fifo	__func__
+FUN_0003c150	uart_send	__func__
+FUN_0003ca38	read_dc_dc	__func__
+FUN_0003e6e0	send_data_to_all_asic	body
+FUN_0003e814	read_data_from_all_asic	body
+FUN_0004ae48	reg_handle	__func__
+FUN_000559d0	status_service_thread	logstring
+FUN_00016d98	load_json_file	body
+FUN_0002ea38	auth_stratum	anchor
+FUN_000363fc	notify_dev_status	body
+FUN_000365d0	api_notify	logstring
+FUN_0005940c	json_load_file	body
+FUN_000597e8	jsonp_strtod	__func__

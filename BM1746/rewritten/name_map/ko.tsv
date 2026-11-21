@@ -1,0 +1,13 @@
+# ko name_map: addr	name	basis
+# ko_bitmain_axi
+FUN_00010024	axi_fpga_dev_open	passthrough
+FUN_0001002c	axi_fpga_dev_mmap	passthrough
+FUN_00010088	axi_fpga_dev_release	passthrough
+FUN_00010090	init_module	passthrough
+FUN_0001023c	cleanup_module	passthrough
+# ko_fpga_mem
+FUN_00010024	fpga_mem_open	passthrough
+FUN_0001002c	fpga_mem_mmap	passthrough
+FUN_00010094	fpga_mem_release	passthrough
+FUN_0001009c	init_module	passthrough
+FUN_00010254	cleanup_module	passthrough

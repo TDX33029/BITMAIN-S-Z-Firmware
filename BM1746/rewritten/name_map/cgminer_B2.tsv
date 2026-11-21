@@ -1,0 +1,55 @@
+# cgminer-B2 name_map (job_mining 0x1a3d4<addr<=0x2f1bc): addr<TAB>name<TAB>basis
+FUN_0001a44c	make_clone	callgraph: 被 clone_queued_work_bymidstate/byid 调用(上游 make_clone); make_work+copy_work_nonce2(work,0)
+FUN_0001a474	clone_work_backdated	body: make_clone(base,0)+work->clone=1+cgtime(tv_stamp 0x770)+tv_gen(0x6d8)-1s; 无调用者(函数指针引用), 上游名不确定 [低置信]
+FUN_0001a4b4	share_diff	__func__ "share_diff"; 输出 New best share
+FUN_0001a730	update_work_stats	__func__ (mutex 错误助手传 "update_work_stats":0x20bf); share_diff 统计+Found block for pool
+FUN_0001a914	test_nonce_fulltest	body: test_nonce(1654c)+update_work_stats+fulltest(29f54), 越目标置出参并报 Share above target; 无调用者(函数指针), 不下发 [低置信]
+FUN_0001aa18	flush_queue	__func__ "flush_queue"; Discarded queued work item
+FUN_0001ab24	_rd_lock	body: pthread_rwlock_rdlock 包装, 失败转 quitfrom 打印 WTF RDLOCK ERROR(file=cgminer.c)
+FUN_0001ab4c	clone_queued_work_bymidstate	__func__ (0x22b0); rdlock+find(16a80)+make_clone
+FUN_0001ac00	clone_queued_work_byid	__func__ (0x22dc); rdlock+按 work->workid(0x724) 遍历+make_clone
+FUN_0001acc4	gen_stratum_work	__func__ "gen_stratum_work"; ARTIFACTS §4.3 锚点: 140B 工作头构造, job_id/nonce1/nonce2/ntime 日志
+FUN_0001b074	find_queued_work_byid	__func__ "find_queued_work_byid"
+FUN_0001b83c	get_devices	__func__ "get_devices"; 按索引返回设备(cgpu)
+FUN_0001bba4	hashmeter	__func__ "hashmeter"; (1m/5m/15m/avg)h/s 速率打印
+FUN_0001c3f4	hash_driver_work	__func__ "hash_driver_work"; 驱动工作循环, 返回-1 时 %s %d failure, disabling!
+FUN_0001c668	print_summary	logstring "Summary of runtime statistics:"+Runtime/Accepted/Rejected/SOLVED 等全套汇总
+FUN_0001d8fc	__quit	body: 双参 (status, wait_for_threads) 退出总控; quit(00016ca8)=单参包装
+FUN_0001d9b4	find_queued_work_bymidstate	__func__ "find_queued_work_bymidstate"
+FUN_0001db0c	test_work_current	__func__ "test_work_current"; New block detected/set_curblock/block_exists
+FUN_0001f17c	hash_push	__func__ "hash_push"(0x159d/0x15a8 传给锁错误助手); Pushing work from pool %d to hash queue
+FUN_0001f938	inc_work_stats	__func__ "inc_work_stats"
+FUN_00022b44	stale_work	__func__ "stale_work"; Work stale due to block mismatch/expiry/stratum job_id mismatch 等 4 类原因
+FUN_00022f88	discard_stale	__func__ "discard_stale"; Discarded %d stales that did not match current hash
+FUN_00023344	watchdog_thread	logstring: declaring SICK!/DEAD!/WELL!/Attempting to restart/Pausing-Restarting execution as per stop-start time/Terminating execution as planned
+FUN_00024708	take_pending_work	body: 取 cgpu+0x164 暂存 work, stale 则 free_work+wake_gws, 否则登记 workid 映射表(16624)并返回; 无调用者(函数指针) [低置信]
+FUN_000247d4	get_work	logstring: Popping work from get queue to get work/Got work ... for thread %d/Get work blocked for %d seconds; hash_pop(193b4)+stale_work 循环
+FUN_00024db0	miner_thread_work_loop	logstring+body: 'work prepare failed, exiting mining thread'/'Driver %s working diff changed' — miner_thread 冷路径/工作循环体 (GCC 拆分)
+FUN_000256a4	submit_work_async	__func__ "submit_work_async"; Pushing submit work to work thread/Failed to create submit_work_thread/stale share 按策略提交
+FUN_00025cc0	submit_noffset_nonce	body: make_work+copy_work_nonce2(new,work,nonceoffset)+test_nonce(1654c)+update_work_stats+fulltest(29f54)+submit_work_async(256a4); "%s %d: Share above target"; 与上游 submit_noffset_nonce 结构吻合 [中置信]
+FUN_00025e48	clone_and_submit_work	body: make_clone(work,0)+submit_work_async(256a4); 无调用者(函数指针), 上游名不确定 [低置信]
+FUN_00025e5c	submit_tested_work	__func__ "submit_tested_work"(0x22...); "%s %s %d: Share above target"; fulltest 通过后 make_clone+submit_work_async
+FUN_00025f48	submit_nonce	body: 重复解检查(0f7e8)+test_nonce(1654c)+submit_tested_work(25e5c)+inc_hw_errors(189a4)+BENCHFILE 处理; 与上游 submit_nonce 流程一致
+FUN_00027ba0	enable_curses	body: curses_lock 下 initscr/newwin x2/cbreak/noecho 初始化; 锁错误助手传 "lock_curses"/"unlock_curses"(内联 lock/unlock_curses)
+FUN_00027cd0	fill_drv_defaults	body: 结构体内空函数指针(+0xc..+0x60)逐项填默认桩(DAT_0000f7xx), +0x3c=miner_thread(24db0), +0x68=1.0; 上游名不确定 [低置信]
+FUN_00027f10	enable_device	__func__ "enable_device"
+FUN_00028ae0	noop_hook	ELF 数据: 全局函数指针 DAT_00075ed8 的初值(被 share_diff/inc_hw_errors/wake_gws/hash_push/curses 等尾部经指针调用); 恒返回 0, 运行时未见改写 [低置信]
+FUN_00029294	json_array_string_nc	body: jansson 校验(json_is_array/json_array_size/json_array_get/json_is_string)后返回 json_string_value(不拷贝); extranonce 响应错误串比较用 [低置信]
+FUN_000292f4	json_array_string	body: 经 29294 校验取数组元素字符串后 __strdup; parse_notify_equihash/parse_extranonce_equihash 取 job_id 等字段用
+FUN_0002930c	_rw_unlock	body: pthread_rwlock_unlock 包装, 失败打印 WTF RWLOCK ERROR ON UNLOCK(file=util.c)
+FUN_000299ac	parse_extranonce_equihash	__func__ "parse_extranonce_equihash"; Pool %d extranonce set to %s; nonce1bin calloc
+FUN_00029f54	fulltest	body: 256bit hash<=target 逐字比较(高位到低位); 调试模式打印 Proof/Target/TrgVal 与 YES (hash <= target)
+FUN_0002a168	tq_new	body: calloc 0x58+INIT_LIST_HEAD 自环+mutex/cond 初始化, 即 util.h struct tqd 构造
+FUN_0002a240	tq_push	__func__ "tq_push"
+FUN_0002a448	timersub	body: b = a-b(带借位, tv_sec/tv_usec)
+FUN_0002a47c	timeradd	body: b = a+b(带进位, 999999 归一)
+FUN_0002a4c8	timercmp_gt	body: 返回 a>b(bool), 先比 tv_sec 再比 tv_usec
+FUN_0002a4fc	timercmp_lt	body: 返回 a<bool 先 tv_sec 后 tv_usec
+FUN_0002a530	copy_timeval	body: 8 字节(dst<-src)双字拷贝; hashmeter 等处全局 timeval 复制 [低置信]
+FUN_0002a84c	cgtime	body: gettimeofday(tv, NULL) 包装, 即 util.h cgtime
+FUN_0002aa24	tdiff	body: 返回 double 秒差 = (a.sec-b.sec)+(a.usec-b.usec)/1e6
+FUN_0002aa68	parse_xnsub	body: rpc_user 中查 "#xnsub" 后缀, 命中置 pool->extranonce_subscribe=1 并截断, 日志 Pool %d extranonce subscribing enabled [中置信]
+FUN_0002cf40	parse_notify_equihash	ARTIFACTS §4.3 锚点; logstring: Valid Notify/Pool %d difficulty changed/Stratum reconnect requested/mining.method 分派
+FUN_0002e69c	extranonce_subscribe	logstring: 发送 {"method":"mining.extranonce.subscribe"}/Timed out waiting for response extranonce.subscribe
+FUN_0002ed88	record_device_fail	body: 设备(cgpu)+0xf4 记时/+0xf8 记 reason, +0xfc..+0x120 十个按原因计数器自增; watchdog 传 3=SICK/4=DEAD; 上游名不确定 [低置信]
+FUN_0002f1bc	_cgsem_post	logstring: Failed to sem_post errno=%d cgsem=0x%p in %s %s():%d (util.c)

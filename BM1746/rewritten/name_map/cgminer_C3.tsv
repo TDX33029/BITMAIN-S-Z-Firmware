@@ -1,0 +1,65 @@
+# cgminer-C3 name_map (pool/api 收尾): addr<TAB>name<TAB>basis
+FUN_0000b774	_mutex_lock	logstring: api.c 锁包装 "WTF MUTEX ERROR ON LOCK! errno=%d in %s %s():%d" + file 串 api.c
+FUN_0000b7e0	api_rw_unlock	logstring: api.c 锁包装 WTF RWUNLOCK (与 _rw_unlock 区分)
+FUN_0000b84c	_mutex_unlock	logstring: api.c 锁包装 "WTF MUTEX ERROR ON UNLOCK! errno=%d in %s %s():%d" + api.c
+FUN_000160b4	zero_bestshare	body: 与 cgminer.c zero_bestshare 一致—best_diff/best_share 清零 + suffix_string(0→"0",8B) + 遍历 pools 清 pool->best_diff(+400/+0x194 u64); 被 FUN_0001b8b4(zero_stats) 调用
+FUN_000178f8	kill_work	body: cg_completion_timeout(&__kill_work,0,5000) + applog "Shutdown signal received." + quit(0); 与 cgminer.c kill_work 一致
+FUN_00018924	inc_dev_status	__func__
+FUN_0001b8b4	zero_stats	__func__ (调 zero_bestshare, 与 cgminer.c zero_stats 一致)
+FUN_0002cec8	restart_stratum	body: stratum_active 则 suspend_stratum → initiate_stratum → extranonce_subscribe(fork 增) → auth_stratum; 败→pool_died, 成→stratum_resumed; util.c restart_stratum 同构
+FUN_0002f0b4	rename_thread	body: snprintf "cg@%s" + prctl(PR_SET_NAME); util.c RenameThread 原样
+FUN_0002f174	thr_info_create	__func__ (+util.c)
+FUN_00030500	escape_string	__func__ (+api.c; "Failed to malloc escape buf %d")
+FUN_000306b4	add_item_buf	__func__ ("OOM buf siz=%d tot=%d ext=%d" + api.c)
+FUN_000307c8	io_add	body: io_data{siz,ptr,cur} 增长缓冲追加串(含NUL), 不够时 realloc siz+0x20000=2*SOCKBUFALLOCSIZ, 溢出按 (2+(int)(tot/SOCKBUFALLOCSIZ))*SOCKBUFALLOCSIZ; 与 api.c io_add 一致
+FUN_0003085c	head_join	body: JOIN 命令回复段头—first=1 时 json 加 "{"(JSON0) 否则 ",", escape 后加 "\":["(JSON1+JSON2); 非 json 加 "CMD="(JOIN_CMD)+名+"|"(SEPSTR); 与 api.c head_join 一致
+FUN_000309e8	check_connect	body: getnameinfo→"::ffff:%s" 映射→inet_pton; "127.0.0.1"=localaddr 直通; ipaccess 16B mask 匹配取组; 与 api.c check_connect 一致
+FUN_00030b88	send_result	logstring: "API: send reply: (%d) '%.10s%s'" + "API: sent %d of %d first go"/"sent %d of remaining" 重试发送; api.c send_result
+FUN_0003107c	mcast	body: 224.0.0.75 mcast 监听—bind/join SO_REUSEADDR 循环, "cgm-FTW-%d-%s"/"cgminer-" 应答协议, check_connect 过滤; 与 api.c mcast() 一致
+FUN_00031ca0	mcast_thread	body: pthread_detach+self + setcanceltype + RenameThread("APIMCast") + mcast() + PTH(mythr)=0; 与 api.c mcast_thread 一致
+FUN_00031cdc	api_add_data_full	body: 构 api_data{type,name,data,prev,next,copied} 环链表, NULL→"(null)"(NULLSTR), 按 type 拷贝(0xe=bool 1B/3=1B/4,5=2B/6-9,0x10=4B/10,11=8B/0xf=timeval), default→"API: unknown1 data type %d ignored"+UNKNOWN"Unknown"; 与 api.c api_add_data_full 一致
+FUN_00031f64	tail_join	body: io_data->close(+0xd) 则 io_add("]")(JSON_CLOSE) 并清标志; isjson 再加 ",\"id\":1}"(JSON_END)+"]"(JSON3); 与 api.c tail_join 一致
+FUN_00031fc4	copyadvanceafter	body: 逐字符拷贝至 ','/NUL, 跳过 '\\' 转义, 补 '\0' 并前移源指针; 与 api.c copyadvanceafter 一致 (pooldetails/addpool 字段拆分用)
+FUN_0003204c	pooldetails	logstring: "Failed to malloc pooldetails buf"+quit(1); 体=malloc(strlen+1)+copyadvanceafter×3 拆 url/user/pass; api.c pooldetails 同构
+FUN_00032190	api_rd_lock	logstring: api.c 锁包装 WTF RDLOCK (与 cgminer 主体 _rd_lock 区分)
+FUN_0003220c	quit_restart_unlock	body: pthread_mutex_unlock(quit_restart_lock=DAT_00078cb8) 失败走 _mutex_unlock(log) + 尾调 DAT_00075ed8(noop_hook); api() 退出路径(0x15f9/0x1602)专用 [低置信]
+FUN_00032248	api_restart_thread	__func__ 'API: restarting cgminer' — api.c 侧重启线程 (与 cgminer.c restart_thread 区分)
+FUN_00032340	quit_thread	__func__ ("API: killing cgminer")
+FUN_0003243c	tidyup	__func__
+FUN_00032534	print_data	__func__ ("API: unknown2 data type %d ignored"+UNKNOWN; "%.15f"/"%ld.%06ld"; wrlock 内联)
+FUN_00032df8	api_add_escape	body: api_add_data_full(type=0=API_ESCAPE) 一行包装; 与 api.c api_add_* 序列对应
+FUN_00032e1c	api_add_string	body: api_add_data_full(type=1=API_STRING)
+FUN_00032e40	api_add_const	body: api_add_data_full(type=2=API_CONST)
+FUN_00032ed0	api_add_int	body: api_add_data_full(type=6=API_INT)
+FUN_00032f18	api_add_uint32	body: api_add_data_full(type=8=API_UINT32)
+FUN_00032fcc	api_add_elapsed	body: api_add_data_full(type=13=API_ELAPSED)
+FUN_00033014	api_add_timeval	body: api_add_data_full(type=15=API_TIMEVAL)
+FUN_00033038	api_add_time	body: api_add_data_full(type=16=API_TIME; 32位 time_t=4B 与体拷贝尺寸一致)
+FUN_0003305c	message	body: codes[] 表(DAT_000760fc)查 severity(I/S/W/E)+params 分支, "F"/When/Code(-1)/Msg 兜底, Description=opt_api_description("cgminer 4.9.0"); {"STATUS":[ 头 + print_data + "]" 尾; 与 api.c message() 一致
+FUN_00033488	asccount	body: message(0x68=MSG_NUMASC) + ",\"ASCS\":["/("ASCS,") + api_add_int("Count") + print_data + io_close(+0xd=1); 与 api.c asccount 一致
+FUN_00033c34	checkcommand	body: message(MSG_CHECK) + ",\"CHECK\":[" + Exists/Access(Y/N) + print_data; 与 api.c checkcommand 一致
+FUN_00033dcc	devdetails	body: message(MSG_DEVDETAILS) + ",\"DEVDETAILS\":[" + DEVDETAILS/Name/ID/Driver/Kernel/Model/Device Path 字段; 与 api.c devdetails 一致
+FUN_00034830	switchpool	__func__ ("switchpool" 传给锁包装+行号 0xb5b/0xb5e/0xb65); 体=total_pools==0→MSG(8)/缺参→MSG(0x19)/无效→MSG(0x1a), pool->do_dstd? (+0x84)=1 后 switch_pools; 与 api.c switchpool 一致
+FUN_00034dc0	dosave	body: 缺省 default_save_file()→fopen(w) 败→escape+message(0x2b=MSG_BADFN); 成→write_config+message(0x2c=MSG_SAVED); 与 api.c dosave 一致
+FUN_00034eb0	api_add_mhs	body: api_add_data_full(type=17=API_MHS) 一行包装; 被 lcd(GHS5s/GHSavg) 与 itemstats(GHS 5s/GHS av) 使用
+FUN_00034ed4	lcd	body: cmds 表 VA 0x766a0 'lcd'→此函数; message(7) + "LCD"/"fan"/"temp"/"user"/GHS5s/GHSavg/当前池 rpc_url(+0xc4)/rpc_user(+0xcc) 字段; fork 复用 ,\"POOLS\":[ 标签输出 LCD 数据
+FUN_00035154	itemstats	body: STATS/ID/Elapsed/Calls/Wait/Max/Min/GHS 5s/GHS av + extra(api_data 链表拼接 param_5) + 返回 i+1; 与 api.c itemstats 一致
+FUN_00035e88	pools	body: cmds 表 VA 0x7655c 'pools'→此函数; total_pools==0→message(8)=MSG_NOPOOL; 遍历 pools 输出 Status/Stratum URL/Stratum Active/Has Stratum/Priority/Quota/Getworks/Accepted/Rejected/Discarded/Stale/Get Failures/Remote Failures/Best Share/Pool Rejected%/Pool Stale%/Last Share Difficulty/Last Share Time("%d:%02d:%02d")/Difficulty Accepted/Rejected/Stale/Proxy Type/Proxy/Long Poll/Disabled/Diff1 Shares
+FUN_0003669c	mcast_init	body: calloc(1,0x40) 败→quit(1,"Failed to calloc mcast thr"); thr_info_create(mcast_thread) 败→quit(1,"API mcast thread create failed"); 与 api.c mcast_init 一致
+FUN_00036764	api	logstring: API 主线程—ipaccess/组解析("API duplicate group name"), bind 4028 重试 30s, cmds 表(0x765xx)分发+权限检查("API: access denied"), head_join/tail_join/send_result, mcast_init 调用, 退出路径 thr_info_create(restart_thread/quit_thread)+quit_restart_lock
+FUN_0003aebc	bm1740_makeup_get_status_cmd	__func__ ("%s input param error: str length = %u")
+FUN_000499d4	create_bitmain_check_miner_status_pthread	__func__ ("create thread for check miner_status"; calloc thr 0x40 + thr_info_create(FUN_00044b5c) + pthread_detach + FUN_0002a92c(500))
+FUN_0005664c	http_listen_thread	logstring: 创建者 FUN_00056a90 日志 "httpListenThread start ret=%d"; 体=socket/bind/listen 6060 失败 10s 重试循环 + accept "one client connected sock=%d"
+FUN_000577a4	json_dump_callback	body: !(flags&JSON_ENCODE_ANY=0x200) 且 (json==0||type>1) 返回 -1; 否则 do_dump(json,flags,0,callback,data); 与 jansson json_dump_callback 一致(老版本, 无 parents_set)
+FUN_00057854	json_dumps	body: strbuffer_init + json_dump_callback(dump_to_strbuffer=&LAB_000570bc) + jsonp_strdup(strbuffer_value) + strbuffer_close; 与 jansson json_dumps 一致; stratum 各函数序列化 JSON 用
+FUN_0005791c	hashtable_find_pair	body: 桶链表遍历 pair->hash==hash && strcmp(pair->key)==0 返回 pair; 与 jansson hashtable_find_pair 一致
+FUN_00057ea4	hashtable_iter_at	body: hash_str(0x1505=5381 起始, *0x21=33) + hash%prime_list[order](DAT_0006cb74 质数表) 定桶 + hashtable_find_pair + 返回 &pair->list; 与 jansson hashtable_iter_at 一致
+FUN_00059230	json_loads	body: jsonp_error_init(error,"<string>") + string==NULL 报 "wrong arguments" + lex_init(string_get)+parse_json+lex_close; 与 jansson json_loads 一致
+FUN_000592c4	json_loadb	body: jsonp_error_init(error,"<buffer>") + buffer==NULL 报 "wrong arguments"; 与 jansson json_loadb 一致
+FUN_000595b4	jsonp_strdup	body: strlen+1 经分配器函数指针 DAT_00076ba0 malloc + memcpy; 与 jansson jsonp_strdup 一致 (json_dumps 结果复制)
+FUN_0005961c	strbuffer_init	body: strbuffer_t{value,length,size}: size=16(STRBUFFER_MIN_SIZE), length=0, malloc, value[0]=0; 与 jansson strbuffer_init 一致
+FUN_00059654	strbuffer_close	body: value!=0 则 free(FUN_00059594) + 三字段清零; 与 jansson strbuffer_close 一致
+FUN_00059e20	json_object_get	body: json_is_object(type==0) 检查 + hash_str + hash%prime_list[order] 定桶 + hashtable_find_pair + 返回 pair->value(+0xc); 与 jansson json_object_get 一致
+FUN_0005a248	json_integer_value	body: type==3(JSON_INTEGER) 返回 *(int64*)(json+8); 与 jansson json_integer_value 一致
+FUN_0005a2f8	json_real_value	body: type==4(JSON_REAL) 返回 *(double*)(json+8) (o32 下 r0:r1 成对返回); 与 jansson json_real_value 一致
+FUN_0005c6f0	__umodsi3	body: 无符号取模; 除数==0 时 raise(SIGFPE=8) 否则走 FUN_0005c648(udiv: 除数1快速路径+商/余成对返回); 调用方= jansson 桶索引 hash%prime_list[order] 与 adjust_quota_gcd 的 gcd 试除循环

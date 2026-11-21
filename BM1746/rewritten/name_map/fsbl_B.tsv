@@ -1,0 +1,85 @@
+# fsbl-B name_map (addr>=0x7430): addr<TAB>name<TAB>basis
+FUN_00007430	sd_write_blocks	body: SD host write path; CMD24/CMD25 enc 0x1800/0x1900 + SDHCI DMA, dcache clean before DMA
+FUN_00007574	mmc_card_identify	body: CMD0 + CMD1 arg0/OCR 0x40ff8000 + CMD2 + CMD3(0x12340000) + CMD9 sequence
+FUN_00007758	sdmmc_card_init	body: card init state machine calling identify/SCR/bus-width/HS-switch/ext-CSD/clk helpers
+FUN_00007d40	sdmmc_set_blocklen	body: CMD16 enc 0x1000, stores blklen&0xfff
+FUN_00007dfc	sd_send_scr	body: CMD55 + ACMD51 enc 0xB300, zeroed 8-byte buffer DMA read = SCR
+FUN_00007f5c	sd_set_bus_width	body: CMD55 + ACMD6 enc 0x8600
+FUN_00008168	sd_switch_func_check	body: SD CMD6 enc 0x600 arg 0xFFFFF0 (check mode), 64-byte status read
+FUN_000082b0	sd_set_clk_freq	body: SDHCI clock divider search on reg +0x2C, wait stable bit1, enable bit2
+FUN_00008428	sdmmc_switch_high_speed	body: CMD6 0x80FFFFF1 (SD) / eMMC EXT_CSD 0x3B90200, freq targets 50/52/200MHz
+FUN_00008798	sd_set_card_detect	body: CMD55 + ACMD42 enc 0xAA00 (SET_CLR_CARD_DETECT)
+FUN_0000884c	mmc_send_ext_csd	body: eMMC CMD8 enc 0x800 arg 0, 512-byte EXT_CSD DMA read
+FUN_00008994	mmc_switch_cmd6	body: CMD6 enc 0x600 with arg, no data phase
+FUN_00008a00	rsa_inv_mod2p32	body: Newton iteration modular inverse mod 2^32 (Montgomery n0)
+FUN_00008a78	rsa_mont_mul	body: 64-word 2048-bit Montgomery multiply with n0inv
+FUN_00008df8	rsa_bignum_cmp	body: 64-word bignum compare returning a>b
+FUN_00008eac	rsa_bignum_sub	body: 64-word bignum subtract with borrow
+FUN_00008f80	rsa_modexp_u32exp	body: square-and-multiply modexp, 32-bit exponent MSB-first
+FUN_000090d8	rsa_modexp	body: modexp with 64-word exponent array, MSB-first
+FUN_00009294	sha256_init	body: init state + zero length counters at ctx+0x60/+0x64
+FUN_000092c8	sha256_update	body: buffers 64-byte blocks, big-endian word load, calls transform
+FUN_000095a0	sha256_final	body: append 0x80, 64-bit bit length, pad to 56/120 bytes
+FUN_00009924	sha256_hash	body: one-shot init+update+final wrapper on stack ctx
+FUN_00009974	sha256_state_reset	body: memcpy 32-byte H0 constants into ctx
+FUN_000099a0	sha256_transform	body: SHA-256 block compression with K table, Sigma/maj functions
+FUN_0000aedc	efuse_setup_timing	body: EFUSE 0xF800D00C mode bits + timing regs 0xD018/0xD01C from freq
+FUN_0000af74	crc_syndrome_table_init	body: clears DAT_00028eac area, builds GF(2) syndrome tables
+FUN_0000b0e4	crc_syndrome_calc	body: 25-byte input -> 5 check bytes via table dot-products
+FUN_0000b160	crc_syndrome_position	body: dot-product + table lookup returns single-bit error position
+FUN_0000b254	efuse_addr_is_reserved	body: range/exclusion checks on 0xF800D/E0xx efuse row registers
+FUN_0000b3d4	efuse_read_bit_checked	body: XADC temp/supply range check then read bit0 of row register
+FUN_0000b450	efuse_read_rows_ecc	body: scans rows from 0xF800E080, corrects 1-bit errors, packs 256 bits
+FUN_0000b680	efuse_write_bit	body: masked write of bit0 to non-reserved efuse register
+FUN_0000b6a4	efuse_program_bit	body: program bit + global timer timeout 0x96 units, verify readback
+FUN_0000b710	efuse_program	body: SLCR unlock 0xDF0D, program AES/RSA/user rows, status 0x81xx-0x99xx
+FUN_0000ba3c	hex_char_to_nibble	body: '0'-'9','a'-'f','A'-'F' decode, err 0x11
+FUN_0000ba90	hex_string_to_bytes	body: pairs of hex chars -> bytes forward fill
+FUN_0000bb18	xadc_init	body: lookup cfg + CfgInitialize + SelfTest + seq mode; err 0xd/0xe/0xf
+FUN_0000bb98	xadc_read_channels	body: reads chan0 + supply chans via cmd reg 0x10/data 0x14 into 7 words
+FUN_0000bc50	global_timer_reset	body: 0xF8F00200/204=0, control 0xF8F00208=1
+FUN_0000bc74	global_timer_counter_read	body: returns 64-bit ARM global timer counter
+FUN_0000bcd8	timeout_deadline_set	body: deadline = counter + cycles*DAT_00028f50 (+upper term)
+FUN_0000bd28	timeout_expired	body: compare deadline upper word vs counter
+FUN_0000bda8	hex_to_bytes_ralign	body: even-length hex pairs -> bytes filling buffer backward (right-aligned)
+FUN_0000be74	bitarray_unpack	body: bytes -> 1-bit-per-byte array LSB-first
+FUN_0000bed4	bitarray_pack	body: 1-bit-per-byte array -> packed bytes LSB-first
+FUN_0000bf60	hex_char_invalid	body: strchr in 22-char hex table at 0x17274; true when absent
+FUN_0000bfbc	hex_string_validate	body: strlen match + per-char table membership; NULL on success
+FUN_0000c024	cpu_freq_detect	body: ARM_PLL 0xF8000100 / IO_PLL 0xF8000120 FDIV, sets timer scale
+FUN_0000c0dc	hex_to_key32	body: <=64 hex chars -> 32-byte AES key, right-aligned
+FUN_0000c240	xadc_selftest	body: threshold reg 0x51 write 0x55 + readback verify, err file xadcps
+FUN_0000c2f8	xadc_lookup_config	body: device id 0 match -> DAT_00019c50 config
+FUN_0000c314	xadc_cfg_initialize	body: unlock 0xF8007034=0x757BDF0D, CFG0|=0x80ff0000, IsReady 0x11111111
+FUN_0000c44c	xadc_cfg0_get	body: returns *(base+0x00) with assert guards
+FUN_0000c4d0	xadc_cfg3_get	body: returns *(base+0x0C) with assert guards
+FUN_0000c5d0	xadc_cfg2_get	body: returns *(base+0x18) with assert guards
+FUN_0000c654	xadc_cfg2_pulse	body: base+0x18 = 0x10 then 0, used around selftest
+FUN_0000c6dc	xadc_chan_data_get	body: cmd reg chan<<16|0x4000000 read, chans 0-6/0xd-0x23
+FUN_0000c7b8	xadc_auxchan_data_get	body: chans (param+8)=8..10 via cmd reg, returns data&0xffff
+FUN_0000c888	xadc_supply_data_get	body: chans (param+0x20)=0x20..0x2D via cmd reg
+FUN_0000ca3c	xadc_cfg0_field_get	body: read cmd 0x4400000 reg 0x40 CFR0, return (data&0x3fff)>>12 = bits [13:12]
+FUN_0000cba0	xadc_msts_alarm_get	body: read cmd 0x4410000, ~data&0xf0f active-low alarms
+FUN_0000cd30	xadc_msts_nibble_get	body: read cmd 0x4410000, data&0xf0
+FUN_0000cdd4	xadc_seq_mode_set	body: write cmd 0x8410000 data mode<<12|old&0xfff; modes 0-3,4,8
+FUN_0000ceb8	xadc_seq_mode_get	body: read cmd 0x4410000 reg 0x41, return (data&0xffff)>>12 = seq mode bits
+FUN_0000cf5c	xadc_set_single_chan_params	body: CFR0 0x40 chan[4:0]|flags 0x100/0x200/0x400 keep 0x3000, chan+flag range checks, mode check via ceb8
+FUN_0000d190	xadc_cfg2_divider_get	body: read cmd 0x4420000 reg 0x42 CFR2, return (data&0xffff)>>8 = CD divider bits [15:8]
+FUN_0000d234	xadc_seq_ch0_set	body: requires seq mode 0; write cmds 0x8480000/0x8490000 regs 0x48/0x49 = param&0x7fe1 / param>>16
+FUN_0000d300	xadc_seq_ch0_get	body: reads regs 0x48/0x49 pair, returns 32-bit combine (data<<16 | other&0x7fe1)
+FUN_0000d3cc	xadc_seq_ch1_set	body: write cmds 0x84A0000/0x84B0000 regs 0x4A/0x4B = param&0x7fe0 / param>>16, mode check via ceb8
+FUN_0000d498	xadc_seq_ch1_get	body: reads regs 0x4A/0x4B pair, returns 32-bit combine
+FUN_0000d564	xadc_avg_ch0_set	body: write cmds 0x84C0000/0x84D0000 regs 0x4C/0x4D = param&0x800 / param>>16, mode check via ceb8
+FUN_0000d62c	xadc_avg_ch0_get	body: reads regs 0x4C/0x4D pair, returns 32-bit combine
+FUN_0000d6f4	xadc_avg_ch1_set	body: write cmds 0x84E0000/0x84F0000 regs 0x4E/0x4F = param&0x800 / param>>16, mode check via ceb8
+FUN_0000d7bc	xadc_avg_ch1_get	body: reads regs 0x4E/0x4F pair, returns 32-bit combine
+FUN_0000d884	xadc_alarm_thr_set	body: param_2<0x10; write cmd 0x8000000|(param_2+0x50)<<16|value = alarm regs 0x50-0x5F
+FUN_0000d938	xadc_alarm_thr_get	body: param_2<0x10; read cmd 0x4000000|(param_2+0x50)<<16, return data&0xffff
+FUN_0000dc4c	xadc_cfg0_flags_get	body: read cmd 0x4400000 reg 0x40 CFR0, return (data&0x3ff)>>9 = flags bits [10:9]
+FUN_0000deac	xadc_cfg2_field_get	body: read cmd 0x4420000 reg 0x42 CFR2, return (data>>4)&0xffffffc
+FUN_0000dfb0	strchr	body: 0xfefefeff/0x01010101 NUL word scan then byte compare - libc strchr
+FUN_0000e138	fsbl_main_entry	body: SLCR unlock 0xF8000008=0xdf0ddf0d, IRQ vectors 0x1b28..0x1a9c, markers 0xaa55aa55 @0x200000/0x100000, boot mode 0xF800025C&7 -> FUN_00000714
+FUN_0000e6c0	efuse_row_blank_check	body: XADC range check bb98, efuse timing aedc, bit read via b254; returns not-programmed state
+FUN_0000e7c4	efuse_program_row_pair	body: b6a4 program bit + e6c0 blank-check verify; companion row reg at param_1+0x87c-(param_1&0x7f)*2
+FUN_0000e88c	efuse_write_rows	body: be74 unpack 256 bits -> af74 syndrome tables -> b0e4 CRC -> e7c4 program per set bit
+FUN_0000e948	icache_invalidate_wfi	body: CP15 ICIALLU/IC IVAU invalidate, DSB/ISB, control reg, WFE/WFI idle loop

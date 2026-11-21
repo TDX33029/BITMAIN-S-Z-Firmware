@@ -375,3 +375,49 @@
 - 方法论与解包细节：METHODOLOGY.md、SUMMARY.md（BMU 容器格式 §一~§九）
 - 协议细节（帧格式/PIC 命令/频率规则）：bm1746\BM1746_uart_register_ops.md
 - 单芯片可行性论证：bm1746\ESP32_single_chip_feasibility.md
+
+## 8. rewritten\（语义化 C 全量转写，1114 函数）
+
+对 `reversed\` 全部 6 个二进制（7 产物）1,114 个函数的语义化 C 转写，100% 完成落盘。
+规则见 `rewritten\CONVENTIONS.md`；总索引见 `rewritten\README.md`。
+
+### 8.1 完成度
+
+| 目录 | 函数 | 行数 | 说明 |
+|---|---|---|---|
+| rewritten\cgminer\ | 644 | 38,670 | 33 个模块文件（uart/axi/i2c/pic/fan/chain/freq×4/job×9/pool×3/json/api×3/cfg/log/util/hash/nostr） |
+| rewritten\fsbl\ | 165 | 9,936 | p1a-p4 + ps7_init.c（540 条 PS 寄存器序列, 由 analysis\out\ps7_final.json 生成） |
+| rewritten\uboot\ | 140 | 6,297 | p1a-p3b（另 5 条仅索引无源条目豁免, 记录于 coverage.py） |
+| rewritten\monitor\ | 113 | 5,008 | cjson.c + monitor_core_p1/p2 |
+| rewritten\fileparser\ | 42 | 1,329 | farmhash na::Hash64 (2172 golden 向量验证通过) |
+| rewritten\ko\ | 10 | 420 | bitmain_axi.c + fpga_mem.c |
+| rewritten\include\ | — | 241 | common_types.h / bm1746_regs.h / fpga_axi.h |
+| rewritten\name_map\ | 1114 | — | FUN_地址→语义名→依据 冻结事实源（6 个正式 tsv + 分片过程件） |
+
+### 8.2 校验状态
+
+- 覆盖率脚本 `tools\coverage.py all`：names 6/6 OK、transcribed 6/6 OK（1114/1114）、Ghidra 残留 0。
+- gcc 语法冒烟：53 个翻译单元全部通过（`-fsyntax-only -std=gnu99`；MinGW 桩头
+  `analysis\tmp_syntax_stubs\` 仅服务语法检查——POSIX/内核/openssl/curses 头缺失补桩 +
+  prelude 注入 glibc 符号；`-DNO_OLDNAMES` 屏蔽 MinGW 1 参 mkdir）。
+- 机器码级抽查：BLAKE2b（gcc 8192/8192 + 已知答案）、SHA-256（NIST 向量）、scrypt（hashlib
+  对拍）、farmhash（2172 golden）、CRC16、__udivsi3（capstone 裁决）、4-bit lane 校验和
+  （3000 随机码流 vs 寄存器模型）等，逐批次详见各文件头部注释与批次报告。
+- 阶段 3 冒烟中修复的真实转写缺陷约 30 处（注释内 `*/` 早闭、do-while 作用域、跨文件签名
+  不一致、DAT_ 缺 extern、fsbl p2b/p4 部分实参调用形态、fat_find_volume/rsa_mont_mul 按
+  反编译重对齐等），全部修正后三关复绿。
+
+### 8.3 工具链
+
+| 工具 | 用途 |
+|---|---|
+| tools\coverage.py | names/transcribed/remnants 三模校验（横幅配对 + Ghidra 残留扫描） |
+| tools\merge_name_maps.py | cgminer 9 分片命名合并（__func__>anchor>logstring 优先级） |
+| tools\batch_plan.py | 按类别+≤2500 行装箱生成 27 个转写批次 |
+| tools\gen_ps7_init_c.py | ps7_final.json → ps7_init.c 确定性生成 |
+
+### 8.4 已知边界
+
+- 不保证可链接：纯数据 blob（opt_config_table、ctype 表等）以 extern 引用未转写数据段。
+- 反编译体受损函数（halt_baddata 占位）按原样转写为挂死入口，不虚构语义。
+- Ghidra 丢失实参的调用点以"部分原型函数指针"形态保留并注明寄存器未定值（不虚构补参）。
